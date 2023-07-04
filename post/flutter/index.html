@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>flutter - 개발노트</title>
+    <title> - 개발노트</title>
 
     
     
@@ -25,7 +25,15 @@
         }
     </style></head>
 <body class="bg:fade-84@dark font:fade-16@dark font:sans">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+        50% { color: #4682B4; }
+        100% { color: #2F4F4F; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
     <div class="
         h:full
         w:full
@@ -44,74 +52,66 @@
         </div>
 
         <div class="ml:auto">
+
             
             
             
-            
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/" title="">전체</a>
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">전체</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/flutter/" title="">flutter</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/flutter/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">flutter</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/swift/" title="">swift</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/etc/" title="">etc</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="" title=""> | </a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/about/" title="">about</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
             
         </div>
     </div>
@@ -121,7 +121,7 @@
 <div>
     <article class="box:border-box pt:15 w:full">
         <header class="mb:12">
-            <div class="font:18 font:extrabold">flutter</div>
+            <div class="font:18 font:extrabold"></div>
         </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
