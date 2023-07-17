@@ -2,90 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개발노트</title>
-    <link>https://sanc93.github.io/index.html</link>
+    <link>https://sanc93.github.io/</link>
     <description>Recent content on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dart</title>
-      <link>https://sanc93.github.io/tags/dart/</link>
+      <title>TIL 01 : Today I Learned 시작</title>
+      <link>https://sanc93.github.io/post/record/2023-07-17-til/</link>
+      <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-17-til/</guid>
+      <description>오늘 한 일 첫 TIL 작성
+평일에 배운 것을 매일매일 기록하기
+Swift 문법 강의 수강
+저번주 팀 프로젝트 회고시간에 JY님이 추천한 몇가지 다운로드
+스팟라이트 (Spotlight) → Raycast
+터미널 (Terminal) → Hyper
+과제 Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름 Typora에서 이미지 파일이 안 올라가는* 문제 → 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다. 내일 다시 확인해 봐야지.. 잡담 오늘부터 TIL을 쓰려고 한다.</description>
+    </item>
+    
+    <item>
+      <title>XCode 단축키 모음 (Xcode Keyboard Shortcuts)</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-17-etc-01/</link>
+      <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-17-etc-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-10-error-02/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-02/</guid>
+      <description>1. 문제 Flutter 프로젝트를 끌어와서 VSCode &amp;gt; pubspec.yml 파일에서 Get Packages 하려고 하니 디버그 콘솔에 이러한 문구가 뜬다.
+Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &amp;gt;=3.0.5 &amp;lt;4.0.0, version solving failed. Exited (1) 2. 원인 내 Dart 버전이 3.0.3. 인데 &amp;lsquo;3.0.5 ~ 4.0.0&amp;rsquo; 버전을 요구하고 있어서 그렇다
+.. environment: sdk: &amp;#39;&amp;gt;=3.0.5 &amp;lt;4.0.0&amp;#39; .. 3. 해결방법 Dart SDK를 올려주면 해결된다. VSCode Terminal에서 flutter upgrade 해주자</description>
+    </item>
+    
+    <item>
+      <title>에러 : VSCode에서 iOS Emulator가 뜨지 않을때</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-10-error-01/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-01/</guid>
+      <description>1. 문제 iOS 에뮬레이터 실행 해보려 했는데
+없다&amp;hellip;.
+Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &amp;gt;=3.0.5 &amp;lt;4.0.0, version solving failed. Exited (1) 2. 원인 3. 해결방법 VSCode 터미널에서
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer 을 해주자
+그럼 잘~ 뜬다</description>
+    </item>
+    
+    <item>
+      <title>Flutter 01 : Flutter와 Dart의 관계</title>
+      <link>https://sanc93.github.io/post/flutter/2023-07-07-flutter/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/dart/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/flutter/2023-07-07-flutter/</guid>
+      <description>앱 개발 방법은
+① 네이티브 앱(Native App)
+② 크로스 플랫폼 앱(Cross Platform App)
+이렇게 크게 2가지로 나뉜다.
+네이티브 앱(Native App)
+원래 앱을 개발하던 방식. 모바일 기기는 iOS와 Android로 양분되어 있다.
+네이티브로 앱을 제작하려면 안드로이드, iOS 앱을 각각의 개발 방법으로 두 번 제작 해야 함.
+따라서 리소스가 많이 들어간다는 단점은 있지만 성능이 가장 빠르고 최신 기능을 빠르게 적용할 수 있다는 장점이 있다.
+Android
+개발 언어: Java, Kotlin
+개발 툴 : Android Studio</description>
     </item>
     
     <item>
-      <title>flutter</title>
-      <link>https://sanc93.github.io/tags/flutter/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      <title>첫 글</title>
+      <link>https://sanc93.github.io/post/1/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/flutter/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/1/</guid>
+      <description>야호!</description>
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://sanc93.github.io/tags/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://sanc93.github.io/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/</guid>
+      <guid>https://sanc93.github.io/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sanc93.github.io/post/</link>
+      <link>https://sanc93.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/etc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/flutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/flutter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/record/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/record/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/swift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Series</title>
-      <link>https://sanc93.github.io/series/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/series/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/about/</guid>
+      <description>서울 관악구 사는 30살 아재
+아직 모르는 건 많지만 열심히 하면 할 수 있다!
+lazy-kim.com
+e-mail : sanc93@me.com</description>
     </item>
     
   </channel>

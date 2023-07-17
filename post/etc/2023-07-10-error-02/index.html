@@ -4,12 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title> - 개발노트</title>
+    <title>에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed. - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="1. 문제 Flutter 프로젝트를 끌어와서 VSCode &gt; pubspec.yml 파일에서 Get Packages 하려고 하니 디버그 콘솔에 이러한 문구가 뜬다.
+Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed. Exited (1) 2. 원인 내 Dart 버전이 3.0.3. 인데 &lsquo;3.0.5 ~ 4.0.0&rsquo; 버전을 요구하고 있어서 그렇다
+.. environment: sdk: &#39;&gt;=3.0.5 &lt;4.0.0&#39; .. 3. 해결방법 Dart SDK를 올려주면 해결된다. VSCode Terminal에서 flutter upgrade 해주자" />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -138,11 +140,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold"></div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jul 10, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
@@ -179,34 +183,30 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/2023-07-17-etc-01/">
-                                <div>XCode 단축키 모음 (Xcode Keyboard Shortcuts)</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 17, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/2023-07-10-error-02/">
-                                <div>에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 10, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/2023-07-10-error-01/">
-                                <div>에러 : VSCode에서 iOS Emulator가 뜨지 않을때</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 10, 2023</time></div>
-                        </div>
-                    </li>
-    </ul>
-</div>
+"><blockquote>
+<h3 id="1-문제">1. 문제</h3>
+</blockquote>
+<p>Flutter 프로젝트를 끌어와서 VSCode &gt; pubspec.yml 파일에서 Get Packages 하려고 하니
+디버그 콘솔에 이러한 문구가 뜬다.</p>
+<pre tabindex="0"><code>Resolving dependencies...
+The current Dart SDK version is 3.0.3.
+
+Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.
+Exited (1)
+</code></pre><blockquote>
+<h3 id="2-원인">2. 원인</h3>
+</blockquote>
+<p>내 Dart 버전이 3.0.3. 인데 &lsquo;3.0.5 ~ 4.0.0&rsquo; 버전을 요구하고 있어서 그렇다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">..</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">sdk</span>: <span style="color:#e6db74">&#39;&gt;=3.0.5 &lt;4.0.0&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">..</span>
+</span></span></code></pre></div><blockquote>
+<h3 id="3-해결방법">3. 해결방법</h3>
+</blockquote>
+<p>Dart SDK를 올려주면 해결된다.
+VSCode Terminal에서 flutter upgrade 해주자</p>
+</div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
 </footer></div>
