@@ -4,15 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>TIL 01 - 개발노트</title>
+    <title>Swift 02 : 프로퍼티 (Property) - 개발노트</title>
 
     
     
-    <meta name="description" content="오늘 한 일 첫 TIL 작성
-평일에 배운 것을 매일매일 기록하기
-Swift 문법 강의 수강
-저번주 팀 프로젝트 회고시간에 JY님이 추천한 몇가지 다운로드
-스팟라이트 (Spotlight) → Raycast 터미널 (Terminal) → Hyper 과제 Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름 Typora에서 이미지 파일이 안 올라가는 문제 → 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다.. 느낀점 오늘부터 TIL을 쓰려고 한다." />
+    <meta name="description" content="프로퍼티란? Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
+데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.
+1. 저장프로퍼티 2. 연산프로퍼티 프로퍼티는 크게 이 두가지 유형으로 나뉜다.
+저장 프로퍼티 (Stored Property) var : 변경할 수 있는 변수(Variable)를 선언할 떄 사용
+let a = 100 a = 200 print(a) // 100 let : 변경할 수 없는 상수(Constant)를 선언 할때 사용
+let a = 100 a = 200 // 에러 발생." />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -87,12 +88,18 @@ Swift 문법 강의 수강
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+                    transition:150ms;ease-in
+                    active" href="/post/swift/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">swift</a>
+                
             
             
             
@@ -105,18 +112,12 @@ Swift 문법 강의 수강
             
             
             
-                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
-                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in
-                    active" href="/post/record/" title=""
-                        style="color: #f0f0f0;
-                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
-                
+                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
             
             
             
@@ -144,9 +145,9 @@ Swift 문법 강의 수강
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">TIL 01</div>
+        <div class="font:40 font:extrabold">Swift 02 : 프로퍼티 (Property)</div>
         <div class="mt:16 f:fade-60">
-            <time>Jul 17, 2023</time>
+            <time>Jul 18, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -186,38 +187,45 @@ Swift 문법 강의 수강
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><h4 id="오늘-한-일">오늘 한 일</h4>
+"><h4 id="프로퍼티란">프로퍼티란?</h4>
+<p>Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값<br>
+데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.</p>
+<h6 id="1-저장프로퍼티">1. 저장프로퍼티</h6>
+<h6 id="2-연산프로퍼티">2. 연산프로퍼티</h6>
+<p>프로퍼티는 크게 이 두가지 유형으로 나뉜다.</p>
+<h4 id="저장-프로퍼티-stored-property">저장 프로퍼티 (Stored Property)</h4>
+<p><code>var</code> : 변경할 수 있는 변수(Variable)를 선언할 떄 사용</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> a = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>a = <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(a) <span style="color:#75715e">// 100</span>
+</span></span></code></pre></div><p><code>let</code> : 변경할 수 없는 상수(Constant)를 선언 할때 사용</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> a = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>a = <span style="color:#ae81ff">200</span> <span style="color:#75715e">// 에러 발생. a는 let(상수)이기 때문에 값을 재할당 할 수 없다</span>
+</span></span></code></pre></div><h4 id="연산-프로퍼티-computed-property">연산 프로퍼티 (Computed Property)</h4>
 <ul>
 <li>
-<p>첫 TIL 작성<br>
-평일에 배운 것을 매일매일 기록하기</p>
+<p>값을 직접 저장하는 것이 아닌, 특정한 연사을 통해 값을 가져오거나 설정하는 프로퍼티</p>
 </li>
 <li>
-<p>Swift 문법 강의 수강</p>
-</li>
-<li>
-<p>저번주 팀 프로젝트 회고시간에 JY님이 추천한 몇가지 다운로드</p>
-<ul>
-<li>스팟라이트 (Spotlight) → Raycast
-<img src="/images/2023-07-17-til/1.png" alt="1"></li>
-<li>터미널 (Terminal) → Hyper
-<img src="/images/2023-07-17-til/2.png" alt="2"></li>
-</ul>
+<p>보통 다른 저장 프로퍼티의 값을 기반으로 계산된 값을 제공하기 위해 사용된다</p>
+<p>(따라서 연산 프로퍼티는 그때 그때 계산한 값을 알려주기 때문에 변수 <code>var</code>로만 선언가능)</p>
 </li>
 </ul>
-<h4 id="과제">과제</h4>
-<ul>
-<li>Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름</li>
-<li>Typora에서 이미지 파일이 안 올라가는 문제
-→ 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다..</li>
-</ul>
-<h4 id="느낀점">느낀점</h4>
-<p>오늘부터 TIL을 쓰려고 한다.<br>
-원래는 항상 노션에 적어왔는데 노션도 좋긴 하지만 그렇게 되면 나만 보게 되니까<br>
-부끄럽지만 하루를 되돌아볼 겸 그날그날 배웠던 것을 기록해 보려고 한다.<br>
-이게 쌓이면 뭔가 텅텅 빈 내 개발 블로그도 좀 차(?) 보이지 않을까 ㅎㅎ..<br>
-이참에 마크다운 파일(.md) 작성하는 것도 좀 익숙해져 봐야지</p>
-</div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> x = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> y = <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> sum: Int {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">get</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">set</span> {
+</span></span><span style="display:flex;"><span>    sum = x <span style="color:#f92672">+</span> y
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(sum) <span style="color:#75715e">// 30</span>
+</span></span></code></pre></div></div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
 </footer></div>

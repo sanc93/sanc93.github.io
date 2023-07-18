@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <link rel="stylesheet" href="/custom.css">
     <title>swift - 개발노트</title>
 
     
@@ -25,7 +25,24 @@
         }
     </style></head>
 <body class="bg:fade-84@dark font:fade-16@dark font:sans">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
     <div class="
         h:full
         w:full
@@ -44,74 +61,71 @@
         </div>
 
         <div class="ml:auto">
+
             
             
             
-            
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/" title="">전체</a>
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">전체</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/flutter/" title="">flutter</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/swift/" title="">swift</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/post/etc/" title="">etc</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="" title=""> | </a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
             
             
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/about/" title="">about</a>
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
             
         </div>
     </div>
@@ -125,6 +139,7 @@
         </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
     _:where(code){font:90%;_v:middle}
     _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
@@ -161,38 +176,22 @@
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
 "></div></article>
     <ul class="mt:0 mb:0 pl:0">
-                <li>
-                    <div class="mb:0 py:18">
-                        <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/1/">
-                            <div>etc</div>
-                        </a>
-                        <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:0 py:18">
-                        <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/flutter/1/">
-                            <div>flutter</div>
-                        </a>
-                        <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:0 py:18">
-                        <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/swift/1/">
-                            <div>swift</div>
-                        </a>
-                        <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:0 py:18">
-                        <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/1/">
-                            <div>첫 글</div>
-                        </a>
-                        <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                    </div>
-                </li>
+                    <li>
+                        <div class="mb:0 py:18">
+                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/1/">
+                                <div>첫 글</div>
+                            </a>
+                            <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb:0 py:18">
+                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/swift/untitled/">
+                                <div></div>
+                            </a>
+                            <div class="mt:8 f:14 f:fade-70"><time>Jan 01, 0001</time></div>
+                        </div>
+                    </li>
     </ul>
 </div>
 <footer class="py:24">

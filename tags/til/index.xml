@@ -7,9 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TIL 01 : Today I Learned 시작</title>
+      <title>TIL 02</title>
+      <link>https://sanc93.github.io/post/record/2023-07-18-til/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-18-til/</guid>
+      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결 → 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고 생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데 아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다 Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데 그때 지정한 폴더로 복사하는 건 잘 된다.</description>
+    </item>
+    
+    <item>
+      <title>TIL 01</title>
       <link>https://sanc93.github.io/post/record/2023-07-17-til/</link>
       <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
       
@@ -18,9 +27,7 @@
 평일에 배운 것을 매일매일 기록하기
 Swift 문법 강의 수강
 저번주 팀 프로젝트 회고시간에 JY님이 추천한 몇가지 다운로드
-스팟라이트 (Spotlight) → Raycast
-터미널 (Terminal) → Hyper
-과제 Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름 Typora에서 이미지 파일이 안 올라가는 문제 → 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다.. 잡담 오늘부터 TIL을 쓰려고 한다.</description>
+스팟라이트 (Spotlight) → Raycast 터미널 (Terminal) → Hyper 과제 Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름 Typora에서 이미지 파일이 안 올라가는 문제 → 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다.. 느낀점 오늘부터 TIL을 쓰려고 한다.</description>
     </item>
     
   </channel>

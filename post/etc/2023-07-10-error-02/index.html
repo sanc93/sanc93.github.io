@@ -9,7 +9,7 @@
     
     
     <meta name="description" content="1. 문제 Flutter 프로젝트를 끌어와서 VSCode &gt; pubspec.yml 파일에서 Get Packages 하려고 하니 디버그 콘솔에 이러한 문구가 뜬다.
-Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed. Exited (1) 2. 원인 내 Dart 버전이 3.0.3. 인데 &lsquo;3.0.5 ~ 4.0.0&rsquo; 버전을 요구하고 있어서 그렇다
+Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed. Exited (1) 2. 원인 내 Dart 버전이 3.0.3 인데 3.0.5 ~ 4.0.0 버전을 요구하고 있어서 그렇다
 .. environment: sdk: &#39;&gt;=3.0.5 &lt;4.0.0&#39; .. 3. 해결방법 Dart SDK를 올려주면 해결된다. VSCode Terminal에서 flutter upgrade 해주자" />
     <meta name="author" content="Sanghun Kim" />
     
@@ -149,6 +149,7 @@ Resolving dependencies... The current Dart SDK version is 3.0.3. Because introdu
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
     _:where(code){font:90%;_v:middle}
     _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
@@ -186,7 +187,7 @@ Resolving dependencies... The current Dart SDK version is 3.0.3. Because introdu
 "><blockquote>
 <h3 id="1-문제">1. 문제</h3>
 </blockquote>
-<p>Flutter 프로젝트를 끌어와서 VSCode &gt; pubspec.yml 파일에서 Get Packages 하려고 하니
+<p>Flutter 프로젝트를 끌어와서 VSCode &gt; pubspec.yml 파일에서 <code>Get Packages</code> 하려고 하니
 디버그 콘솔에 이러한 문구가 뜬다.</p>
 <pre tabindex="0"><code>Resolving dependencies...
 The current Dart SDK version is 3.0.3.
@@ -196,7 +197,7 @@ Exited (1)
 </code></pre><blockquote>
 <h3 id="2-원인">2. 원인</h3>
 </blockquote>
-<p>내 Dart 버전이 3.0.3. 인데 &lsquo;3.0.5 ~ 4.0.0&rsquo; 버전을 요구하고 있어서 그렇다</p>
+<p>내 Dart 버전이 <code>3.0.3</code> 인데 <code>3.0.5 ~ 4.0.0</code> 버전을 요구하고 있어서 그렇다</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">..</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">environment</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">sdk</span>: <span style="color:#e6db74">&#39;&gt;=3.0.5 &lt;4.0.0&#39;</span>
