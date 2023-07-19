@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 03</title>
+      <link>https://sanc93.github.io/post/record/2023-07-19-til/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-19-til/</guid>
+      <description>오늘 한 일 Swift 문법 강의 수강
+개인 과제 제출
+→ swift로 계산기를 구현하는(화면까진 아니고 콘솔에 출력하는 정도만) 과제가 있었는데
+과제 고려 사항에 단일 책임 원칙, 의존성 역전 원칙이라는 용어가 나와서 😧&amp;hellip;
+결론적으로 각각 코드 유지 보수성 그리고 코드 유연성과 재사용성을 높이기 위해 코드 작성 시 지켜야 할 중요한 원칙인데 이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 남에게 설명하라 하면 잘 못할 것 같다
+흠.. 주중에 한번 정리해서 글로 올려봐야겠다
+7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)</description>
+    </item>
+    
     <item>
       <title>TIL 02</title>
       <link>https://sanc93.github.io/post/record/2023-07-18-til/</link>

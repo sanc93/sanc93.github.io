@@ -4,12 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title> - 개발노트</title>
+    <title>TIL 03 - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="오늘 한 일 Swift 문법 강의 수강
+개인 과제 제출
+→ swift로 계산기를 구현하는(화면까진 아니고 콘솔에 출력하는 정도만) 과제가 있었는데
+과제 고려 사항에 단일 책임 원칙, 의존성 역전 원칙이라는 용어가 나와서 😧&hellip;
+결론적으로 각각 코드 유지 보수성 그리고 코드 유연성과 재사용성을 높이기 위해 코드 작성 시 지켜야 할 중요한 원칙인데 이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 남에게 설명하라 하면 잘 못할 것 같다
+흠.. 주중에 한번 정리해서 글로 올려봐야겠다
+7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)" />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -138,11 +144,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold"></div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 03</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jul 19, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(u){text-decoration:underline;}
@@ -180,34 +188,93 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/record/2023-07-19-til/">
-                                <div>TIL 03</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 19, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/record/2023-07-18-til/">
-                                <div>TIL 02</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 18, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/record/2023-07-17-til/">
-                                <div>TIL 01</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jul 17, 2023</time></div>
-                        </div>
-                    </li>
-    </ul>
-</div>
+"><h4 id="오늘-한-일">오늘 한 일</h4>
+<ul>
+<li>
+<p>Swift 문법 강의 수강</p>
+</li>
+<li>
+<p>개인 과제 제출</p>
+<p>→ swift로 계산기를 구현하는(화면까진 아니고 콘솔에 출력하는 정도만) 과제가 있었는데<br>
+과제 고려 사항에 단일 책임 원칙, 의존성 역전 원칙이라는 용어가 나와서 😧&hellip;<br>
+결론적으로 각각 코드 유지 보수성 그리고 코드 유연성과 재사용성을 높이기 위해
+코드 작성 시 지켜야 할 중요한 원칙인데 이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 남에게 설명하라 하면 잘 못할 것 같다<br>
+흠.. 주중에 한번 정리해서 글로 올려봐야겠다</p>
+</li>
+<li>
+<p>7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)</p>
+<ul>
+<li>
+<p>수능 잘 본 사람 != 일 잘하는 사람
+실무 1주일 &gt; 개인 공부 3개월 명심</p>
+<p>→ 일하는 머리와 공부 잘하는 머리랑 다름..</p>
+</li>
+<li>
+<p>모르는 부분에 대해서는 잘 모른다고 말하는 것도 실력<br>
+→ 좋은 개발자는 남들에게 물어보면서 성장한다</p>
+</li>
+<li>
+<p>상대방의 시간은 내 시간만큼 귀하다</p>
+<p>→ 궁금한 부분은 정확하게 정리해 본 이후 말해보기</p>
+</li>
+<li>
+<p>에러 메시지를 만났을 때 바로 구글링해서 찾기보다는, 일단 메시지를 읽고 고민해 보기 그리고 그 고민의 흔적을 글로 남겨보기</p>
+<p>→ TIL, WIL을 작성할 때 오늘은 ~를 구현했다 이런 식으로 일기장처럼 쓰는 게 아니라<br>
+내가 고민한 흔적을 글로 남겨본다<br>
+&ldquo;오늘 만난 에러 &gt; 어떤 식으로 접근했는지 &gt; 해결 실마리 찾음 &gt; 해결&rdquo;<br>
+위 내용을 글에서 보여준다면 나의 좋은 무기가 될 수 있을 것이다.</p>
+</li>
+<li>
+<p>오늘 무언가를 배운 내용, 아는 것에서 끝나는 것이 아닌 직접 행위로써 해보는 것이 중요<br>
+→ 간단한 프로젝트라도 만들어보면 좋다</p>
+</li>
+<li>
+<p>국내 블로그보다는 해외 글을 많이 읽기<br>
+→ 해외는 실제 현업 프로젝트에서 사용중인 코드 블록이라거나, 이것도 올리나 싶을 정도로 글이 많음<br>
+국내 블로그 같은경우 기초적인 내용은 많은데,
+예를들어 ctrl+c, ctrl+v 가 막혀있는 블로그도 있고 아무래도 공유에 대한 인식이 해외보다는 폐쇄적임.
+국내도 좋지만 아무래도 해외 쪽으로 눈을 돌리면 인사이트를 키울 수 있다.</p>
+</li>
+<li>
+<p>&ldquo;누군가 해야 된다면 그게 제가 될 것입니다&rdquo;
+→ 리더십, 희생정신 도전을 해보겠다는 의지 또는 관련된 경험이 중요</p>
+</li>
+<li>
+<p>약간의 겸손함을 겸비하면서 상대방을 배려하는 개발</p>
+<p>→ 실무에서 대립되는 경우가 많은데 서로가 융합돼서 가는것이 중요하니까..</p>
+</li>
+<li>
+<p>분위기 메이커가 되자</p>
+<p>→ 실제로 팀 분위기가 좋은 팀이 결과물이 좋은 경우 다수</p>
+</li>
+<li>
+<p>문제 앞에서는 &lsquo;들이받기&rsquo;<br>
+완성 앞에서는 &lsquo;세밀함&rsquo;<br>
+어려움 앞에서는 &lsquo;도움&rsquo;<br>
+리더라면 &lsquo;리더십&rsquo;<br>
+팀원이라면 리더를 &lsquo;믿기&rsquo;<br>
+그리고 가장 중요한 건 &ldquo;소통&rdquo;<br>
+소통이 안되어도 괜찮은 개발자도 물론 있다 그런 사람은 자기 스스로 모든 것을 해내는 사람.<br>
+하지만 극소수에 불가하기 때문에 부족한 나에게는 소통이 중요하다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>단일책임원칙, 의존성역전원칙 그 외에도 중요한 원칙이 있는지 찾아보고 글로 정리해보기</li>
+<li>TIL, WIL 작성 시 오늘 특강 때 배운 내용 적용해보기</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>오늘은 저녁에 특강 때 튜터님이 말씀해 주신걸 요약해 보자면<br>
+실력도 중요하지만 좋은 개발자라 함은 실력이 모든 걸 대변해 주지 않고<br>
+실력이 부족하더라도 좋은 개발자로써 인정받을 수단은 많고 그중에서도 가장 중요한 건 소통인데<br>
+신입에게 있어서는 정말 소통이 중요하다는 것..<br>
+소통만 잘해도 실력은 어느 정도 따라오게 되어있다고 강조하셨는데<br>
+소통 보다 당장 실력이 걱정이 크지만 이러한 이야기를 정말 수도 없이 많이 본 것 같아서<br>
+이번 부트 캠프 통해서 개발하는데 있어 협업적인 부분에서 많이 익숙해지고 배워가고 싶다<br>
+나중에 실무에서도 자연스럽게 ㅎㅎ..</p>
+</div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
 </footer></div>

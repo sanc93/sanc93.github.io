@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>개발노트</title>
+    <title>Posts on 개발노트</title>
     <link>https://sanc93.github.io/post/</link>
-    <description>Recent content on 개발노트</description>
+    <description>Recent content in Posts on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
-thub.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swift 03 : 연산자 (Operators)</title>
       <link>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</link>
@@ -19,6 +17,21 @@ thub.io/post/index.xml" rel="self" type="application/rss+xml" />
       <description>연산자란? 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
 산술 연산자 (Arithmetic Operators) 숫자 값들의 산술 연산을 수행. 일반적인 수학 기호와 특별히 다를 건 없다
 + 덧셈 - 뺄셈 * 곱셈 / 나눗셈 % 나머지* % (나머지) 예시 let a = 13 let b = 5 print(a%b) // 3 할당 연산자 (Arithmetic Operators) 할당 연산자는 오른쪽에 값을 왼쪽 변수에 할당 한다.</description>
+    </item>
+    
+    <item>
+      <title>TIL 03</title>
+      <link>https://sanc93.github.io/post/record/2023-07-19-til/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-19-til/</guid>
+      <description>오늘 한 일 Swift 문법 강의 수강
+개인 과제 제출
+→ swift로 계산기를 구현하는(화면까진 아니고 콘솔에 출력하는 정도만) 과제가 있었는데
+과제 고려 사항에 단일 책임 원칙, 의존성 역전 원칙이라는 용어가 나와서 😧&amp;hellip;
+결론적으로 각각 코드 유지 보수성 그리고 코드 유연성과 재사용성을 높이기 위해 코드 작성 시 지켜야 할 중요한 원칙인데 이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 남에게 설명하라 하면 잘 못할 것 같다
+흠.. 주중에 한번 정리해서 글로 올려봐야겠다
+7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)</description>
     </item>
     
     <item>
