@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 개발노트</title>
+    <title>개발노트</title>
     <link>https://sanc93.github.io/post/</link>
-    <description>Recent content in Posts on 개발노트</description>
+    <description>Recent content on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
+thub.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift 03 : 연산자 (Operators)</title>
+      <link>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</guid>
+      <description>연산자란? 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
+산술 연산자 (Arithmetic Operators) 숫자 값들의 산술 연산을 수행. 일반적인 수학 기호와 특별히 다를 건 없다
++ 덧셈 - 뺄셈 * 곱셈 / 나눗셈 % 나머지* % (나머지) 예시 let a = 13 let b = 5 print(a%b) // 3 할당 연산자 (Arithmetic Operators) 할당 연산자는 오른쪽에 값을 왼쪽 변수에 할당 한다.</description>
+    </item>
+    
     <item>
       <title>Swift 02 : 프로퍼티 (Property)</title>
       <link>https://sanc93.github.io/post/swift/2023-07-18-swift-02/</link>
@@ -28,7 +41,12 @@ let a = 100 a = 200 // 에러 발생.</description>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-07-18-til/</guid>
-      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결 → 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고 생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데 아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다 Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데 그때 지정한 폴더로 복사하는 건 잘 된다.</description>
+      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결
+→ 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고
+생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데
+아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다
+Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데
+그때 지정한 폴더로 복사하는 건 잘 된다.</description>
     </item>
     
     <item>
@@ -65,7 +83,7 @@ Swift 문법 강의 수강
     </item>
     
     <item>
-      <title>에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
+      <title>에러 : Because 프로젝트명 requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
       <link>https://sanc93.github.io/post/etc/2023-07-10-error-02/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
       

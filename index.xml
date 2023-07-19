@@ -2,56 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개발노트</title>
-    <link>https://sanc93.github.io/</link>
+    <link>https://sanc93.github.io/index.html</link>
     <description>Recent content on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Swift 02 : 프로퍼티 (Property)</title>
-      <link>https://sanc93.github.io/post/swift/2023-07-18-swift-02/</link>
+      <title>operators</title>
+      <link>https://sanc93.github.io/tags/operators/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/operators/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swift</title>
+      <link>https://sanc93.github.io/tags/swift/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://sanc93.github.io/tags/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>연산자</title>
+      <link>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>property</title>
+      <link>https://sanc93.github.io/tags/property/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/swift/2023-07-18-swift-02/</guid>
-      <description>프로퍼티란? Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
-데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.
-1. 저장프로퍼티 2. 연산프로퍼티 프로퍼티는 크게 이 두가지 유형으로 나뉜다.
-저장 프로퍼티 (Stored Property) var : 변경할 수 있는 변수(Variable)를 선언할 떄 사용
-let a = 100 a = 200 print(a) // 100 let : 변경할 수 없는 상수(Constant)를 선언 할때 사용
-let a = 100 a = 200 // 에러 발생.</description>
+      <guid>https://sanc93.github.io/tags/property/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>TIL 02</title>
-      <link>https://sanc93.github.io/post/record/2023-07-18-til/</link>
+      <title>TIL</title>
+      <link>https://sanc93.github.io/tags/til/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/record/2023-07-18-til/</guid>
-      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결 → 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고 생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데 아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다 Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데 그때 지정한 폴더로 복사하는 건 잘 된다.</description>
+      <guid>https://sanc93.github.io/tags/til/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Swift 01 : Swift란</title>
-      <link>https://sanc93.github.io/post/swift/2023-07-17-swift-01/</link>
-      <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
+      <title>프로퍼티</title>
+      <link>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/swift/2023-07-17-swift-01/</guid>
-      <description>Swift란 2014년 WWDC를 통해서 처음 공개된 언어
-기존에는 Objective-C로만 iOS앱 개발이 가능했는데 Swift가 공개 되고나서는 Swift로도 iOS앱을 개발 할수 있게 되었다. 비교적 최근에 나온 언어인 만큼, 기존 프로그래밍 언어들이 많이 참고되었다.
-Swift의 특징 안정성 Type에 엄격하다 1 문자열 배열에는 문자열만 담을 수 있다. 타입 안정성을 위해 타입체크를 해줘야한다. nil(빈 값)에 엄격하다 컴파일을 할떄 문제가 될수있는 nil객 체를 만들거나 사용할수 없도록 함. (nil을 사용할 경우 옵셔널(Optional)을 이용하여 빈값이 올수도 있다고 표현) 표현성 표현성을 고려한 프로그래밍 언어이다.</description>
+      <guid>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>TIL 01</title>
-      <link>https://sanc93.github.io/post/record/2023-07-17-til/</link>
+      <title>etc</title>
+      <link>https://sanc93.github.io/tags/etc/</link>
       <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/record/2023-07-17-til/</guid>
-      <description>오늘 한 일 첫 TIL 작성
-평일에 배운 것을 매일매일 기록하기
-Swift 문법 강의 수강
-저번주 팀 프로젝트 회고시간에 JY님이 추천한 몇가지 다운로드
+      <guid>https://sanc93.github.io/tags/etc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dart</title>
+      <link>https://sanc93.github.io/tags/dart/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/dart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flutter</title>
+      <link>https://sanc93.github.io/tags/flutter/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/flutter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/record/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/swift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Series</title>
+      <link>https://sanc93.github.io/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/series/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
+� 추천한 몇가지 다운로드
 스팟라이트 (Spotlight) → Raycast 터미널 (Terminal) → Hyper 과제 Hyper 터미널에서 plug-in 이 되는 게 있고 안되는 게 있다. 원인 모름 Typora에서 이미지 파일이 안 올라가는 문제 → 뭔가 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말도 있는 것 같다.. 느낀점 오늘부터 TIL을 쓰려고 한다.</description>
     </item>
     
@@ -65,7 +167,7 @@ Swift 문법 강의 수강
     </item>
     
     <item>
-      <title>에러 : Because introduce_e1if requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
+      <title>에러 : Because 프로젝트명 requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
       <link>https://sanc93.github.io/post/etc/2023-07-10-error-02/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
       

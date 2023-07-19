@@ -14,7 +14,12 @@
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-07-18-til/</guid>
-      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결 → 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고 생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데 아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다 Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데 그때 지정한 폴더로 복사하는 건 잘 된다.</description>
+      <description>오늘 한 일 Swift 문법 강의 수강 Typora에서 이미지 파일이 안 올라가는 문제 해결
+→ 어제 어디서 본 author profile에 적는 categories 이 부분이 경로를 꼬이게 한다는 말은 dog소리였고
+생각해 보니 이 블로그 about-me에 올라간 md 파일에는 사진을 첨부했었는데
+아니 그럼 그땐 내가 어떻게 한 거지.. 하다가 경로가 문제라는 것을 알게 됐다
+Typora에서 마크다운 파일을 작성할 때 drag &amp;amp; drop으로 간편하게 이미지 삽입이 가능한데
+그때 지정한 폴더로 복사하는 건 잘 된다.</description>
     </item>
     
     <item>

@@ -7,13 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>operators</title>
+      <link>https://sanc93.github.io/tags/operators/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/operators/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>swift</title>
       <link>https://sanc93.github.io/tags/swift/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>연산자</title>
+      <link>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>property</title>
+      <link>https://sanc93.github.io/tags/property/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/property/</guid>
       <description></description>
     </item>
     
@@ -23,6 +50,15 @@
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>프로퍼티</title>
+      <link>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</guid>
       <description></description>
     </item>
     
