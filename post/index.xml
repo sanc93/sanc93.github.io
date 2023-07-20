@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift 04 : 튜플(Tuple) 그리고 컬렉션 타입 (Collection Types)</title>
+      <link>https://sanc93.github.io/post/swift/2023-07-20-swift-04/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/2023-07-20-swift-04/</guid>
+      <description>튜플? 컬렉션 타입? 컬렉션 타입은 동일한 타입의 여러 개의 값을 하나로 묶어서 처리할수록 하는 데이터 타입을 의미한다.
+Swift에서는 배열(Array), 딕셔너리(Dictionary), 세트(Set)가 컬렉션 타입에 해당한다.
+반면 튜플(Tuple)은 여러 데이터 타입을 하나로 묶어서 사용할 수 있으며, 컬렉션 타입이 아닌 복합 데이터 타입이다. 데이터를 묶어서 다룬다는 점에서 비슷하게 느껴지나 다르다.
+튜플은 주로 함수나 메서드의 반환값으로 여러 값을 리턴할 때 사용하거나 임시적으로 관련 데이터를 묶어서 사용할 때 활용되며
+컬렉션 타입은 여러 개의 데이터를 효율적으로 다루고 관리하는 데 사용된다.</description>
+    </item>
+    
+    <item>
+      <title>TIL 04</title>
+      <link>https://sanc93.github.io/post/record/2023-07-20-til/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-20-til/</guid>
+      <description>오늘 한 일 Swift 문법 강의 수강
+객체 지향 프로그래밍 특징에 대한 이해
+과제 다른 프로그래밍 패러다임에 대해서도 찾아보기 느낀점 전에 다녔던 직장들에서 Java를 사용하면서 객체지향 프로그래밍 언어라는 말을 종종 많이 듣긴 했으나 정작 그걸 사용하면서도 객체지향이란 말에 대해서 정확하게 알지 못했던 것 같다. 일단은 구현하고 굴러가게 하는 데에 급급했던 것 같아서.. 앞으로 배울 swift도 객체 지향 프로그래밍도 들어간 다중 패러다임 프로그래밍 언어(사실 이 말도 이해하기 어려움..ㅠㅠ)라고 하니 오늘 배웠던 SOLID 원칙을 지켜가면서 더 견고하고 깨끗한 코드를 작성하도록 노력해야겠다고 생각했다.</description>
+    </item>
+    
     <item>
       <title>Swift 03 : 연산자 (Operators)</title>
       <link>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</link>
@@ -29,9 +53,33 @@
 개인 과제 제출
 → swift로 계산기를 구현하는(화면까진 아니고 콘솔에 출력하는 정도만) 과제가 있었는데
 과제 고려 사항에 단일 책임 원칙, 의존성 역전 원칙이라는 용어가 나와서 😧&amp;hellip;
-결론적으로 각각 코드 유지 보수성 그리고 코드 유연성과 재사용성을 높이기 위해 코드 작성 시 지켜야 할 중요한 원칙인데 이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 남에게 설명하라 하면 잘 못할 것 같다
-흠.. 주중에 한번 정리해서 글로 올려봐야겠다
-7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)</description>
+이걸 풀어서 하나하나 생각하면 이해하겠는데 막상 누군가에게 정리해서 이야기해야 한다면 잘 못할 것 같다
+주중에 한번 정리해서 글로 올려봐야겠다
+7/19 20:00 특강 : 좋은 개발자의 비밀 (BH 튜터님)
+수능 잘 본 사람 != 일 잘하는 사람 실무 1주일 &amp;gt; 개인 공부 3개월 명심</description>
+    </item>
+    
+    <item>
+      <title>객체 지향 프로그래밍의 SOLID 원칙</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</guid>
+      <description>객체 지향 프로그래밍(OOP)에서는 SOLID라고 불리는 중요한 다섯가지 원칙이 있다.
+SRP (Single Responsibility Principle) : 단일 책임 원칙 클래스는 하나의 기능 또는 역할에만 집중해야 함.
+단일 책임 원칙(SRP)을 지키지 못한 코드
+class Student { func examScore() { // 시험 점수 로직 } func saveToDatabase() { // DB에 저장하는 로직 } } Student 클래스에 시험 점수 로직과 DB 저장 두 가지 기능이 모두 포함되어 있는데 하나의 클래스가 여러 개의 기능을 가지면 변경이 발생할 때 다른 기능에 영향을 미칠 수 있으며, 코드가 복잡해질 수 있으므로 좋은 코드는 아니다</description>
+    </item>
+    
+    <item>
+      <title>프로그래밍 패러다임 : 객체지향 프로그래밍</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-19-etc-01/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-19-etc-01/</guid>
+      <description>Object-Oriented Programming(OOP), 객체 지향 프로그래밍이란 프로그래밍 패러다임 중 하나로 프로그램을 객체라는 단위로 분해하고 이러한 객체들 간의 상호작용을 통해 프로그램을 구현하는 방식의 프로그래밍 접근 방법이다.
+여기서 객체란 무언가를 만들 때 사용하는 부품이라고 할 수 있는데, 예를 들어 자동차를 만들 때 엔진, 바퀴, 핸들 등이 부품으로 사용된다고 치자. 이러한 부품들은 각자의 기능들이 있고, 함께 조립되어 자동차가 완성된다.
+이렇게 부품을 하나하나 조립하여 더 큰 물건을 만드는 것이 객체 지향 프로그래밍이라고 할 수 있다.</description>
     </item>
     
     <item>

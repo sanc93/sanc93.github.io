@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>객체 지향 프로그래밍의 SOLID 원칙</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</guid>
+      <description>객체 지향 프로그래밍(OOP)에서는 SOLID라고 불리는 중요한 다섯가지 원칙이 있다.
+SRP (Single Responsibility Principle) : 단일 책임 원칙 클래스는 하나의 기능 또는 역할에만 집중해야 함.
+단일 책임 원칙(SRP)을 지키지 못한 코드
+class Student { func examScore() { // 시험 점수 로직 } func saveToDatabase() { // DB에 저장하는 로직 } } Student 클래스에 시험 점수 로직과 DB 저장 두 가지 기능이 모두 포함되어 있는데 하나의 클래스가 여러 개의 기능을 가지면 변경이 발생할 때 다른 기능에 영향을 미칠 수 있으며, 코드가 복잡해질 수 있으므로 좋은 코드는 아니다</description>
+    </item>
+    
+    <item>
+      <title>프로그래밍 패러다임 : 객체지향 프로그래밍</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-19-etc-01/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-19-etc-01/</guid>
+      <description>Object-Oriented Programming(OOP), 객체 지향 프로그래밍이란 프로그래밍 패러다임 중 하나로 프로그램을 객체라는 단위로 분해하고 이러한 객체들 간의 상호작용을 통해 프로그램을 구현하는 방식의 프로그래밍 접근 방법이다.
+여기서 객체란 무언가를 만들 때 사용하는 부품이라고 할 수 있는데, 예를 들어 자동차를 만들 때 엔진, 바퀴, 핸들 등이 부품으로 사용된다고 치자. 이러한 부품들은 각자의 기능들이 있고, 함께 조립되어 자동차가 완성된다.
+이렇게 부품을 하나하나 조립하여 더 큰 물건을 만드는 것이 객체 지향 프로그래밍이라고 할 수 있다.</description>
+    </item>
+    
     <item>
       <title>XCode 단축키 모음 (Xcode Keyboard Shortcuts)</title>
       <link>https://sanc93.github.io/post/etc/2023-07-17-etc-01/</link>

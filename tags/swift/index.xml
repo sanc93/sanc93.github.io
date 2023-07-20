@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift 04 : 튜플(Tuple) 그리고 컬렉션 타입 (Collection Types)</title>
+      <link>https://sanc93.github.io/post/swift/2023-07-20-swift-04/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/2023-07-20-swift-04/</guid>
+      <description>튜플? 컬렉션 타입? 컬렉션 타입은 동일한 타입의 여러 개의 값을 하나로 묶어서 처리할수록 하는 데이터 타입을 의미한다.
+Swift에서는 배열(Array), 딕셔너리(Dictionary), 세트(Set)가 컬렉션 타입에 해당한다.
+반면 튜플(Tuple)은 여러 데이터 타입을 하나로 묶어서 사용할 수 있으며, 컬렉션 타입이 아닌 복합 데이터 타입이다. 데이터를 묶어서 다룬다는 점에서 비슷하게 느껴지나 다르다.
+튜플은 주로 함수나 메서드의 반환값으로 여러 값을 리턴할 때 사용하거나 임시적으로 관련 데이터를 묶어서 사용할 때 활용되며
+컬렉션 타입은 여러 개의 데이터를 효율적으로 다루고 관리하는 데 사용된다.</description>
+    </item>
+    
     <item>
       <title>Swift 03 : 연산자 (Operators)</title>
       <link>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</link>
