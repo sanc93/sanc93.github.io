@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>Swift 05 : 반복문 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="for(for-in)문 컬렉션 타입(배열, 딕셔너리 등)의 모든 요소를 순회하는데 사용 let numbers = [1, 2, 3, 4, 5] for number in numbers { print(number) } // 1 // 2 // 3 // 4 // 5 while문 반복문 진입 전에 조건을 검사하고 조건이 true인 경우에 코드 블록을 실행,
+false이면 반복문을 빠져나옴
+(반복문이 실행되기 전 조건이 false면 while문 내부는 단 한번도 실행 안됨) var i = 0 while i &lt; 5 { print(i) i &#43;= 1 } // 0 // 1 // 2 // 3 // 4 repeat-while문 조건을 평가하기 전에 코드 블록을 최소한 한 번은 실행하는 while문" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">전체</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/swift/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">swift</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Swift 05 : 반복문</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jul 21, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h6 id="forfor-in문">for(for-in)문</h6>
+<ul>
+<li>컬렉션 타입(배열, 딕셔너리 등)의 모든 요소를 순회하는데 사용</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> numbers = [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> number <span style="color:#66d9ef">in</span> numbers {
+</span></span><span style="display:flex;"><span>    print(number)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 5 </span>
+</span></span></code></pre></div><h6 id="while문">while문</h6>
+<ul>
+<li>반복문 진입 전에 조건을 검사하고 조건이 true인 경우에 코드 블록을 실행,<br>
+false이면 반복문을 빠져나옴<br>
+(반복문이 실행되기 전 조건이 false면 while문 내부는 단 한번도 실행 안됨)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> i = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span> {
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4</span>
+</span></span></code></pre></div><h6 id="repeat-while문">repeat-while문</h6>
+<ul>
+<li>조건을 평가하기 전에 코드 블록을 최소한 한 번은 실행하는 while문<br>
+(즉 while문과 다른 점은 false일지라도 처음 한번은 실행되고 조건이 평가된다.)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> i = <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">repeat</span> {
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 5</span>
+</span></span></code></pre></div><h6 id="foreach문">forEach문</h6>
+<ul>
+<li>배열과 같은 컬렉션을 순회할 때 사용하는 반복문</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> fruits = [<span style="color:#e6db74">&#34;Apple&#34;</span>, <span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Orange&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fruits.forEach { fruit <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    print(fruit)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Apple</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Banana</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Orange</span>
+</span></span></code></pre></div><h6 id="stride문">stride문</h6>
+<ul>
+<li>범위의 값을 특정 간격으로 건너뛰면서 반복할 때 사용</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> stride(from: <span style="color:#ae81ff">0</span>, to: <span style="color:#ae81ff">10</span>, by: <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 6 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 8</span>
+</span></span></code></pre></div><hr>
+<p>또한 반복문 안에서 사용할 수 있는 <strong>제어문</strong>이 있다<br>
+제어문은 조건에 따라 특정 부분을 건너 뛰거나 반복문을 종료할 수 있게 한다.</p>
+<h6 id="continue">continue</h6>
+<ul>
+<li>반복문 내에서 특정 조건을 만족할 때, 해당 반복을 건너뛰고 다음 반복으로 이동</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> number <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>..<span style="color:#ae81ff">10</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> number <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> == <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span> <span style="color:#75715e">// 짝수일 때는 반복을 건너뛰고 다음 반복으로 진행</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    print(number)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 5 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 7 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 9</span>
+</span></span></code></pre></div><h6 id="break">break</h6>
+<ul>
+<li>반복문 내에서 특정 조건을 만족할 때, 해당 반복문을 강제로 종료</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> number <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>..<span style="color:#ae81ff">10</span> {
+</span></span><span style="display:flex;"><span>    print(number)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> number == <span style="color:#ae81ff">5</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span> <span style="color:#75715e">// 5를 만나면 반복문 종료</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 5</span>
+</span></span></code></pre></div></div></article>
+<footer class="py:24">
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

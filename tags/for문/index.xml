@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>for문 on 개발노트</title>
+    <link>https://sanc93.github.io/tags/for%EB%AC%B8/</link>
+    <description>Recent content in for문 on 개발노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/for%EB%AC%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift 05 : 반복문</title>
+      <link>https://sanc93.github.io/post/swift/2023-07-21.swift-05/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/2023-07-21.swift-05/</guid>
+      <description>for(for-in)문 컬렉션 타입(배열, 딕셔너리 등)의 모든 요소를 순회하는데 사용 let numbers = [1, 2, 3, 4, 5] for number in numbers { print(number) } // 1 // 2 // 3 // 4 // 5 while문 반복문 진입 전에 조건을 검사하고 조건이 true인 경우에 코드 블록을 실행,
+false이면 반복문을 빠져나옴
+(반복문이 실행되기 전 조건이 false면 while문 내부는 단 한번도 실행 안됨) var i = 0 while i &amp;lt; 5 { print(i) i += 1 } // 0 // 1 // 2 // 3 // 4 repeat-while문 조건을 평가하기 전에 코드 블록을 최소한 한 번은 실행하는 while문</description>
+    </item>
+    
+  </channel>
+</rss>
