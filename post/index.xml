@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 05</title>
+      <link>https://sanc93.github.io/post/record/2023-07-24-til/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-24-til/</guid>
+      <description>오늘 한 일 / 배운점 Swift 문법 강의 수강 SJ님이 부스트코스(https://www.boostcourse.org/)에
+야곰 무료 강의로 swift의 기초 강의가 있으니 들어보라고 추천해 주셔서 들어봤는데
+물론 지금 부트 캠프 강의랑 중복되는 부분도 있지만 조금 더 자세하게 훑고 가주는 것 같아서
+나처럼 초심자에게는 약간 더 친절한 것 같았다. 둘 다 병행해서 들어야지
+팀 과제 Lv.1 코드 작성
+이번주도 새로운 과제를 시작하려는데 처음 레포지토리에 push하려니 .DS_Store, contents.xcworkspacedata 이런 것들이 뜬다.. 하나하나 입력하려다 혹시나 해서 찾아보니 사람들은 이런 역시 편리한 사이트를 이용하고 있었다 https://www.</description>
+    </item>
+    
     <item>
       <title>Swift 05 : 반복문</title>
       <link>https://sanc93.github.io/post/swift/2023-07-21.swift-05/</link>
@@ -42,7 +56,10 @@ Swift에서는 배열(Array), 딕셔너리(Dictionary), 세트(Set)가 컬렉션
 객체 지향 프로그래밍 특징에 대한 이해
 https://lazy-kim.com/post/etc/2023-07-19-etc-01/
 https://lazy-kim.com/post/etc/2023-07-19-etc-02/
-과제 다른 프로그래밍 패러다임에 대해서도 찾아보기 느낀점 전에 다녔던 직장들에서 Java를 사용하면서 객체지향 프로그래밍 언어라는 말을 종종 많이 듣긴 했으나 정작 그걸 사용하면서도 객체지향이란 말에 대해서 정확하게 알지 못했던 것 같다. 일단은 구현하고 굴러가게 하는 데에 급급했던 것 같아서.. 앞으로 배울 swift도 객체 지향 프로그래밍도 들어간 다중 패러다임 프로그래밍 언어(사실 이 말도 이해하기 어려움..ㅠㅠ)라고 하니 오늘 배웠던 SOLID 원칙을 지켜가면서 더 견고하고 깨끗한 코드를 작성하도록 노력해야겠다고 생각했다.</description>
+과제 다른 프로그래밍 패러다임에 대해서도 찾아보기 느낀점 전에 다녔던 직장들에서 Java를 사용하면서 객체지향 프로그래밍 언어라는 말을 종종 많이 듣긴 했으나
+정작 그걸 사용하면서도 구현하고 굴러가게 하는 데에 급급했던 것 같아서 객체지향이란 말에 대해서 정확하게 알지 못했던 것 같다.
+앞으로 배울 swift도 객체 지향 프로그래밍도 들어간 다중 패러다임 프로그래밍 언어(사실 이 말도 이해하기 어려움..ㅠㅠ)라고 하니
+오늘 배웠던 SOLID 원칙을 지켜가면서 더 견고하고 깨끗한 코드를 작성하도록 노력해야겠다고 생각했다.</description>
     </item>
     
     <item>
