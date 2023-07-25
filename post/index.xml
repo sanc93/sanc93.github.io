@@ -7,14 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 06</title>
+      <link>https://sanc93.github.io/post/record/2023-07-25-til/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-25-til/</guid>
+      <description>오늘 한 일 / 배운점 팀 내 코드 리뷰
+→ 우리 팀에 스위프트 잘 아는 SC님이 계신데
+switch 문에서 열거형(enum)으로 정의된 걸 사용하는 게 좋다고 한다.
+가독성도 올라가고 실무에서는 보통 이렇게 한다고.. 설명 들을 때는 이따가 바로 해봐야지 했는데
+막상 내 코드를 보니 어디에 적용해야 할지 모르겠다 orz..
+열거형에 대해 두루뭉실한 것도 있고 해서 더 찾아보면서 해볼 예정 팀 과제 Lv.2 코드 작성 7/25 20:00 알고리즘 세션 (YH 튜터님)
+→ 어제 튜터님이 한번 생각해오세요 한 알고리즘 문제는 다른 것에 밀려 하지 못했다.</description>
+    </item>
+    
     <item>
       <title>TIL 05</title>
       <link>https://sanc93.github.io/post/record/2023-07-24-til/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-07-24-til/</guid>
-      <description>오늘 한 일 / 배운점 Swift 문법 강의 수강 SJ님이 부스트코스(https://www.boostcourse.org/)에
+      <description>오늘 한 일 / 배운점 Swift 문법 강의 수강
+→ SJ님이 부스트코스(https://www.boostcourse.org/)에
 야곰 무료 강의로 swift의 기초 강의가 있으니 들어보라고 추천해 주셔서 들어봤는데
 물론 지금 부트 캠프 강의랑 중복되는 부분도 있지만 조금 더 자세하게 훑고 가주는 것 같아서
 나처럼 초심자에게는 약간 더 친절한 것 같았다. 둘 다 병행해서 들어야지
