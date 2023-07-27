@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 08</title>
+      <link>https://sanc93.github.io/post/record/2023-07-27-til/</link>
+      <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-27-til/</guid>
+      <description>오늘 한 일 / 배운점 팀 내 코드 리뷰
+Swift 문법 강의 수강
+팀 과제 Lv.3 코드 작성
+7/27 19:00 학습법 특강 (YI 매니저님)
+&amp;ldquo;코더가 되지말고 개발자가 되자!&amp;rdquo;
+이번 부트캠프에서 가장 중요한거 4가지
+TIL, WIL : 꾸준함 성실함으로 나의 자산이 됨. 개발 문화에서는 매우 중요
+개인과제/팀과제 : 배운 내용을 복습하면서 내 힘으로 사고력과 구현력을 중점으로 단련 가능
+프로젝트: 협업이 단순히 사이좋게 무언가를 만드는 게 아니고 어떤 기술적 의사결정, 기술적 고민같이 머리를 맞대고 합리적으로 하는지 그런 과정이 중요해서 협업이 중요한 것.</description>
+    </item>
+    
     <item>
       <title>TIL 07</title>
       <link>https://sanc93.github.io/post/record/2023-07-26-til/</link>
