@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 09 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 팀 내 코드 리뷰
+Swift 문법 강의 수강
+팀 과제 코드 작성 / 제출 (팀장 JM님 통해서)
+→ 일단 이번 필수 사항 Lv.3 까지는 충족이 된 것 같아서
+그렇다고 선택 과제 Lv.4, Lv.5까지는 시간이 모자랄 것 같고 개인적으로 궁금했던걸 해보았다.
+이번 키오스크를 맥도날드로 만들었는데 맥도날드에는 맥모닝과 맥런치가 있는데
+이용 시간대를 막아놔야 정상적이지 않겠는가.. 🧐
+let dateFormatter = DateFormatter() func currentTime() -&gt; String { dateFormatter.locale = Locale(identifier:&#34;ko_KR&#34;) dateFormatter." />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">전체</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 09</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jul 28, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>
+<p>팀 내 코드 리뷰</p>
+</li>
+<li>
+<p>Swift 문법 강의 수강</p>
+</li>
+<li>
+<p>팀 과제 코드 작성 / 제출 (팀장 JM님 통해서)<br>
+→ 일단 이번 필수 사항 Lv.3 까지는 충족이 된 것 같아서<br>
+그렇다고 선택 과제 Lv.4, Lv.5까지는 시간이 모자랄 것 같고 개인적으로 궁금했던걸 해보았다.<br>
+이번 키오스크를 맥도날드로 만들었는데 맥도날드에는 맥모닝과 맥런치가 있는데<br>
+이용 시간대를 막아놔야 정상적이지 않겠는가.. 🧐</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> dateFormatter = DateFormatter()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">currentTime</span>() -&gt; String {
+</span></span><span style="display:flex;"><span>    dateFormatter.locale = Locale(identifier:<span style="color:#e6db74">&#34;ko_KR&#34;</span>)
+</span></span><span style="display:flex;"><span>    dateFormatter.dateFormat = <span style="color:#e6db74">&#34;HH:mm&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> timeStr = dateFormatter.string(from: Date())
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> timeStr
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ... 코드 생략</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">case</span> .mcLunch :
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 맥런치 이용시간 (10:30~14:00)이 아니면 카테고리 메인으로 돌아가도록</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> mcLunchStartTime = dateFormatter.date(from: <span style="color:#e6db74">&#34;10:30&#34;</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> mcLunchEndTime = dateFormatter.date(from: <span style="color:#e6db74">&#34;14:00&#34;</span>),
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">let</span> currentTime = dateFormatter.date(from: currentTime()) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> currentTime <span style="color:#f92672">&gt;=</span> mcLunchStartTime <span style="color:#f92672">&amp;&amp;</span> currentTime <span style="color:#f92672">&lt;=</span> mcLunchEndTime {
+</span></span><span style="display:flex;"><span>                    McLunch().askToCustomer()
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">&#34;⚠️ 맥런치 이용 가능 시간이 아닙니다. 다시 선택해 주세요.&#34;</span>)
+</span></span><span style="display:flex;"><span>                    categoryMain()
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> .mcMorning :
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 맥모닝 이용시간 (04:00~10:30)이 아니면 카테고리 메인으로 돌아가도록</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> mcLunchStartTime = dateFormatter.date(from: <span style="color:#e6db74">&#34;04:00&#34;</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> mcLunchEndTime = dateFormatter.date(from: <span style="color:#e6db74">&#34;10:30&#34;</span>),
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">let</span> currentTime = dateFormatter.date(from: currentTime()) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> currentTime <span style="color:#f92672">&gt;=</span> mcLunchStartTime <span style="color:#f92672">&amp;&amp;</span> currentTime <span style="color:#f92672">&lt;=</span> mcLunchEndTime {
+</span></span><span style="display:flex;"><span>                    McMorning().askToCustomer()
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">&#34;⚠️ 맥모닝 이용 가능 시간이 아닙니다. 다시 선택해 주세요.&#34;</span>)
+</span></span><span style="display:flex;"><span>                    categoryMain()
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ... 코드 생략</span>
+</span></span></code></pre></div><p>위와 같이 현재 시간을 한국시간과 HH:mm로 가져와서 매번 콘솔에서 구분선에 표시해 주고<br>
+맥런치와 맥모닝은 현재 시간과 비교해서 운영시간이 아니라면 거부 메시지를 띄우고<br>
+다시 카테고리 메뉴를 보여주는 식으로 했다</p>
+<h6 id="console-결과-">console 결과 ↓</h6>
+<p><img src="/images/2023-07-28-til/sc1.png" alt="sc1">
+그리고 장바구니 배열을 만들어서 장바구니에 담는 것도 해보고 싶었는데<br>
+시간이 부족해서 거기까지는 구현하지 못했다ㅜ</p>
+</li>
+<li>
+<p>다면 평가 작성</p>
+</li>
+<li>
+<p>이번 주 과제 해설 영상 시청</p>
+</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>협업 툴 많이 사용해 보고 다음 팀 프로젝트 때 적극 활용하기</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>전에 Flutter 팀 프로젝트 발표 때 다른 팀이 와이어 프레임을 FigJam으로 작성했던 것이 인상에 남아서<br>
+다음에 나도 한번 써봐야지 하다가 이번에 써보았는데<br>
+<img src="/images/2023-07-28-til/sc2.png" alt="sc2"></p>
+<p>이런 식으로 쓰는 게 맞는지 모르겠지만<br>
+모르는 상황에서 썼는데도 기능들이 단순직관적이고 전체적인 흐름을 깔끔하게 정리할 수 있어서 좋았다
+좀 기능을 더 익힌다면 협업할 때 분명 도움이 많이 될 것 같았다.</p>
+</div></article>
+<footer class="py:24">
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 개발노트</title>
+    <title>개발노트</title>
     <link>https://sanc93.github.io/post/</link>
-    <description>Recent content in Posts on 개발노트</description>
+    <description>Recent content on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 27 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
+thub.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 09</title>
+      <link>https://sanc93.github.io/post/record/2023-07-28-til/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-28-til/</guid>
+      <description>오늘 한 일 / 배운점 팀 내 코드 리뷰
+Swift 문법 강의 수강
+팀 과제 코드 작성 / 제출 (팀장 JM님 통해서)
+→ 일단 이번 필수 사항 Lv.3 까지는 충족이 된 것 같아서
+그렇다고 선택 과제 Lv.4, Lv.5까지는 시간이 모자랄 것 같고 개인적으로 궁금했던걸 해보았다.
+이번 키오스크를 맥도날드로 만들었는데 맥도날드에는 맥모닝과 맥런치가 있는데
+이용 시간대를 막아놔야 정상적이지 않겠는가.. 🧐
+let dateFormatter = DateFormatter() func currentTime() -&amp;gt; String { dateFormatter.locale = Locale(identifier:&amp;#34;ko_KR&amp;#34;) dateFormatter.</description>
+    </item>
+    
     <item>
       <title>TIL 08</title>
       <link>https://sanc93.github.io/post/record/2023-07-27-til/</link>
