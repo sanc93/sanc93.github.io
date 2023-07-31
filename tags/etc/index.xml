@@ -51,18 +51,5 @@ Resolving dependencies... The current Dart SDK version is 3.0.3. Because introdu
 .. environment: sdk: &amp;#39;&amp;gt;=3.0.5 &amp;lt;4.0.0&amp;#39; .. 3. 해결방법 Dart SDK를 올려주면 해결된다. VSCode Terminal에서 flutter upgrade 해주자</description>
     </item>
     
-    <item>
-      <title>에러 : VSCode에서 iOS Emulator가 뜨지 않을때</title>
-      <link>https://sanc93.github.io/post/etc/2023-07-10-error-01/</link>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-01/</guid>
-      <description>1. 문제 iOS 에뮬레이터 실행 해보려 했는데
-없다&amp;hellip;.
-Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &amp;gt;=3.0.5 &amp;lt;4.0.0, version solving failed. Exited (1) 2. 원인 3. 해결방법 VSCode 터미널에서
-sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer 을 해주자
-그럼 잘~ 뜬다</description>
-    </item>
-    
   </channel>
 </rss>
