@@ -4,21 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>Flutter 01 : Flutter와 Dart의 관계 - 개발노트</title>
+    <title>UIKit 01 : UIView - 개발노트</title>
 
     
     
-    <meta name="description" content="앱 개발 방법은
-① 네이티브 앱(Native App)
-② 크로스 플랫폼 앱(Cross Platform App)
-이렇게 크게 2가지로 나뉜다.
-네이티브 앱(Native App)
-원래 앱을 개발하던 방식. 모바일 기기는 iOS와 Android로 양분되어 있다.
-네이티브로 앱을 제작하려면 안드로이드, iOS 앱을 각각의 개발 방법으로 두 번 제작 해야 함.
-따라서 리소스가 많이 들어간다는 단점은 있지만 성능이 가장 빠르고 최신 기능을 빠르게 적용할 수 있다는 장점이 있다.
-Android
-개발 언어: Java, Kotlin
-개발 툴 : Android Studio" />
+    <meta name="description" content="UIView란 iOS의 사용자 인터페이스(UI)를 구성하는 데 사용되는 객체
+iOS 앱을 실행하면 보이는 대부분의 화면 요소들은 UIView를 사용하여 만들어졌다고 생각하면 된다.
+배경, 화면, 아이콘, 글자 등 UIView를 기반으로 해서 만들어진다
+UIView의 다양한 요소들을 시각적으로 적절하게 배치하면서 사용자에게 UI를 제공할 수 있다
+주로 뷰 컨트롤러와 함께 사용 → UIView는 주로 UIViewController와 함께 사용된다.
+UIView에서 할 수 있는 것들 위치, 크기 등을 조정
+frame 속성 : 뷰의 위치와 크기를 설정 bounds 속성 : 화면 전환, 확대/ 축소 등의 변환 작업 수행 center 속성 : 뷰의 중심 위치를 설정(주로 뷰를 정중앙에 배치하는 데 사용) 배경색(backgroundColor, alpha, layer) 변경" />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -84,18 +80,12 @@ Android
             
             
             
-                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
-                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in
-                    active" href="/post/flutter/" title=""
-                        style="color: #f0f0f0;
-                        animation: text-fade-animation 3s linear infinite alternate;">flutter</a>
-                
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
             
             
             
@@ -108,12 +98,18 @@ Android
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+                    transition:150ms;ease-in
+                    active" href="/post/ios/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">ios</a>
+                
             
             
             
@@ -159,9 +155,9 @@ Android
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">Flutter 01 : Flutter와 Dart의 관계</div>
+        <div class="font:40 font:extrabold">UIKit 01 : UIView</div>
         <div class="mt:16 f:fade-60">
-            <time>Jul 7, 2023</time>
+            <time>Jul 31, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -201,81 +197,81 @@ Android
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><p>앱 개발 방법은<br>
-① 네이티브 앱(Native App)<br>
-② 크로스 플랫폼 앱(Cross Platform App)<br>
-이렇게 크게 2가지로 나뉜다.</p>
-<ol>
-<li>
-<p><strong>네이티브 앱(Native App)</strong></p>
-<p>원래 앱을 개발하던 방식. 모바일 기기는 iOS와 Android로 양분되어 있다.<br>
-네이티브로 앱을 제작하려면 안드로이드, iOS 앱을 각각의 개발 방법으로 두 번 제작 해야 함.<br>
-따라서 리소스가 많이 들어간다는 단점은 있지만 성능이 가장 빠르고 최신 기능을 빠르게 적용할 수 있다는 장점이 있다.</p>
-<p><strong>Android</strong></p>
-</li>
-</ol>
+"><h4 id="uiview란">UIView란</h4>
 <ul>
 <li>
-<p>개발 언어: Java, Kotlin</p>
+<p>iOS의 사용자 인터페이스(UI)를 구성하는 데 사용되는 객체</p>
 </li>
 <li>
-<p>개발 툴 : Android Studio</p>
-<p>→ Google의 Android SDK(Software Development Kit)을 이용하여 개발</p>
-<p><strong>iOS</strong></p>
+<p>iOS 앱을 실행하면 보이는 대부분의 화면 요소들은 UIView를 사용하여 만들어졌다고 생각하면 된다.</p>
 </li>
 <li>
-<p>개발 언어: Objective-C, Swift</p>
+<p>배경, 화면, 아이콘, 글자 등 UIView를 기반으로 해서 만들어진다</p>
 </li>
 <li>
-<p>개발 툴 : Xcode</p>
-<p>→ Apple의 iOS SDK(Software Development Kit)을 이용하여 개발</p>
+<p>UIView의 다양한 요소들을 시각적으로 적절하게 배치하면서 사용자에게 UI를 제공할 수 있다</p>
+</li>
+<li>
+<p>주로 뷰 컨트롤러와 함께 사용
+→ UIView는 주로 UIViewController와 함께 사용된다.</p>
 </li>
 </ul>
-<ol start="2">
-<li>
-<p>크로스 플랫폼 앱(Cross Platform App)</p>
-<p>하나의 프로그래밍 언어와 소스코드로 Android와 iOS를 모두 개발하는 방법<br>
-네이티브 앱의 성능을 뛰어넘기는 힘드나, 하나의 언어로 두 플랫폼에서 모두 실행하는<br>
-앱을 빠르게 만들 수 있다는 강력한 장점이 있다. (생산성 월등🔥)</p>
-</li>
-</ol>
+<h4 id="uiview에서-할-수-있는-것들">UIView에서 할 수 있는 것들</h4>
 <ul>
 <li>
-<p><strong>React Native</strong></p>
+<p>위치, 크기 등을 조정</p>
 <ul>
-<li>
-<p>개발 언어 : JavaScript</p>
-<p>→ 페이스북에서 출시한 오픈 소스 모바일 애플리케이션 프레임워크
-React라는 라이브러리를 앱을 만들 수 있게 끔 바꾼 게 React Native</p>
-</li>
+<li>frame 속성 : 뷰의 위치와 크기를 설정</li>
+<li>bounds 속성 : 화면 전환, 확대/ 축소 등의 변환 작업 수행</li>
+<li>center 속성 : 뷰의 중심 위치를 설정(주로 뷰를 정중앙에 배치하는 데 사용)</li>
 </ul>
 </li>
 <li>
-<p><strong>Flutter</strong></p>
-<ul>
+<p>배경색(backgroundColor, alpha, layer) 변경</p>
+</li>
 <li>
-<p>개발 언어 : Dart</p>
-<p>→ 구글에서 출시한 오픈 소스 모바일 애플리케이션 프레임워크</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>크로스 플랫폼 앱을 만드는 데 있어 React Native 보다 Flutter를 선호하는 이유</p>
+<p>뷰의 속성 변화를 애니메이션 효과를 이용하여 구현</p>
 <ul>
-<li>플러터가 리액트 네이티브보다 후발주자이긴 하지만 커뮤니티나 관련 자료 등이 더 많고 핫함</li>
-<li>구글에서 제공하는 공식 문서가 굉장히 Good</li>
-<li>연산 시간 등, 성능이 React Native 보다 월등</li>
+<li>UIView.animate()를 사용하여 간단한 애니메이션 구현</li>
+<li>UIViewPropertyAnimator()를 사용하여 더 복잡한 애니메이션을 구현 가능</li>
 </ul>
-<blockquote>
-<h3 id="dart--flutter"><strong>Dart &gt; Flutter</strong></h3>
-<p>Dart : Google에서 개발한 프로그래밍 언어<br>
-Flutter : Dart라는 프로그래밍 언어를 기반으로 하는 프레임워크*<br>
-(프레임워크 : 어떤 규칙대로 코드를 작성하면 앱이나 웹서비스를 만들어주는 코드 뭉치)<br>
-즉, Flutter 프레임워크는 Dart 언어를 기반으로 구축되었으며,<br>
-Flutter 애플리케이션을 개발하기 위해서는 Dart 언어를 사용해야 한다.<br>
-Dart는 Flutter의 필수 요소지만, Dart는 Flutter 외에도 다른 애플리케이션 개발에서 사용될 수 있다.</p>
-</blockquote>
-</div></article>
+</li>
+<li>
+<p>다른 뷰를 자식 뷰로 추가하여 계층적인 구조를 형성 가능</p>
+<ul>
+<li>addSubview(_:) 메서드를 사용하여<br>
+superview, subview 형태로 다른 뷰를 현재 뷰의 자식으로 추가할 수 있음<br>
+이런 계층적 구조화를 통해 복잡한 인터페이스를 구성하는 데 사용할 수 있다</li>
+</ul>
+</li>
+<li>
+<p>Storyboard의 기본적인 구성</p>
+</li>
+<li>
+<p>AutoLayout을 통하여 위치 및 크기 고정 가능</p>
+</li>
+</ul>
+<h4 id="실제-uiview가-사용되고-있는-컴포넌트">실제 UIView가 사용되고 있는 컴포넌트</h4>
+<ul>
+<li>UIButton, UILabel, UIImageView, UIWebView, UIScrollView 등</li>
+</ul>
+<h4 id="uiview-생성-예제">UIView 생성 예제</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ViewController</span>: UIViewController {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.viewDidLoad()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> myView = UIView(frame: CGRect(x: <span style="color:#ae81ff">0</span>, y: <span style="color:#ae81ff">0</span>, width: <span style="color:#ae81ff">100</span>, height: <span style="color:#ae81ff">100</span>)) <span style="color:#75715e">// UIView 객체 생성</span>
+</span></span><span style="display:flex;"><span>        myView.backgroundColor = UIColor.yellow <span style="color:#75715e">// 뷰 배경색 지정</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.view.addSubview(myView) <span style="color:#75715e">// 뷰를 subView로 추가</span>
+</span></span><span style="display:flex;"><span>        myView.frame = CGRect(x: <span style="color:#ae81ff">50</span>, y: <span style="color:#ae81ff">50</span>, width: <span style="color:#ae81ff">200</span>, height: <span style="color:#ae81ff">200</span>) <span style="color:#75715e">// 뷰의 위치 및 크기 변경</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
 </footer></div>

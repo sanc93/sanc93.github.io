@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ios on 개발노트</title>
+    <link>https://sanc93.github.io/tags/ios/</link>
+    <description>Recent content in ios on 개발노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UIKit 01 : UIView</title>
+      <link>https://sanc93.github.io/post/ios/2023-07-31-uikit-01/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/ios/2023-07-31-uikit-01/</guid>
+      <description>UIView란 iOS의 사용자 인터페이스(UI)를 구성하는 데 사용되는 객체
+iOS 앱을 실행하면 보이는 대부분의 화면 요소들은 UIView를 사용하여 만들어졌다고 생각하면 된다.
+배경, 화면, 아이콘, 글자 등 UIView를 기반으로 해서 만들어진다
+UIView의 다양한 요소들을 시각적으로 적절하게 배치하면서 사용자에게 UI를 제공할 수 있다
+주로 뷰 컨트롤러와 함께 사용 → UIView는 주로 UIViewController와 함께 사용된다.
+UIView에서 할 수 있는 것들 위치, 크기 등을 조정
+frame 속성 : 뷰의 위치와 크기를 설정 bounds 속성 : 화면 전환, 확대/ 축소 등의 변환 작업 수행 center 속성 : 뷰의 중심 위치를 설정(주로 뷰를 정중앙에 배치하는 데 사용) 배경색(backgroundColor, alpha, layer) 변경</description>
+    </item>
+    
+  </channel>
+</rss>

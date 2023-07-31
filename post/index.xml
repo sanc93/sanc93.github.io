@@ -7,14 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 10</title>
-      <link>https://sanc93.github.io/post/record/2023-07-30-til/</link>
-      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      <link>https://sanc93.github.io/post/record/2023-07-31-til/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/record/2023-07-30-til/</guid>
-      <description>오늘 한 일 / 배운점 과제 느낀점 </description>
+      <guid>https://sanc93.github.io/post/record/2023-07-31-til/</guid>
+      <description>오늘 한 일 / 배운점 새로운 팀 배정 iOS 앱 개발 입문 강의 수강 과제 뷰 컨트롤러 종류 더 파보기 개인 과제 조금이라도 시작해 보기 느낀점 드디어 오늘부터 UIKit을 배우게 되었다.
+UIView와 UIViewController를 배웠는데 이렇게 뷰 컨트롤러에 종류가 많은 지 몰랐다.
+또 강의 내내 뭔가 쓱쓱 지나가는 게 많아서 정신없이 코드 옮겨가며 따라가기 바빴는데
+func 앞에 @objc는 뭔지.. 계속 나오는 animated는 또 뭔지.. 궁금한 건 많은데
+전에 너무 한곳에 머물러서 깊게 파려 하지 말고 일단 몰라도 나가고</description>
+    </item>
+    
+    <item>
+      <title>UIKit 01 : UIView</title>
+      <link>https://sanc93.github.io/post/ios/2023-07-31-uikit-01/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/ios/2023-07-31-uikit-01/</guid>
+      <description>UIView란 iOS의 사용자 인터페이스(UI)를 구성하는 데 사용되는 객체
+iOS 앱을 실행하면 보이는 대부분의 화면 요소들은 UIView를 사용하여 만들어졌다고 생각하면 된다.
+배경, 화면, 아이콘, 글자 등 UIView를 기반으로 해서 만들어진다
+UIView의 다양한 요소들을 시각적으로 적절하게 배치하면서 사용자에게 UI를 제공할 수 있다
+주로 뷰 컨트롤러와 함께 사용 → UIView는 주로 UIViewController와 함께 사용된다.
+UIView에서 할 수 있는 것들 위치, 크기 등을 조정
+frame 속성 : 뷰의 위치와 크기를 설정 bounds 속성 : 화면 전환, 확대/ 축소 등의 변환 작업 수행 center 속성 : 뷰의 중심 위치를 설정(주로 뷰를 정중앙에 배치하는 데 사용) 배경색(backgroundColor, alpha, layer) 변경</description>
     </item>
     
     <item>
@@ -109,10 +128,10 @@ switch 문에서 열거형(enum)으로 정의된 걸 사용하는 게 좋다고 
     
     <item>
       <title>Swift 05 : 반복문</title>
-      <link>https://sanc93.github.io/post/swift/2023-07-21.swift-05/</link>
+      <link>https://sanc93.github.io/post/swift/2023-07-21-swift-05/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/swift/2023-07-21.swift-05/</guid>
+      <guid>https://sanc93.github.io/post/swift/2023-07-21-swift-05/</guid>
       <description>for(for-in)문 컬렉션 타입(배열, 딕셔너리 등)의 모든 요소를 순회하는데 사용 let numbers = [1, 2, 3, 4, 5] for number in numbers { print(number) } // 1 // 2 // 3 // 4 // 5 while문 반복문 진입 전에 조건을 검사하고 조건이 true인 경우에 코드 블록을 실행,
 false이면 반복문을 빠져나옴
 (반복문이 실행되기 전 조건이 false면 while문 내부는 단 한번도 실행 안됨) var i = 0 while i &amp;lt; 5 { print(i) i += 1 } // 0 // 1 // 2 // 3 // 4 repeat-while문 조건을 평가하기 전에 코드 블록을 최소한 한 번은 실행하는 while문</description>
@@ -308,15 +327,6 @@ Android
       
       <guid>https://sanc93.github.io/post/1/</guid>
       <description>야호!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/swift/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/swift/untitled/</guid>
-      <description></description>
     </item>
     
   </channel>
