@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>개발노트</title>
+    <title>Posts on 개발노트</title>
     <link>https://sanc93.github.io/post/</link>
-    <description>Recent content on 개발노트</description>
+    <description>Recent content in Posts on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
-thub.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 10</title>
+      <link>https://sanc93.github.io/post/record/2023-07-30-til/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-30-til/</guid>
+      <description>오늘 한 일 / 배운점 과제 느낀점 </description>
+    </item>
+    
+    <item>
+      <title>WIL (07/24 - 07/28)</title>
+      <link>https://sanc93.github.io/post/record/2023-07-29-wil/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-07-29-wil/</guid>
+      <description>2023.7.24(월) - 28(금) 😎 이번주에 한 일 프로그래밍 심화 주차(Swift) Swift 문법 심화 팀과제 - 키오스크 프로그래밍 7/24 - 25 20:00 알고리즘 세션 (YH 튜터님) 7/27 19:00 학습법 특강 (YI 매니저님) 😃 도움이 되었거나 즐거웠던 점 저번 주는 개인과제로 진행해서 그런 것도 있고 팀원분들이랑 이야기할 기회가 거의 없었는데
+이번에는 팀 프로젝트까진 아니지만 팀 과제였어서 매일 같이 코드 리뷰하고 대화하면서 많은 정보도 얻고
+특히 JM님이 되게 솔직하고 긍정적이어서 좋은 에너지를 많이 얻었던 것 같다.</description>
+    </item>
+    
     <item>
       <title>TIL 09</title>
       <link>https://sanc93.github.io/post/record/2023-07-28-til/</link>
