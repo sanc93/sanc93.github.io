@@ -4,13 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>프로그래밍 패러다임 : 객체지향 프로그래밍(OOP) - 개발노트</title>
+    <title>UIKit 02 : UIViewController - 개발노트</title>
 
     
     
-    <meta name="description" content="Object-Oriented Programming(OOP), 객체 지향 프로그래밍이란 프로그래밍 패러다임 중 하나로 프로그램을 객체라는 단위로 분해하고 이러한 객체들 간의 상호작용을 통해 프로그램을 구현하는 방식의 프로그래밍 접근 방법이다.
-여기서 객체란 무언가를 만들 때 사용하는 부품이라고 할 수 있는데, 예를 들어 자동차를 만들 때 엔진, 바퀴, 핸들 등이 부품으로 사용된다고 치자. 이러한 부품들은 각자의 기능들이 있고, 함께 조립되어 자동차가 완성된다.
-이렇게 부품을 하나하나 조립하여 더 큰 물건을 만드는 것이 객체 지향 프로그래밍이라고 할 수 있다." />
+    <meta name="description" content="UIViewController란 UI(유저 인터페이스)를 관리하는 데 사용되는 객체
+→ UIViewController라는 클래스로 정의되어 있고 클래스를 사용해서 사용자 인터페이스 요소들과 로직을 관리하고, 다양한 뷰와 관련된 작업들을 처리한다. 예를 들어 UI 요소(button, label 등)와 이 요소의 동작들을 코드로 구현하여 제어할 수 있다. UIViewController에서 할 수 있는 것들 뷰의 라이프사이클 관리
+→ 뷰 컨트롤러가 화면에 처음 표시되거나 화면에서 사라지는 시점 등 이벤트 처리 가능.
+이를 통해 초기 설정, 데이터 로딩, 메모리 관리 등의 작업을 수행할 수 있다" />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -94,15 +95,6 @@
             
             
             
-                <a class="
-                    font:semibold
-                    font:fade
-                    font:fade-10:hover
-                    px:8
-                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
-            
-            
-            
                 
                 <a class="
                     font:semibold
@@ -111,10 +103,19 @@
                     font:fade-0.active
                     px:8
                     transition:150ms;ease-in
-                    active" href="/post/etc/" title=""
+                    active" href="/post/ios/" title=""
                         style="color: #f0f0f0;
-                        animation: text-fade-animation 3s linear infinite alternate;">etc</a>
+                        animation: text-fade-animation 3s linear infinite alternate;">ios</a>
                 
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
             
             
             
@@ -151,9 +152,9 @@
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">프로그래밍 패러다임 : 객체지향 프로그래밍(OOP)</div>
+        <div class="font:40 font:extrabold">UIKit 02 : UIViewController</div>
         <div class="mt:16 f:fade-60">
-            <time>Jul 19, 2023</time>
+            <time>Aug 1, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -193,42 +194,100 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><h4 id="object-oriented-programmingoop-객체-지향-프로그래밍이란">Object-Oriented Programming(OOP), 객체 지향 프로그래밍이란</h4>
-<p>프로그래밍 패러다임 중 하나로 프로그램을 객체라는 단위로 분해하고 이러한 객체들 간의 상호작용을 통해 프로그램을 구현하는 방식의 프로그래밍 접근 방법이다.<br>
-여기서 객체란 무언가를 만들 때 사용하는 부품이라고 할 수 있는데, 예를 들어 자동차를 만들 때 엔진, 바퀴, 핸들 등이 부품으로 사용된다고 치자. 이러한 부품들은 각자의 기능들이 있고, 함께 조립되어 자동차가 완성된다.<br>
-이렇게 부품을 하나하나 조립하여 더 큰 물건을 만드는 것이 객체 지향 프로그래밍이라고 할 수 있다.</p>
-<p>각 객체는 자신만의 기능을 가지고 있고, 다른 객체와 정보를 주고받을 수 있다. 이렇게 객체가 서로 상호작용, 동작하면서 프로그램이 완성된다</p>
-<h4 id="특징">특징</h4>
+"><h4 id="uiviewcontroller란">UIViewController란</h4>
+<ul>
+<li>UI(유저 인터페이스)를 관리하는 데 사용되는 객체<br>
+→ UIViewController라는 클래스로 정의되어 있고 클래스를 사용해서 사용자 인터페이스 요소들과 로직을 관리하고, 다양한 뷰와 관련된 작업들을 처리한다. 예를 들어 UI 요소(button, label 등)와 이 요소의 동작들을 코드로 구현하여 제어할 수 있다.</li>
+</ul>
+<h4 id="uiviewcontroller에서-할-수-있는-것들">UIViewController에서 할 수 있는 것들</h4>
 <ul>
 <li>
-<h6 id="캡슐화encapsulation">캡슐화(Encapsulation)</h6>
-<p>캡슐화는 마치 물건을 상자에 담는 것처럼, 데이터와 그 데이터를 다루는 코드를 하나로 묶는 것을 말한다. 관련된 데이터와 그 데이터를 다루는 코드를 함께 묶어서 외부로부터 감추어 보호하는 거라고 생각하면 된다.<br>
-캡슐화를 사용하면 코드의 복잡성을 줄이고 코드를 보호하고 안전하게 사용할 수 있다. 또한 코드 변경 시에도 외부에 영향을 끼치지 않고 내부적으로 변경할 수 있어서 유지 보수에도 편리하다.</p>
+<p>뷰의 라이프사이클 관리<br>
+→ 뷰 컨트롤러가 화면에 처음 표시되거나 화면에서 사라지는 시점 등 이벤트 처리 가능.<br>
+이를 통해 초기 설정, 데이터 로딩, 메모리 관리 등의 작업을 수행할 수 있다</p>
 </li>
 <li>
-<h6 id="상속inheritance">상속(Inheritance)</h6>
-<p>상속은 한 클래스가 다른 클래스의 특성과 기능을 물려받는 것을 뜻한다.<br>
-흔히 가족에서 부모가 자식에게 유전적 특징을 물려주는 것을 비유하며 이야기한다.<br>
-예를 들어 자동차 클래스가 있다고 가정했을 때 추가적으로 전기차를 만들어야 한다면,<br>
-전기차 클래스를 몽땅 새로 그릴 필요 없이 상속을 사용하면 가존의 자동차 클래스를 확장해서 전기차 클래스를 만들 수 있다.<br>
-상속을 사용하면 코드의 재사용성을 높일 수 있고 객체들 사이의 계층 구조를 잘 나타낼 수 있다. 또 유지 보수의 편리성과 코드의 가독성 또한 좋아진다.</p>
+<p>화면 전환 관리<br>
+→ 앱 내 다른 뷰 컨트롤러로 화면전환도 UIViewController를 이용하여 할 수 있다.</p>
 </li>
 <li>
-<h6 id="다형성polymorphism">다형성(Polymorphism)</h6>
-<p>하나의 메서드나 함수가 다양한 형태로 동작할 수 있는 능력.
-즉 같은 이름의 메서드나 함수를 다양한 클래스에서 사용할 수 있고, 각 클래스마다 다르게 구현될 수 있다는 것이다.
-만약에 도형 클래스가 있고, 거기에 넓이를 계산하는 메서드가 있다고 가정하면,<br>
-사각형 클래스와 삼각형 클래스는 각각 다르게 넓이를 계산할 필요가 있는데<br>
-이때 다형성을 사용하면 도형 클래스의 &ldquo;넓이를 계산하는 메서드&quot;를 오버라이딩 해서<br>
-각 클래스에서 자신만의 구현을 할 수 있다.<br>
-이렇듯 하나의 코드가 다양한 클래스들에 대해 다양한 동작을 수행할 수 있는 능력을 다형성이라고 하며<br>
-다형성은 코드의 재사용 성과 유연성을 높여준다.</p>
+<p>데이터 관리<br>
+→ 데이터를 처리하고 관리할 수 있으며, 데이터의 상태에 따라 화면의 뷰들을 업데이트하거나, 다른 UIViewController와도 데이터를 공유할 수 있다.</p>
+</li>
+<li>
+<p>사용자의 상호작용 처리<br>
+→  예를 들면 터치 이벤트(touch event)나 드래그 이벤트(drag event) 등을 처리. 이를 통해 사용자의 입력에 따라 특정 처리를 하거나, 화면을 업데이트하거나 할 수 있다.</p>
 </li>
 </ul>
-<h4 id="장점">장점</h4>
-<p>객체 지향 프로그래밍을 사용하면 프로그램을 만들 때 부품처럼 세분화해서 만들 수 있다.<br>
-이렇게 개발을 하면 프로그램을 더 이해하기 쉽고 수정하기도 간편하다.<br>
-또 코드를 재사용해서 비슷한 기능을 가진 프로그램을 더 빨리 만들 수도 있다.</p>
+<h4 id="uiviewcontroller-사용방법">UIViewController 사용방법</h4>
+<ol>
+<li>
+<p>Storyboard에서 뷰 컨트롤러 관리<br>
+→ Storyboard(iOS 앱의 UI를 디자인할 수 있는 인터페이스 빌더)에서 뷰 컨트롤러를 시각적으로 구성 / 관리.</p>
+</li>
+<li>
+<p>생성자 코드를 통해서 객체를 생성<br>
+→ 뷰 컨트롤러를 직접 코드로 생성하고 관리</p>
+<h6 id="uiviewcontroller의-인스턴스-생성-예">UIViewController의 인스턴스 생성 예</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyViewController</span>: UIViewController {
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// (내용 작성)</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> myViewController = MyViewController()
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="viewcontroller-종류">ViewController 종류</h4>
+<ul>
+<li>
+<h5 id="container-view-controller"><strong>Container View Controller</strong></h5>
+<p>→ 다른 뷰 컨트롤러들(Content view controller)을 포함하고 관리하는 뷰 컨트롤러.<br>
+하나 이상의 자식 뷰 컨트롤러를 내부에 가지고 있고, 이들을 관리하고 조정하는 역할</p>
+<ul>
+<li>
+<h6 id="uinavigationcontroller"><strong>UINavigationController</strong></h6>
+<p><img src="/images/2023-08-01-uikit-02/navigation_interface_2x_8f059f7f-2e2f-4c86-8468-7402b7b3cfe0.png" alt="navigation_interface_2x_8f059f7f-2e2f-4c86-8468-7402b7b3cfe0"></p>
+<p>여러 개의 뷰 컨트롤러를 스택 형태로 관리하여 화면 전환을 제공하는 뷰 컨트롤러</p>
+</li>
+<li>
+<h6 id="uitabbarcontroller"><strong>UITabBarController</strong></h6>
+<p><img src="/images/2023-08-01-uikit-02/1bc595c9-a817-4057-b8b9-ecaa4e8647de.png" alt="1bc595c9-a817-4057-b8b9-ecaa4e8647de"></p>
+<p>탭바(탭 바) 형태의 사용자 인터페이스를 제공하는 뷰 컨트롤러</p>
+</li>
+<li>
+<h6 id="uisplitviewcontroller"><strong>UISplitViewController</strong></h6>
+<p><img src="/images/2023-08-01-uikit-02/ui-split-view-overview~dark@2x-0860197.png" alt="ui-split-view-overview~dark@2x"></p>
+<p>두 개의 하위 뷰 컨트롤러를 마스터(Master)와 디테일(Detail)로 나누어 화면에 표시하는 뷰 컨트롤러(주로 iPadOS의 대형 화면에서 사용)</p>
+</li>
+<li>
+<h6 id="uipageviewcontroller"><strong>UIPageViewController</strong></h6>
+<p><img src="/images/2023-08-01-uikit-02/giphy-2.gif" alt="giphy-2"></p>
+<p>스와이프 하거나 탭 하는 등 사용자가 제스처를 사용하여 직접 여러 페이지를 전환할 수 있는 UI 제공하는 뷰 컨트롤러 주로 책 페이지 넘기는 것 같은 방식으로 화면 전환.</p>
+<p>💡 <strong>UINavigationController와 UITabBarController는 특히 현업에서 가장 많이 쓰이는 컨테이너 뷰 컨트롤러이다.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="content-view-controller"><strong>Content View Controller</strong></h4>
+<p>→ 단일 뷰나 특정 콘텐츠를 관리하는 뷰 컨트롤러들</p>
+<ul>
+<li>
+<h6 id="uiviewcontroller"><strong>UIViewController</strong></h6>
+<p>가장 기본적인 뷰 컨트롤러로, 단일 뷰와 연결되어 있음</p>
+</li>
+<li>
+<h6 id="uitableviewcontroller"><strong>UITableViewController</strong></h6>
+<p>테이블 뷰를 표시하는 데 특화된 뷰 컨트롤러</p>
+</li>
+<li>
+<h6 id="uicollectionviewcontroller"><strong>UICollectionViewController</strong></h6>
+<p>컬렉션 뷰를 표시하는 데 특화된 뷰 컨트롤러</p>
+</li>
+</ul>
+</li>
+</ul>
 </div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
