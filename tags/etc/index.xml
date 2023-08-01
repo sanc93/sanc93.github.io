@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>에러 : “View Controller“ is unreachable because it has no entry points...</title>
+      <link>https://sanc93.github.io/post/etc/2023-07-10-error-03/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-03/</guid>
+      <description>1. 문제 강의 보면서 실습하다가 뷰 컨트롤러 하나만 남기고 지웠는데 갑자기 Xcode에 이러한 에러가 뜬다.
+“View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:]. 2. 원인 이 오류는 스토리보드에서 해당 &amp;ldquo;View Controller&amp;quot;에 대한 엔트리포인트(진입점)을 내가 지정해 주지 않아서 그렇다.
+3. 해결방법 View Controller를 클릭 &amp;gt; Attributes Inspector &amp;gt; Is Initial View Controller에 체크
+하여 엔트리포인트를 추가해주자.
+이렇게하면 뷰 컨트롤러에 엔트리포인트가 추가 된것도 확인이 가능하고 오류 메세지도 깔끔히 사라진다.</description>
+    </item>
+    
     <item>
       <title>객체 지향 프로그래밍의 SOLID 원칙</title>
       <link>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</link>

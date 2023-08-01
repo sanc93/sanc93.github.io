@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 11</title>
+      <link>https://sanc93.github.io/post/record/2023-08-01-til/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-01-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱 개발 입문 강의 수강 알고리즘 문제 풀기 과제 매일 1개 라도 알고리즘 문제 풀어보도록 내일은 진짜 개인 과제 시작하기 느낀점 오늘 팀원분들 중에 문법 공부 겸 알고리즘 문제 풀이를 하고 계시다는 분이 계셔서
+문제 리스트와 이름이 적힌 구글 스프레드시트 링크를 보내주셨는데
+전에 발제 때였나 분명히 이 시트 봤었는데 지금까지 존재를 잊고 있었다
+목록 보니 이미 어마어마하게 나가신 분들도 계시고
+오늘 한번 해봤는데 두 번째 문제부터 막혔다&amp;hellip; 감도 안 오고</description>
+    </item>
+    
     <item>
       <title>TIL 10</title>
       <link>https://sanc93.github.io/post/record/2023-07-31-til/</link>
