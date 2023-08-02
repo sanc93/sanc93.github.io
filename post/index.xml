@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 12</title>
+      <link>https://sanc93.github.io/post/record/2023-08-02-til/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-02-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱 개발 입문 강의 수강 개인 과제 Lv.1 과제 개인 과제 Lv.2 느낀점 오늘 팀원 분들이랑 이야기하다가
+이번 과제를 인터페이스 빌더로 짤지 코드로 짤지에 대한 이야기가 나왔었는데
+밤에 마침 튜터님이 오셔서 물어봤다. 요즘에 현업에서는 스토리보드를 안 쓰는 추세고
+특히나 스위프트 UI 나오고 나서는 더더욱 코드로 짜는 식으로 가고 있다고 한다.
+그런데 스토리보드에서 오토 레이아웃, IBAction 연결 같은 거 연습하기 위해서
+이번 과제는 모두 스토리보드로 하는 게 좋을 것 같다고 하심&amp;hellip; 스토리보드가 되면 코드는 할 수 있게 돼있다고</description>
+    </item>
+    
     <item>
       <title>TIL 11</title>
       <link>https://sanc93.github.io/post/record/2023-08-01-til/</link>
