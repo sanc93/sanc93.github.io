@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 13</title>
+      <link>https://sanc93.github.io/post/record/2023-08-03-til/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-03-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 Lv.2 (진행중) 과제 개인 과제 Lv.2
+오토 레이아웃 적용하기
+UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기
+할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+오토 레이아웃 적용하기 UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기 할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+느낀점 소소한 배움 두가지
+폴더링
+뭔가 파일들을 깔끔하게 정리해 보고 싶어서 폴더링에 대해 찾아봤다</description>
+    </item>
+    
     <item>
       <title>TIL 12</title>
       <link>https://sanc93.github.io/post/record/2023-08-02-til/</link>
