@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 14 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 개인 과제 Lv.2 (진행중) 8/4 19:00 실시간 세션 : 옵셔널의 이해 (HH튜터님) 과제 개인 과제 Lv.2
+오토 레이아웃 적용하기
+UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기
+할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+오토 레이아웃 적용하기 UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기 할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+느낀점 원래 오늘 계획했던 내용들은 하다가 또 다른 곳에 꽂혀서 자연스럽게 다음 주 월요일 계획으로 넘어갔다." />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 14</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 4, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>개인 과제 Lv.2 (진행중)</li>
+<li>8/4 19:00 실시간 세션 : 옵셔널의 이해 (HH튜터님)</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>
+<p>개인 과제 Lv.2</p>
+<ul>
+<li>
+<p>오토 레이아웃 적용하기</p>
+</li>
+<li>
+<p>UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기</p>
+</li>
+<li>
+<p>할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경</p>
+</li>
+<li>
+<p>오토 레이아웃 적용하기
+UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기
+할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>원래 오늘 계획했던 내용들은 하다가 또 다른 곳에 꽂혀서 자연스럽게 다음 주 월요일 계획으로 넘어갔다..<br>
+아래는 오늘 얻은 결과물</p>
+<ol>
+<li>다른 뷰 컨트롤러를 갔다 와도 데이터가 남아있고 앱을 껐다 켜도 할 일이 날아가지 않도록<br>
+→ 이것은 UserDefaults를 사용하여 해결 가능했다<br>
+이 UserDefaults라는 게 원래는 앱 설정, 사용자 기본값이나 임시 데이터 같은 거를 저장하는 용도라 간단한 데이터 저장에만 적합하다고 한다<br>
+하지만 이번에는 간단한 과제기도 하고.. 배열 하나 정도 저장하는 거니 한번 써볼 겸 사용하기로</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> toDoTasks = [String]() <span style="color:#75715e">// TODO 입력값 저장하는 배열</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> toDoTasksKey = <span style="color:#e6db74">&#34;ToDoTasks&#34;</span> <span style="color:#75715e">// ① UserDefaults Key값 설정</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.viewDidLoad()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ② UserDefaults로부터 저장된 데이터 가져와서 toDoTask 배열에 넣기</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> savedData = UserDefaults.standard.array(forKey: toDoTasksKey) <span style="color:#66d9ef">as</span>? [String] {
+</span></span><span style="display:flex;"><span>            toDoTasks = savedData
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ToDoViewController</span>: UIViewController {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">self</span>.toDoTasks.append(inputText)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">self</span>.emptyTasksUILabel.isHidden = <span style="color:#66d9ef">true</span> <span style="color:#75715e">// 배열에 값이 추가되면 UILabel 가리기</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">self</span>.tableView.reloadData() <span style="color:#75715e">// 테이블 뷰를 리프레시</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                UserDefaults.standard.<span style="color:#66d9ef">set</span>(<span style="color:#66d9ef">self</span>.toDoTasks, forKey: <span style="color:#66d9ef">self</span>.toDoTasksKey) <span style="color:#75715e">// ③ toDoTasks를 UserDefaults에 저장     </span>
+</span></span></code></pre></div><p>위와 같이
+① Key 값 설정 (바로 갖다 써도 되긴 하지만 코드 유지 보수성&amp;가독성 위해 변수에 담아 준다)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#e6db74">&#34;(UserDefaults Key값)&#34;</span> = <span style="color:#e6db74">&#34;UserDefaults Key값&#34;</span>
+</span></span></code></pre></div><p>② 해당 Key 값으로 저장할 때</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>UserDefaults.standard.<span style="color:#66d9ef">set</span>(<span style="color:#66d9ef">self</span>.<span style="color:#e6db74">&#34;(UserDefaults에 넣을 값)&#34;</span>, forKey: <span style="color:#66d9ef">self</span>.<span style="color:#e6db74">&#34;(UserDefaults Key값)&#34;</span>)
+</span></span></code></pre></div><p>③ 해당 Key 값으로 불러올 때</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>UserDefaults.standard.array(forKey: <span style="color:#e6db74">&#34;(UserDefaults Key값)&#34;</span>)
+</span></span></code></pre></div><p>하면 앱이 종료되고 다시 실행해도 복원이 된다. 이렇게 간단할 수가!</p>
+<ol start="2">
+<li>
+<p>할 일을 오른쪽으로 스와이프 하여 삭제 가능하도록</p>
+<p>→ 흔히 앱에서 옆으로 스와이프 하면 쮸르륵 나오는 기능들
+<img src="/images/2023-08-04-til/1.png" alt="1"></p>
+<p>위와 같은 것을 적용하고 싶었는데 역시나 찾아보니 있다<br>
+<code>UITableViewDataSource</code>에서 제공하는 <code>trailingSwipeActionsConfigurationForRowAt</code>메서드를 이용하면 되는 것.<br>
+이 메서드는 <code>UITableView</code>의 행(셀)을 오른쪽으로 스와이프 할 때 나타나는 뷰를 구성하는 데 사용된다.<br>
+나는 꼬리 쪽에 달고 싶었는데 물론 <code>leadingSwipeActionsConfigurationForRowAt</code>를 사용하면 머리 부분에 달 수도 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">ToDoViewController</span>: UITableViewDelegate {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// row를 오른쪽으로 스와이프 시 삭제 버튼 나오도록</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">tableView</span>(<span style="color:#66d9ef">_</span> tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -&gt; UISwipeActionsConfiguration? {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> delete = UIContextualAction(style: .destructive, title: <span style="color:#66d9ef">nil</span>) { (<span style="color:#66d9ef">_</span>, <span style="color:#66d9ef">_</span>, success) <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">self</span>.toDoTasks.remove(at: indexPath.row) <span style="color:#75715e">// toDoTasks배열에서 해당 row와 같은 값 삭제</span>
+</span></span><span style="display:flex;"><span>            UserDefaults.standard.<span style="color:#66d9ef">set</span>(<span style="color:#66d9ef">self</span>.toDoTasks, forKey: <span style="color:#66d9ef">self</span>.toDoTasksKey) <span style="color:#75715e">// toDoTasks배열을 UserDefaults에 반영</span>
+</span></span><span style="display:flex;"><span>            tableView.reloadData()<span style="color:#75715e">// 테이블 뷰 리로드</span>
+</span></span><span style="display:flex;"><span>            success(<span style="color:#66d9ef">true</span>)        
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        delete.backgroundColor = .red
+</span></span><span style="display:flex;"><span>        delete.image = UIImage(systemName: <span style="color:#e6db74">&#34;trash&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> UISwipeActionsConfiguration(actions: [delete])
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>위와 같이 row를 밀었을 때 빨간 배경에 휴지통 모양의 아이콘이 나오고<br>
+그것을 클릭하면 toDoTasks 배열에서 해당 indexPath.row의 값을 찾아 삭제하고<br>
+그 toDoTasks 배열을 그대로 UserDefaults에 반영시키는 식으로 처리했다.</p>
+<p>*처음에는 눌렀을 때 실행되는 이벤트 같은 거니까 UITableViewDelegate 내부에 위치시켰는데<br>
+일반적으로 스와이프 액션은 데이터 변경에 관련된 기능이므로 UITableViewDataSource에 놓는 게 적합하다 해서 다시 변경했다</p>
+</li>
+<li>
+<p>할 일이 없을 때는 할 일을 추가하라고 메시지를 표시<br>
+→ toDoTasks 배열 감시하여 배열에 아무 값이 없으면 표시하고 값이 추가되면 사라지게 하고 싶었는데</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> toDoTasks = [String]()
+</span></span></code></pre></div><p>아래와 같이 didSet을 사용하여 내가 원하는 것을 구현할 수 있었다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> toDoTasks = [String]() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">didSet</span> { <span style="color:#75715e">// didset: toDoTask에 변화가 감지되면 아래 코드블럭이 호출된다</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span> toDoTasks.isEmpty {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">self</span>.emptyTasksUILabel.isHidden = <span style="color:#66d9ef">false</span> <span style="color:#75715e">// 배열이 비어있으면 UILabel 숨기기</span>
+</span></span><span style="display:flex;"><span>          } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">self</span>.emptyTasksUILabel.isHidden = <span style="color:#66d9ef">true</span> <span style="color:#75715e">// 배열에 값이 있으면 UILabel 보이기</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div></li>
+<li>
+<p>오토레이아웃</p>
+<p>오토 레이아웃은 정말 간단해 보이는데 지금도 모르겠다(그래서 스위프트 하면 오토 레이아웃이란 말이 심심치 않게 보였나 보다)<br>
+야금 유튜브 강의 이것저것 보면서 따라 해봤는데 그 예제를 하나하나 똑같이 따라 하면 잘 되는데<br>
+내가 놓은 요소들을 내가 원하는.. 머릿속에 있는 걸 직접 해보면 다른 제약이랑 겹쳐서 빨간 줄 뜨고 난리 ㄱ-</p>
+<p><img src="/images/2023-08-04-til/2.png" alt="2"><br>
+일단 두 개의 버튼의 사이를 간격을 지정하고 Stack View로 묶고 Horizontal , Vertical 모두 중앙으로 박고.. 어찌어찌해서 맞췄다<br>
+사실 이 간단한 거 하는데도 뭐가 계속 충돌 나고 어떻게 했는지 기억도 안 나지만.. 이젠 빨간색 선도 안 뜨고</p>
+<p><img src="/images/2023-08-04-til/3.gif" alt="3"><br>
+이렇게 화면을 가로세로 전환해도 잘 적용되는 것을 확인할 수 있다<br>
+근데 이게 과연 바람직하게 맞춘 건지 모르겠다 -_-;<br>
+오토 레이아웃은 좀 더.. 공부할 필요가 있는 것 같다.</p>
+</li>
+</ol>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

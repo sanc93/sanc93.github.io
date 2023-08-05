@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 14</title>
+      <link>https://sanc93.github.io/post/record/2023-08-04-til/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-04-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 Lv.2 (진행중) 8/4 19:00 실시간 세션 : 옵셔널의 이해 (HH튜터님) 과제 개인 과제 Lv.2
+오토 레이아웃 적용하기
+UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기
+할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+오토 레이아웃 적용하기 UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 만들기 할 일 완료되면 가로선 넣는 등.. 완료/미완료 상태에 따라 UI 변경
+느낀점 원래 오늘 계획했던 내용들은 하다가 또 다른 곳에 꽂혀서 자연스럽게 다음 주 월요일 계획으로 넘어갔다.</description>
+    </item>
+    
     <item>
       <title>TIL 13</title>
       <link>https://sanc93.github.io/post/record/2023-08-03-til/</link>
