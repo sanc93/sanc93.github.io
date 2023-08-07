@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 15</title>
+      <link>https://sanc93.github.io/post/record/2023-08-07-til/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-07-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 Lv.2 (진행중)
+8/7 19:00 보충학습 (HG튜터님)
+null? nil?
+null : 메모리에 객체를 가리키는 포인터가 없음 객체가 없음 -&amp;gt; 접근하는 순간 에러
+// nullPointerException var optionalName: String? print(optionalName) nil : 값이 없는 상태를 나타내는 키워드
+var str = &amp;#34;&amp;#34; 옵셔널 선언
+? 타입으로 선언하는 건 간략화된 표현.
+let num1: Int? = 2 // 간편표기 let num2: Optional&amp;lt;Int&amp;gt; = 3 // 정식 문법 옵셔널은 어떻게 구현되어 있는가</description>
+    </item>
+    
     <item>
       <title>TIL 14</title>
       <link>https://sanc93.github.io/post/record/2023-08-04-til/</link>
