@@ -4,16 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>Swift 02 : 프로퍼티 (Property) - 개발노트</title>
+    <title>TIL 17 - 개발노트</title>
 
     
     
-    <meta name="description" content="프로퍼티란 Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
-데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.
-1. 저장프로퍼티 2. 연산프로퍼티 프로퍼티는 크게 이 두가지 유형으로 나뉜다.
-저장 프로퍼티 (Stored Property) var : 변경할 수 있는 변수(Variable)를 선언할 떄 사용
-let a = 100 a = 200 print(a) // 100 let : 변경할 수 없는 상수(Constant)를 선언 할때 사용
-let a = 100 a = 200 // 에러 발생." />
+    <meta name="description" content="오늘 한 일 / 배운점 개인 과제 Lv.3
+8/9 15:00 팀 내 코드리뷰
+8/9 16:00 개인 면담 (SJ매니저님)
+8/9 19:00 실시간 세션 : 옵셔널의 이해 &#43; 예외처리 (HH튜터님)
+옵셔널 체이닝(OptionaI Chaining):
+nil 값이 하나라도 있으면 결과도 nil, 모두 값이 있어야 결과를 꺼내줌. 예외 처리 : 말 그대로 예상치 못한 에러 상황을 다룸.
+예외 처리에는 if 문, 함수에 throws 추가 등 다양한 방법이 있는데
+예를 들어 아래와 같이 예외 처리가 가능하다" />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -88,18 +90,12 @@ let a = 100 a = 200 // 에러 발생." />
             
             
             
-                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
-                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in
-                    active" href="/post/swift/" title=""
-                        style="color: #f0f0f0;
-                        animation: text-fade-animation 3s linear infinite alternate;">swift</a>
-                
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
             
             
             
@@ -121,12 +117,18 @@ let a = 100 a = 200 // 에러 발생." />
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
             
             
             
@@ -154,9 +156,9 @@ let a = 100 a = 200 // 에러 발생." />
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">Swift 02 : 프로퍼티 (Property)</div>
+        <div class="font:40 font:extrabold">TIL 17</div>
         <div class="mt:16 f:fade-60">
-            <time>Jul 18, 2023</time>
+            <time>Aug 9, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -196,45 +198,66 @@ let a = 100 a = 200 // 에러 발생." />
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><h4 id="프로퍼티란">프로퍼티란</h4>
-<p>Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값<br>
-데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.</p>
-<h6 id="1-저장프로퍼티">1. 저장프로퍼티</h6>
-<h6 id="2-연산프로퍼티">2. 연산프로퍼티</h6>
-<p>프로퍼티는 크게 이 두가지 유형으로 나뉜다.</p>
-<h4 id="저장-프로퍼티-stored-property">저장 프로퍼티 (Stored Property)</h4>
-<p><code>var</code> : 변경할 수 있는 변수(Variable)를 선언할 떄 사용</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> a = <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>a = <span style="color:#ae81ff">200</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(a) <span style="color:#75715e">// 100</span>
-</span></span></code></pre></div><p><code>let</code> : 변경할 수 없는 상수(Constant)를 선언 할때 사용</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> a = <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>a = <span style="color:#ae81ff">200</span> <span style="color:#75715e">// 에러 발생. a는 let(상수)이기 때문에 값을 재할당 할 수 없다</span>
-</span></span></code></pre></div><h4 id="연산-프로퍼티-computed-property">연산 프로퍼티 (Computed Property)</h4>
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
 <ul>
 <li>
-<p>값을 직접 저장하는 것이 아닌, 특정한 연사을 통해 값을 가져오거나 설정하는 프로퍼티</p>
+<p>개인 과제 Lv.3</p>
 </li>
 <li>
-<p>보통 다른 저장 프로퍼티의 값을 기반으로 계산된 값을 제공하기 위해 사용된다</p>
-<p>(따라서 연산 프로퍼티는 그때 그때 계산한 값을 알려주기 때문에 변수 <code>var</code>로만 선언가능)</p>
+<p>8/9 15:00 팀 내 코드리뷰</p>
 </li>
+<li>
+<p>8/9 16:00 개인 면담 (SJ매니저님)</p>
+</li>
+<li>
+<p>8/9 19:00 실시간 세션 : 옵셔널의 이해 + 예외처리 (HH튜터님)</p>
+<ul>
+<li>옵셔널 체이닝(OptionaI Chaining):<br>
+nil 값이 하나라도 있으면 결과도 nil, 모두 값이 있어야 결과를 꺼내줌.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> x = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> y = <span style="color:#ae81ff">20</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> sum: Int {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">get</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">set</span> {
-</span></span><span style="display:flex;"><span>    sum = x <span style="color:#f92672">+</span> y
-</span></span><span style="display:flex;"><span>  }
+<p><img src="/images/2023-08-09-til/1.png" alt="1"></p>
+<ul>
+<li>
+<p>예외 처리 :
+말 그대로 예상치 못한 에러 상황을 다룸.<br>
+예외 처리에는 if 문, 함수에 throws 추가 등 다양한 방법이 있는데<br>
+예를 들어 아래와 같이 예외 처리가 가능하다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// enum으로 에러 정의</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">TestError</span>: Error {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> dividedByZero
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(sum) <span style="color:#75715e">// 30</span>
-</span></span></code></pre></div></div></article>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 분명 문제가 생길 수 있는 함수라서 예외를 처리</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">devide5Number</span>(<span style="color:#66d9ef">_</span> number: Int) <span style="color:#66d9ef">throws</span> -&gt; Int {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> originNumber = <span style="color:#ae81ff">5</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">guard</span> number <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throw</span> TestError.devidedByZero
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> originNumber<span style="color:#f92672">/</span>number
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// do catch문으로 함수를 싸서 잡아냄</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>  devide5Number(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> TestError.devidedByZero {
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;0이 들어갔습니다&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>개인 과제 다듬기</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>드디어 개인과제 Lv.3까지 구현이 끝났다<br>
+이로써 필수 항목은 다 채웠는데 아직 코드도 주석 같은 것도 덕지덕지 달려있고<br>
+너무 지저분한 것 같아서 내일은 코드도 좀 깔끔하게 정리하고 그 외 보완해야 할 부분 수정해야겠다<br>
+그리고 오늘 팀 내 코드 리뷰 때 IS 님 코드에서 <code>weak var (변수명)</code> <code>lazy var (변수명)</code> 이런 게 있어서<br>
+물어봤는데 ARC라는 메모리 관리? 그런 거라고 한다 또 접근제어라는 것도 알려주셨는데<br>
+한번 공부하고 나도 적용해 봐야겠다.</p>
+</div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
             data-repo="sanc93/sanc93.github.io"

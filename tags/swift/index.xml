@@ -38,7 +38,7 @@ Swift에서는 배열(Array), 딕셔너리(Dictionary), 세트(Set)가 컬렉션
       <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</guid>
-      <description>연산자란? 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
+      <description>연산자란 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
 산술 연산자 (Arithmetic Operators) 숫자 값들의 산술 연산을 수행. 일반적인 수학 기호와 특별히 다를 건 없다
 + 덧셈 - 뺄셈 * 곱셈 / 나눗셈 % 나머지* % (나머지) 예시 let a = 13 let b = 5 print(a%b) // 3 할당 연산자 (Arithmetic Operators) 할당 연산자는 오른쪽에 값을 왼쪽 변수에 할당 한다.</description>
     </item>
@@ -49,7 +49,7 @@ Swift에서는 배열(Array), 딕셔너리(Dictionary), 세트(Set)가 컬렉션
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/swift/2023-07-18-swift-02/</guid>
-      <description>프로퍼티란? Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
+      <description>프로퍼티란 Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
 데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.
 1. 저장프로퍼티 2. 연산프로퍼티 프로퍼티는 크게 이 두가지 유형으로 나뉜다.
 저장 프로퍼티 (Stored Property) var : 변경할 수 있는 변수(Variable)를 선언할 떄 사용

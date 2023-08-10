@@ -7,7 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 18</title>
+      <link>https://sanc93.github.io/post/record/2023-08-10-til/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-10-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 다듬기 과제 개인 과제 다듬기 / 제출 느낀점 오늘은 처음으로 앱 아이콘이랑 LaunchScreen을 설정해 보고
+이런 식으로 row를 스와이프 해서 처리 완료/미완료 전환하던 것을
+didSelectRowAt로 탭 하여 전환하는 식으로 바꿨다거나
+내일 과제 제출 마감날이어서
+전체적으로 주석 정리하고 불필요한 코드 없애거나
+좀 보이는 부분을 자잘 자잘 하게 수정했다
+하나 애를 먹었던 것이
+테이블 cell에 들어가는 완료/미완료 버튼이 상태에 따라 동적으로 바꾸고 싶은데
+스토리보드로 생성해서 코드에서 변경하려고 하니까 텍스트 내용은 변경이 되는데</description>
+    </item>
+    
+    <item>
+      <title>TIL 17</title>
+      <link>https://sanc93.github.io/post/record/2023-08-09-til/</link>
+      <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-09-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 Lv.3
+8/9 15:00 팀 내 코드리뷰
+8/9 16:00 개인 면담 (SJ매니저님)
+8/9 19:00 실시간 세션 : 옵셔널의 이해 + 예외처리 (HH튜터님)
+옵셔널 체이닝(OptionaI Chaining):
+nil 값이 하나라도 있으면 결과도 nil, 모두 값이 있어야 결과를 꺼내줌. 예외 처리 : 말 그대로 예상치 못한 에러 상황을 다룸.
+예외 처리에는 if 문, 함수에 throws 추가 등 다양한 방법이 있는데
+예를 들어 아래와 같이 예외 처리가 가능하다</description>
+    </item>
+    
+    <item>
+      <title>TIL 16</title>
+      <link>https://sanc93.github.io/post/record/2023-08-08-til/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-08-til/</guid>
+      <description>오늘 한 일 / 배운점 개인 과제 Lv.2 과제 개인 과제 Lv.3 느낀점 어제에 이어서 var toDoTasks = [String]() 배열에 값을 저장하던것을 좀 고쳐보려고 했다
+String 대신 ToDoTask라는 구조체를 만들어서 그 구조체를 타입으로 가지는 배열로 변경
+import Foundation struct ToDoTask { var id: UUID // UUID로 고유 ID값 생성. 향후 이 UUID값을 id값으로 사용해서 용이하게 데이터 추가/변경 가능 var inputText: String var date: Date var isCompleted: Bool } 만든 ToDoTask 구조체는 model 폴더로 따로 빼기</description>
+    </item>
+    
     <item>
       <title>TIL 15</title>
       <link>https://sanc93.github.io/post/record/2023-08-07-til/</link>
@@ -281,7 +325,7 @@ https://lazy-kim.com/post/etc/2023-07-19-etc-02/
       <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/swift/2023-07-19-swift-03/</guid>
-      <description>연산자란? 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
+      <description>연산자란 연산자는 프로그래밍에서 값을 조작하거나 다른 값들 간의 관계를 표현하기 위해 사용되는 기호나 기호의 조합. Swift에서도 다른 프로그래밍 언어와 같이 다양한 종류의 연산자를 제공한다.
 산술 연산자 (Arithmetic Operators) 숫자 값들의 산술 연산을 수행. 일반적인 수학 기호와 특별히 다를 건 없다
 + 덧셈 - 뺄셈 * 곱셈 / 나눗셈 % 나머지* % (나머지) 예시 let a = 13 let b = 5 print(a%b) // 3 할당 연산자 (Arithmetic Operators) 할당 연산자는 오른쪽에 값을 왼쪽 변수에 할당 한다.</description>
     </item>
@@ -331,7 +375,7 @@ class Student { func examScore() { // 시험 점수 로직 } func saveToDatabase
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/swift/2023-07-18-swift-02/</guid>
-      <description>프로퍼티란? Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
+      <description>프로퍼티란 Swift 언어에서 클래스, 구조체 또는 열거형 등의 데이터 구조 내부에 속한 값
 데이터 구조의 특성을 나타내거나 저장하고 있는 데이터를 의미한다.
 1. 저장프로퍼티 2. 연산프로퍼티 프로퍼티는 크게 이 두가지 유형으로 나뉜다.
 저장 프로퍼티 (Stored Property) var : 변경할 수 있는 변수(Variable)를 선언할 떄 사용
