@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 19 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 개인 과제 다듬기
+개인 과제 제출
+15:00 팀 내 코드리뷰
+19:00 보충학습 (HG튜터님) : 구조체와 클래스의 차이
+개인과제 예제 코드 및 과제 해설 영상 보기
+과제 WIL 작성 느낀점 오늘은 보충학습 때 들은 내용이 너무 좋아서 정리를 해보려 한다.
+구조체와 클래스 차이에 대해서 CS적인 개념으로 접근해서 설명해 주셨다.
+메모리(RAM) 영역은 프로그램이 실행되는 동안 데이터와 명령을 저장하고 관리하는 공간인데
+이 메모리 영역을 사용하여 프로그램의 실행과 데이터 처리를 가능하게 한다." />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 19</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 11, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>
+<p>개인 과제 다듬기</p>
+</li>
+<li>
+<p>개인 과제 제출</p>
+</li>
+<li>
+<p>15:00 팀 내 코드리뷰</p>
+</li>
+<li>
+<p>19:00 보충학습 (HG튜터님) : 구조체와 클래스의 차이</p>
+</li>
+<li>
+<p>개인과제 예제 코드 및 과제 해설 영상 보기</p>
+</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>WIL 작성</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>오늘은 보충학습 때 들은 내용이 너무 좋아서 정리를 해보려 한다.<br>
+구조체와 클래스 차이에 대해서 CS적인 개념으로 접근해서 설명해 주셨다.</p>
+<p><img src="/images/2023-08-11-til/1.png" alt="1"></p>
+<p>메모리(RAM) 영역은 프로그램이 실행되는 동안 데이터와 명령을 저장하고 관리하는 공간인데<br>
+이 메모리 영역을 사용하여 프로그램의 실행과 데이터 처리를 가능하게 한다.<br>
+메모리는 총 4가지 영역으로 구성이 되어있다<br>
+<strong>① 코드 ② 데이터 ③ 힙 ④ 스택</strong> 이렇게..</p>
+<ol>
+<li>
+<p>코드(Code/Text) 영역 :</p>
+<ul>
+<li>프로그램의 소스코드가 컴파일되면 코드가 기계어(01형태)로 생성되어 저장</li>
+<li>CPU가 이 코드 영역의 명령어 들을 순차적으로 가져와서 실행하는 걸로 프로그램이 동작하게 된다</li>
+<li>읽기 전용 영역</li>
+<li>프로그램 시작~종료 시까지 메모리에 계속 유지되는 영역이다.</li>
+<li>메모리 가장 낮은 주소부터 할당</li>
+</ul>
+</li>
+<li>
+<p>데이터(Data) 영역 :</p>
+<ul>
+<li>전역 변수, 변수, 상수 등이 저장되는 영역이다</li>
+<li>읽고/쓰기 가능</li>
+<li>이 영역 역시 프로그램 시작~종료 시까지 메모리에 계속 유지되는 영역이다.</li>
+<li>메모리의 낮은 주소부터 할당</li>
+</ul>
+</li>
+<li>
+<p>힙(Heap) 영역 :</p>
+<ul>
+<li>런타임(프로그램이 시작되어 종료될 때까지, 즉 실행 시간)중에 동적으로 메모리를 할당하는 영역</li>
+<li>개발자가 직접 관리해야 하고, 필요에 따라 메모리를 할당하고 해제한다</li>
+<li>참조 타입인 Class의 인스턴스가 이 영역에 저장됨</li>
+<li>객체와 구조체를 저장하는 데 사용되고 메모리의 높은 주소부터 할당된다.</li>
+</ul>
+</li>
+<li>
+<p>스택(Stack) 영역 :</p>
+<ul>
+<li>지역변수, 매개변수, 반환 주소 등이 저장되는 영역</li>
+<li>함수가 호출될 때마다 스택 프레임이 생성되고 함수가 종료되면 스택 프레임 제거</li>
+<li>값 타입인 Struct 인스턴스가 이 영역에 저장됨</li>
+</ul>
+</li>
+</ol>
+<p>힙과 스택 같은 경우에는 각각 오버플로우를 방지하기 위해<br>
+위에 그림과 같이 힙 영역이 커지면 스택 영역이 작아지게 되고, 스택 영역이 커지면 힙 영역이 줄어들게 된다</p>
+<blockquote>
+<p>힙이 스택 영역을 침범 <strong>→ heap overflow</strong><br>
+스택이 힙 영역 침범 <strong>→ stack overflow</strong></p>
+</blockquote>
+<p>여기서 튜터님이 힙과 스택을 각각 바둑판과 프링글스로 비유하여 설명해 주셨다</p>
+<p><img src="/images/2023-08-11-til/2.png" alt="2"></p>
+<p>힙(Heap) → 바둑판</p>
+<ul>
+<li>바둑알을 올리는 것은 빈 곳이라면 어느 곳이든 사용 가능하고 중간중간 바둑알을 뺄 수도 있다(동적으로 해제)</li>
+<li>하지만 처음에 들어온 게 해제된다는 보장도 없고 중간중간 빠지게 되면
+어디에 넣어 줘야 할지부터 찾아야 하니까 찾는데 시간이 더 걸리며, 해제하는데 시간이 더 걸린다(힙의 영역이 스택보다 복잡)</li>
+<li>동적인 데이터 구조나 객체 생성, 대용량 데이터 처리에 활용된다.</li>
+</ul>
+<p>스택(Stack) → 프링글스</p>
+<ul>
+<li>프링글스 통에 과자를 하나씩 넣는 것과 비슷</li>
+<li>과자를 꺼내려면 가장 위에 있는 과자부터 차례로 빼야만 아래 과자에 접근할 수 있음</li>
+<li>새로운 과자를 올리거나 빼는 것은 빠르고, 이전 과자를 꺼내려면 비교적 오래 걸린다</li>
+<li>스택은 함수 호출과 지역변수를 관리하는 데 사용되는데 함수가 호출되면 호출된 함수 정보와 매개변수들을 스택에 저장하고 실행이 끝나면 자동적으로 해당 정보를 제거하여 메모리를 확보하게 된다</li>
+<li>빠른 접근/관리를 위해 사용된다</li>
+</ul>
+<p>이렇게 쓰레드(실행 단위)가 돌면서 스택이나 힙으로 던져서 작업을 수행하는 데<br>
+위에 특성 때문에 힙에 저장되는 class를 사용하는 것이 스택에 저장되는 struct 보다 느릴 수밖에 없는 것이다<br>
+따라서 스위프트에서도 만약 class와 struct 둘 다 사용 가능하다면 struct를 사용하는  것을 권장한다고 한다<br>
+(성능은 그리 체감 못할지라도..)<br>
+물론 상속을 한다거나 클래스를 사용해야 하는 경우에는 예외적으로 말이다.</p>
+<p>struct 내부의 프로퍼티의 값을 바꿀 때는 mutating이라는 키워드를 함수 앞에 붙여야 하는 둥<br>
+아주 간혹 다른 경우가 있긴 하지만<br>
+그 외에는 class와 struct는 거의 사용 방식이 비슷하고<br>
+객체를 만들어서 값을 넣어주고 읽어오는 것은 같다 생각해도 된다.</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
