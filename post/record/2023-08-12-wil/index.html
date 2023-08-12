@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>WIL (8/7 - 8/11) - 개발노트</title>
+
+    
+    
+    <meta name="description" content="2023.8.7(월) - 8. 11(금) 😎 이번주에 한 일 개인 과제 및 제출 팀 내 코드 리뷰 개인과제 예제 코드 및 과제 해설 영상 보기 8/7 19:00 보충학습 (HG튜터님) 8/9 16:00 개인 면담 (SJ매니저님) 8/9 19:00 실시간 세션 : 옵셔널의 이해 &#43; 예외처리 (HH튜터님) 8/11 19:00 보충학습 : 구조체와 클래스의 차이 (HG튜터님) 😃 도움이 되었거나 즐거웠던 점 이번 주에 보충학습에서 배운 메모리 영역에 대한 설명은 조금 어려웠지만 재미있었다.
+HG 튜터님이 지난 시간부터 CS 적인 부분도 같이 설명해 주셔서," />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">WIL (8/7 - 8/11)</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 12, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><blockquote>
+<h2 id="202387월---8-11금">2023.8.7(월) - 8. 11(금)</h2>
+</blockquote>
+<h4 id="-이번주에-한-일">😎 이번주에 한 일</h4>
+<ul>
+<li>개인 과제 및 제출</li>
+<li>팀 내 코드 리뷰</li>
+<li>개인과제 예제 코드 및 과제 해설 영상 보기</li>
+<li>8/7 19:00 보충학습 (HG튜터님)</li>
+<li>8/9 16:00 개인 면담 (SJ매니저님)</li>
+<li>8/9 19:00 실시간 세션 : 옵셔널의 이해 + 예외처리 (HH튜터님)</li>
+<li>8/11 19:00 보충학습  : 구조체와 클래스의 차이 (HG튜터님)</li>
+</ul>
+<h4 id="-도움이-되었거나-즐거웠던-점">😃 도움이 되었거나 즐거웠던 점</h4>
+<ul>
+<li>이번 주에 보충학습에서 배운 메모리 영역에 대한 설명은 조금 어려웠지만 재미있었다.<br>
+HG 튜터님이 지난 시간부터 CS 적인 부분도 같이 설명해 주셔서,<br>
+항상 덮고 지나갔던 깊숙한 내용(!)을 다시 한번 생각하게 되는 것 같다.<br>
+내가 비전공자인 만큼 더욱더 CS 공부는 틈틈이 많이 찾아봐야겠다고 생각했다.<br>
+의사소통할 때도 이런 베이스 지식이 깔려있으면 기술적인 이해도도 올라갈 것 같고<br>
+더 효율적인 알고리즘 짤 때 도움이 되지 않을까..</li>
+</ul>
+<h4 id="-힘들거나-어려웠던-점">🥲 힘들거나 어려웠던 점</h4>
+<ul>
+<li>팀 내 코드 리뷰 시간에 IS 님의 코드를 보면서<br>
+종종 <code>weak var</code> 와 같은 표현을 보고 전에도 다른 사람 코드에서 봤던 기억이나 물어보니<br>
+ARC 개념에 대해 한번 찾아보면 좋을 거라고 하셨다.<br>
+그리고 자동적으로 메모리 관리를 처리해 주는 기능이라는 것을 알게 되었다.<br>
+근데 인터넷을 열심히 찾아봐도 어떨 때 <code>weak</code>을 붙여서 약한 참조를 만들어 순환 참조를 막는 건지<br>
+실제로 코드를 작성할 때 언제 사용해야 하는지에 대한 명확한 감이 잡히지 않았다.<br>
+아마 내가 제대로 이해를 못 하고 있는 것 같은데<br>
+지금은 어렴풋이 개념만 알았다 치고 조만간 수업에서 자세히 다루면 그때는 정확히 짚고 넘어가야겠다. 그리고 내 코드에 적용할 수 있도록!</li>
+</ul>
+<h4 id="-깨달음-또는-다음에-시도해-보고-싶은-것">😙 깨달음 또는 다음에 시도해 보고 싶은 것</h4>
+<p>어제 개인 과제를 무사 제출했다.</p>
+<h6 id="와이어프레임">와이어프레임</h6>
+<h4 id="1images2023-08-12-wil1png"><img src="/images/2023-08-12-wil/1.png" alt="1"></h4>
+<h6 id="최종-제출">최종 제출</h6>
+<p><img src="/images/2023-08-12-wil/2.gif" alt="2"></p>
+<p>역시 와이어 프레임 짤 때랑 많이 이것저것 바뀌긴 했지만 그래도.. 얼추 비슷하게 구현이 된 것 같기도 하고<br>
+이번 과제를 하면서 느낀 점은</p>
+<ol>
+<li>다음 프로젝트 때는 폴더링 잘할 수 있을 것 같음</li>
+<li>XCode과 친해짐</li>
+<li>AutoLayout 약간은 알 것 같음</li>
+</ol>
+<p>적고 보니 어째 다 찍먹만 한 것 같네😂<br>
+아니다 그래도 시작 전의 나와는 많이 달라졌을 것이다!</p>
+<p>아래는 내배캠에서 이번 과제하면서 체크해 보라고 한 체크리스트</p>
+<ul>
+<li>Xcode를 활용하여 프로젝트를 생성하고 실행하는 방법을 설명해주세요.</li>
+<li>Xcode를 사용하여 코드를 편집하고 디버깅하는 방법에 대해서 설명할 수 있다.</li>
+<li>스토리보드/인터페이스 빌더를 사용해서 UI를 구성하는 방법을 설명할 수 있다.</li>
+<li>UIKit 프레임워크에 포함된 view와 ViewController들에 대해서 알고 특징을 설명할 수 있다.</li>
+<li>사용자의 입력 받는 View의 종류를 알고 설명할 수 있다.</li>
+<li>사용자에게 데이터를 보여주는 View의 종류를 알고 설명할 수 있다.</li>
+<li>화면전환을 하는 방법을 설명할 수 있다.</li>
+<li>UIScrollView, UIPickerView, UITableView, UICollectionView의 활용 목적을 설명할 수 있다.</li>
+<li>UITableView를 사용하여 데이터 보여주는 방법을 설명할 수 있다.</li>
+</ul>
+<p>그래도 이렇게 보니 많이 배웠다</p>
+<p>다음 주부터는 팀 프로젝트 과제인데<br>
+한 가지 걱정과 불안은 과연 여러 명이 스토리보드 ↔︎ 코드 왔다갔다 섞어서 개발하게 된다면..<br>
+협업할 때 충돌이 많이 일어나진 않을까.. 이런 생각이 든다<br>
+일단 부딪혀보지 않으면 모르겠지만</p>
+<p>여담으로..<br>
+하루 종일 열몇 시간씩 방안에 앉아서 컴퓨터 앞에만 있는 게<br>
+이번 주는 유난히 더 힘들었는데<br>
+태풍도 지나갔겠다 내일은 주말이니 나가서 사람도 만나고 기분 환기 좀 시키고<br>
+월요일부터 다시 달려야겠다~!!<br>
+다음 주는 팀원분들이랑 하는 거니까 더 재밌겠지</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
