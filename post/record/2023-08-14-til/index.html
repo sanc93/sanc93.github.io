@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 20 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘부터 1주간 팀 프로젝트가 시작되었다
+필수 구현 사항으로는
+메인 화면 디테일 화면 글쓰기 화면 마이 페이지 프로필 수정 페이지 예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다
+우리 팀은 &ldquo;팀 프로젝트 관리 앱&quot;을 만들기로 했다
+앱 명은 YH님 아이디어로 아우어(Our Project:우리의 프로젝트)가 되었다" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 20</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 14, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>10:00 팀 회의</li>
+<li>팀 노션 작성</li>
+<li>주제 아이디어 정하기</li>
+<li>와이어 프레임 짜기</li>
+<li>프로젝트 규칙 정하기</li>
+<li>역할 배분</li>
+<li>팀 repository 및 브랜치 생성</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 앱개발 입문 팀 프로젝트 과제</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>오늘부터 1주간 팀 프로젝트가 시작되었다</p>
+<p>필수 구현 사항으로는</p>
+<ul>
+<li>메인 화면</li>
+<li>디테일 화면</li>
+<li>글쓰기 화면</li>
+<li>마이 페이지</li>
+<li>프로필 수정 페이지</li>
+</ul>
+<p>예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다<br>
+우리 팀은 &ldquo;팀 프로젝트 관리 앱&quot;을 만들기로 했다<br>
+앱 명은 YH님 아이디어로 아우어(Our Project:우리의 프로젝트)가 되었다<br>
+아우어 베이커리가 생각난다는 말이 있어 반 패러디로 아우어 베이커리 로고 그대로 갖다가<br>
+우리는 아우어 프로젝트 ㅋㅋ</p>
+<p>와이어 프레임은 Figma로 다 같이 짜서 합치는 식으로 진행했다</p>
+<p><img src="/images/2023-08-14-til/1.png" alt="1"></p>
+<p>git 브랜치는 아래와 같이 나누기로 했다</p>
+<ul>
+<li>main</li>
+<li>develop</li>
+<li>브랜치1(IS님) - 마이페이지 + 프로필 수정 페이지</li>
+<li>브랜치2(HJ님) - 프로젝트 추가 페이지</li>
+<li>브랜치3(YH님) - 디테일 페이지</li>
+<li><strong>브랜치4(나) - 메인페이지</strong></li>
+</ul>
+<p>위와 같이 각자 파트를 맡아서<br>
+목요일 저녁 ~ 금요일 오전까지는 와이어 프레임 보면서 화면별 구현해서 개인 브랜치에 올리고<br>
+완료되면 develop 브랜치로 pull request, 그 뒤에 main으로 올리는 식으로.. 진행하기로<br>
+일요일 17시 마감인데 이번 주는 내일이 광복절 공휴일이라<br>
+오늘 이것저것 정하고 실질적으로 수, 목, 금(+주말) 3일 밖에 시간이 없다</p>
+<p>YH 님이랑 대략적인 model도 생각해 보았는데<br>
+이 부분은 하면서 계속 수정/추가해 나가기로했다</p>
+<p><img src="/images/2023-08-14-til/2.png" alt="2"></p>
+<p>그리고 오늘 또 새로 git 초기 세팅을 해야 되는데<br>
+가물가물해서 찾아보면서 할라 그랬는데<br>
+IS님이 친절히 알려주심🥲</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git clone <span style="color:#f92672">-</span>b develop (<span style="color:#960050;background-color:#1e0010">원격리포지토리</span>URL) <span style="color:#75715e">// 원격리포지토리의 develop브랜치를 내 로컬에 복제</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch <span style="color:#75715e">// 브랜치 확인</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch sanghun <span style="color:#75715e">// sanghun 브랜치 생성</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch <span style="color:#75715e">// 브랜치 확인</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git checkout sanghun <span style="color:#75715e">// sanghun 브랜치 바라보기(전환)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git status <span style="color:#75715e">// 로컬 변경 상태 확인</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git add . <span style="color:#75715e">// 변경된 파일을 스테이징 영역에 추가</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git commit <span style="color:#f92672">-</span>m <span style="color:#e6db74">&#34;App Icon 추가&#34;</span> <span style="color:#75715e">// 변경 사항을 커밋</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git push origin sanghun <span style="color:#75715e">// 로컬 브랜치 변경사항을 원격 브랜치로 push</span>
+</span></span></code></pre></div><p>이번에는 까먹지 않도록 메모&hellip;</p>
+<p>그리고 IS 님이 이번에 팀 프로젝트 하면서 Git 규칙을 정하자고 가져오셨는데</p>
+<p><img src="/images/2023-08-14-til/5.png" alt="5"></p>
+<p>이런 걸 깃 컨벤션(Git convention)이라고 하나보다<br>
+커밋 메시지 앞에 <code>ADD: AppIcon 추가</code> 이런 식으로 타입을 붙여서 한다고..<br>
+진작 알았으면 커밋 내용이 일관적이고 깔끔했을 텐데 정말 공부가 됐다<br>
+이번 팀 프로젝트 끝나고도 이 규칙은 계속 적용할 것 같다</p>
+<p>그리고 또 IS님이(ㅋㅋ)
+<img src="/images/2023-08-14-til/6.png" alt="6"></p>
+<p>코드 작성할 때<br>
+IBOutlet 같은 거는 Properties 주석 아래에<br>
+IBAction은 내비게이션 바 주석 아래에 위치시키자고 하심<br>
+지난주에 혼자 하면서 이런 건 어디에 모아 두는 게 바람직한 걸까.. 싶었는데<br>
+정말 깔끔하고 좋은 방법인 것 같다! 이것도 팀 프로젝트 끝나도 계속 가져가야겠다</p>
+<p>첫 스타트부터 이것저것 많이 배우기도 하고<br>
+탄탄하게 기반이 닦인 것 같아 느낌이 좋다<br>
+이 느낌 그대로 이번 주도 열심히 달려봐야지<br>
+화이팅~!</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

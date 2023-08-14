@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 11 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 20</title>
+      <link>https://sanc93.github.io/post/record/2023-08-14-til/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-14-til/</guid>
+      <description>오늘 한 일 / 배운점 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘부터 1주간 팀 프로젝트가 시작되었다
+필수 구현 사항으로는
+메인 화면 디테일 화면 글쓰기 화면 마이 페이지 프로필 수정 페이지 예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다
+우리 팀은 &amp;ldquo;팀 프로젝트 관리 앱&amp;quot;을 만들기로 했다
+앱 명은 YH님 아이디어로 아우어(Our Project:우리의 프로젝트)가 되었다</description>
+    </item>
+    
     <item>
       <title>TIL 19</title>
       <link>https://sanc93.github.io/post/record/2023-08-11-til/</link>
