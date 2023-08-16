@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>TIL 20 - 개발노트</title>
+    <title>TIL 21 - 개발노트</title>
 
     
     
-    <meta name="description" content="오늘 한 일 / 배운점 8/14 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘부터 1주간 팀 프로젝트가 시작되었다
-필수 구현 사항으로는
-메인 화면 디테일 화면 글쓰기 화면 마이 페이지 프로필 수정 페이지 예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다
-우리 팀은 &ldquo;팀 프로젝트 관리 앱&quot;을 만들기로 했다" />
+    <meta name="description" content="오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/16 15:00 팀 회의 / 코드리뷰 8/16 19:00 보충학습 (HG튜터님) : 프로토콜 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘은 내 담당인 앱 메인화면을 만드는 작업을 했다
+세그먼트 컨트롤을 만들고(아직 인덱스 값에 따라 처리하는 로직은 구현 못했다)
+어제 만든 더미 데이터를 그 아래 테이블 뷰에 뿌리는 것 까지는 처리했다
+그리고 오후에는 커스텀셀안에 UI적인 부분을 짰는데" />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -152,9 +152,9 @@
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">TIL 20</div>
+        <div class="font:40 font:extrabold">TIL 21</div>
         <div class="mt:16 f:fade-60">
-            <time>Aug 14, 2023</time>
+            <time>Aug 16, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -196,82 +196,41 @@
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
 "><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
 <ul>
-<li>8/14 10:00 팀 회의</li>
-<li>팀 노션 작성</li>
-<li>주제 아이디어 정하기</li>
-<li>와이어 프레임 짜기</li>
-<li>프로젝트 규칙 정하기</li>
-<li>역할 배분</li>
-<li>팀 repository 및 브랜치 생성</li>
+<li>iOS 앱개발 입문 팀 프로젝트 과제</li>
+<li>8/16 9:00 팀 회의 / 코드리뷰</li>
+<li>8/16 15:00 팀 회의 / 코드리뷰</li>
+<li>8/16 19:00 보충학습 (HG튜터님) : 프로토콜</li>
 </ul>
 <h4 id="과제">과제</h4>
 <ul>
 <li>iOS 앱개발 입문 팀 프로젝트 과제</li>
 </ul>
 <h4 id="느낀점">느낀점</h4>
-<p>오늘부터 1주간 팀 프로젝트가 시작되었다</p>
-<p>필수 구현 사항으로는</p>
-<ul>
-<li>메인 화면</li>
-<li>디테일 화면</li>
-<li>글쓰기 화면</li>
-<li>마이 페이지</li>
-<li>프로필 수정 페이지</li>
-</ul>
-<p>예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다<br>
-우리 팀은 &ldquo;팀 프로젝트 관리 앱&quot;을 만들기로 했다<br>
-앱 명은 YH님 아이디어로 아우어(Our Project:우리의 프로젝트)가 되었다<br>
-아우어 베이커리가 생각난다는 말이 있어 반 패러디로 아우어 베이커리 로고 그대로 갖다가<br>
-우리는 아우어 프로젝트 ㅋㅋ</p>
-<p>와이어 프레임은 Figma로 다 같이 짜서 합치는 식으로 진행했다</p>
-<p><img src="/images/2023-08-14-til/1.png" alt="1"></p>
-<p>git 브랜치는 아래와 같이 나누기로 했다</p>
-<ul>
-<li>main</li>
-<li>develop</li>
-<li>브랜치1(IS님) - 마이페이지 + 프로필 수정 페이지</li>
-<li>브랜치2(HJ님) - 프로젝트 추가 페이지</li>
-<li>브랜치3(YH님) - 디테일 페이지</li>
-<li><strong>브랜치4(나) - 메인페이지</strong></li>
-</ul>
-<p>위와 같이 각자 파트를 맡아서<br>
-목요일 저녁 ~ 금요일 오전까지는 와이어 프레임 보면서 화면별 구현해서 개인 브랜치에 올리고<br>
-완료되면 develop 브랜치로 pull request, 그 뒤에 main으로 올리는 식으로.. 진행하기로<br>
-일요일 17시 마감인데 이번 주는 내일이 광복절 공휴일이라<br>
-오늘 이것저것 정하고 실질적으로 수, 목, 금(+주말) 3일 밖에 시간이 없다</p>
-<p>YH 님이랑 대략적인 model도 생각해 보았는데<br>
-이 부분은 하면서 계속 수정/추가해 나가기로했다</p>
-<p><img src="/images/2023-08-14-til/2.png" alt="2"></p>
-<p>그리고 오늘 또 새로 git 초기 세팅을 해야 되는데<br>
-가물가물해서 찾아보면서 할라 그랬는데<br>
-IS님이 친절히 알려주심🥲</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git clone <span style="color:#f92672">-</span>b develop (<span style="color:#960050;background-color:#1e0010">원격리포지토리</span>URL) <span style="color:#75715e">// 원격리포지토리의 develop브랜치를 내 로컬에 복제</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch <span style="color:#75715e">// 브랜치 확인</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch sanghun <span style="color:#75715e">// sanghun 브랜치 생성</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git branch <span style="color:#75715e">// 브랜치 확인</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git checkout sanghun <span style="color:#75715e">// sanghun 브랜치 바라보기(전환)</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git status <span style="color:#75715e">// 로컬 변경 상태 확인</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git add . <span style="color:#75715e">// 변경된 파일을 스테이징 영역에 추가</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git commit <span style="color:#f92672">-</span>m <span style="color:#e6db74">&#34;App Icon 추가&#34;</span> <span style="color:#75715e">// 변경 사항을 커밋</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">»</span> git push origin sanghun <span style="color:#75715e">// 로컬 브랜치 변경사항을 원격 브랜치로 push</span>
-</span></span></code></pre></div><p>이번에는 까먹지 않도록 메모&hellip;</p>
-<p>그리고 IS 님이 이번에 팀 프로젝트 하면서 Git 규칙을 정하자고 가져오셨는데</p>
-<p><img src="/images/2023-08-14-til/5.png" alt="5"></p>
-<p>이런 걸 깃 컨벤션(Git convention)이라고 하나보다<br>
-커밋 메시지 앞에 <code>ADD: AppIcon 추가</code> 이런 식으로 타입을 붙여서 한다고..<br>
-진작 알았으면 커밋 내용이 일관적이고 깔끔했을 텐데 정말 공부가 됐다<br>
-이번 팀 프로젝트 끝나고도 이 규칙은 계속 적용할 것 같다</p>
-<p>그리고 또 IS님이(ㅋㅋ)
-<img src="/images/2023-08-14-til/6.png" alt="6"></p>
-<p>코드 작성할 때<br>
-IBOutlet 같은 거는 Properties 주석 아래에<br>
-IBAction은 내비게이션 바 주석 아래에 위치시키자고 하심<br>
-지난주에 혼자 하면서 이런 건 어디에 모아 두는 게 바람직한 걸까.. 싶었는데<br>
-정말 깔끔하고 좋은 방법인 것 같다! 이것도 팀 프로젝트 끝나도 계속 가져가야겠다</p>
-<p>첫 스타트부터 이것저것 많이 배우기도 하고<br>
-탄탄하게 기반이 닦인 것 같아 느낌이 좋다<br>
-이 느낌 그대로 이번 주도 열심히 달려봐야지<br>
-화이팅~!</p>
+<p>오늘은 내 담당인 앱 메인화면을 만드는 작업을 했다<br>
+세그먼트 컨트롤을 만들고(아직 인덱스 값에 따라 처리하는 로직은 구현 못했다)<br>
+어제 만든 더미 데이터를 그 아래 테이블 뷰에 뿌리는 것 까지는 처리했다</p>
+<p>그리고 오후에는 커스텀셀안에 UI적인 부분을 짰는데<br>
+계속 삽질의 연속이다..</p>
+<p>먼저 이번에는 스토리보드 인터페이스 빌더 사용 안 하고 코드로 짜보는 것도 해보고 싶어서<br>
+처음으로 해보고 있는데 위치를 잡는다거나 직관적으로 보면서 마우스로 옮기는 게 아닌 코드로 작성을 하는 게 좀처럼 머릿속에 그려지지 않아서 많이 어렵다<br>
+특히 오후부터 하고 있는 커스텀셀 안에 공간 쪼개는 것.. stackView를 사용해서 지금 하고 있는데<br>
+Figma로 그렸던 거를 하나하나 해보고 있는데 앱을 실행시켜보면 여백 정렬이 어딘가 어색ㅋㅋㅋ</p>
+<p>오늘 끝나기 직전에 YH님이랑 IS님이 얘기하다가 IS님이 나한테도 막히는 부분 없냐고 그래서 몇 가지 의논했는데<br>
+화면공유하다가 레이아웃이 충돌되고 있는 걸 알려주셔서 알았다</p>
+<p><img src="/images/2023-08-16-til/1.png" alt="1"></p>
+<p>저 보라색 느낌표를 클릭하니 13개나🫠<br>
+저기랑 콘솔 창을 봐야 한다고<br>
+구현하는데 급급해서 여태 체크를 안하고 있었다<br>
+보아하니 뭔가 안 맞는 걸 억지로 끼워서 돌아가게 하려 했나 보다</p>
+<p>그리고 사이트를 하나 추천해 주셨는데<br>
+WTF Auto Layout?이라는 사이트 <a href="https://www.wtfautolayout.com/">https://www.wtfautolayout.com/</a>에 들어가서<br>
+저 콘솔 창에 있는 레이아웃 문제 내용을 복사 붙여넣기하고 검색하면</p>
+<p><img src="/images/2023-08-16-til/2.png" alt="2"></p>
+<p>전에 gitignore 짜주는 사이트처럼<br>
+이렇게 문제를 친절하게 알려준다</p>
+<p>일단 내일 팀 회의때 몇 가지 기능을 빼야 할 수도 있을 것 같다고 해서<br>
+오늘은 이 문제를 조금만 더 보다가 잘 생각이다</p>
+<p>끝</p>
 </div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"

@@ -7,18 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 21</title>
+      <link>https://sanc93.github.io/post/record/2023-08-16-til/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-16-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/16 15:00 팀 회의 / 코드리뷰 8/16 19:00 보충학습 (HG튜터님) : 프로토콜 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘은 내 담당인 앱 메인화면을 만드는 작업을 했다
+세그먼트 컨트롤을 만들고(아직 인덱스 값에 따라 처리하는 로직은 구현 못했다)
+어제 만든 더미 데이터를 그 아래 테이블 뷰에 뿌리는 것 까지는 처리했다
+그리고 오후에는 커스텀셀안에 UI적인 부분을 짰는데</description>
+    </item>
+    
     <item>
       <title>TIL 20</title>
       <link>https://sanc93.github.io/post/record/2023-08-14-til/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-08-14-til/</guid>
-      <description>오늘 한 일 / 배운점 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘부터 1주간 팀 프로젝트가 시작되었다
+      <description>오늘 한 일 / 배운점 8/14 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘부터 1주간 팀 프로젝트가 시작되었다
 필수 구현 사항으로는
 메인 화면 디테일 화면 글쓰기 화면 마이 페이지 프로필 수정 페이지 예시로 나온 거는 당근마켓 인스타그램 쓰레드같은 SNS앱이였다
-우리 팀은 &amp;ldquo;팀 프로젝트 관리 앱&amp;quot;을 만들기로 했다
-앱 명은 YH님 아이디어로 아우어(Our Project:우리의 프로젝트)가 되었다</description>
+우리 팀은 &amp;ldquo;팀 프로젝트 관리 앱&amp;quot;을 만들기로 했다</description>
     </item>
     
     <item>
@@ -39,8 +50,8 @@ HG 튜터님이 지난 시간부터 CS 적인 부분도 같이 설명해 주셔�
       <guid>https://sanc93.github.io/post/record/2023-08-11-til/</guid>
       <description>오늘 한 일 / 배운점 개인 과제 다듬기
 개인 과제 제출
-15:00 팀 내 코드리뷰
-19:00 보충학습 (HG튜터님) : 구조체와 클래스의 차이
+8/11 15:00 팀 내 코드리뷰
+8/11 19:00 보충학습 (HG튜터님) : 구조체와 클래스의 차이
 개인과제 예제 코드 및 과제 해설 영상 보기
 과제 WIL 작성 느낀점 오늘은 보충학습 때 들은 내용이 너무 좋아서 정리를 해보려 한다.
 구조체와 클래스 차이에 대해서 CS적인 개념으로 접근해서 설명해 주셨다.
