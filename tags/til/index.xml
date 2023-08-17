@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 22</title>
+      <link>https://sanc93.github.io/post/record/2023-08-17-til/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-17-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/16 15:00 팀 회의 / 코드리뷰 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘 세그먼트 컨트롤 값에 따라서
+종료된 / 진행 중인 프로젝트를 셀을 다르게 뿌려주는 코드를 짰는데
+// ...(생략) @objc private func segmentedControlValueChanged(_ sender: UISegmentedControl) { switch sender.selectedSegmentIndex { case 0: projectList = dummyProjectList.filter { $0.endDate &amp;lt; Date() } case 1: projectList = dummyProjectList.</description>
+    </item>
+    
     <item>
       <title>TIL 21</title>
       <link>https://sanc93.github.io/post/record/2023-08-16-til/</link>
