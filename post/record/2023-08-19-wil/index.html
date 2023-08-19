@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>WIL (8/14 - 8/18) - 개발노트</title>
+
+    
+    
+    <meta name="description" content="2023.8.14(월) - 8. 18(금) 😎 이번주에 한 일 iOS 앱개발 입문 팀 프로젝트 과제 팀 내 코드 리뷰 8/16 19:00 보충학습 (HG튜터님) : 프로토콜 8/18 19:00 보충학습 (HG튜터님) : 확장 😃 도움이 되었거나 즐거웠던 점 내배캠 정식 시작 전 flutter로 팀 프로젝트 한 것에 이어 swift를 이용한 첫 번째 팀 프로젝트였는데 2주동안 혼자 하다가 간만에 더 의욕도 생기고 즐거웠다 이번에는 팀 내 IS님이 처음부터 체계적으로 팀 내 규칙 같은 것을 짰는데 틀에 맞춰 돌아가는 걸 좋아하는 나로서는 팀 노션 구성하는 방식이라든지." />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">WIL (8/14 - 8/18)</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 19, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><blockquote>
+<h2 id="2023814월---8-18금">2023.8.14(월) - 8. 18(금)</h2>
+</blockquote>
+<h4 id="-이번주에-한-일">😎 이번주에 한 일</h4>
+<ul>
+<li>iOS 앱개발 입문 팀 프로젝트 과제</li>
+<li>팀 내 코드 리뷰</li>
+<li>8/16 19:00 보충학습 (HG튜터님) : 프로토콜</li>
+<li>8/18 19:00 보충학습 (HG튜터님) : 확장</li>
+</ul>
+<h4 id="-도움이-되었거나-즐거웠던-점">😃 도움이 되었거나 즐거웠던 점</h4>
+<ul>
+<li>내배캠 정식 시작 전 flutter로 팀 프로젝트 한 것에 이어 swift를 이용한 첫 번째 팀 프로젝트였는데 2주동안 혼자 하다가 간만에 더 의욕도 생기고 즐거웠다 이번에는 팀 내 IS님이 처음부터 체계적으로 팀 내 규칙 같은 것을 짰는데 틀에 맞춰 돌아가는 걸 좋아하는 나로서는 팀 노션 구성하는 방식이라든지.. 깃 컨벤션이라든지 정말 앞으로도 적용해 가고 싶은 것들이 많았다.</li>
+</ul>
+<h4 id="-힘들거나-어려웠던-점">🥲 힘들거나 어려웠던 점</h4>
+<ul>
+<li>우리 팀은 <code>main</code> <code>develop</code> <code>팀원 1</code> <code>팀원 2</code> <code>팀원 3</code> <code>팀원 4</code> 이렇게 브랜치를 나누어서 각자 맡은 화면/기능(나 같은 경우에는 메인화면)을 개인 브랜치에 계속 커밋 하다가 PR을 날려서 합쳐보고 이런 식으로 진행을 하였는데 IS 님과 나는 올 코드로, YH 님과 HJ 님은 스토리보드 사용하며 작업했어서 전원이 스토리보드 사용하는 팀보다는 훨씬 충돌이 적을 텐데도 불구하고(실제로 이야기 들음) 공통적으로 갖다 쓰는 것들 중에서 많이 충돌이 일어났다.<br>
+그때 어느 사람 코드를 쓰고 어느 사람 코드를 지운다든지 계속 이야기하면서 진행해야 하니 이런 커뮤니케이션하는 데에 생각보다 많은 시간이 할애되었다. 물론 결과물의 완성도를 위해서 필요하기도 하고 이 과정을 겪으면서 새로운 지식을 정말 많이 배워서 헛된 시간은 아니었다고 생각하지만 계획을 짤 때 이런 시간들도 고려를 못 했던 게 아쉬웠다</li>
+<li>처음 월요일에 계획을 짤 때 모델에 대해서 이야기를 나눴었는데 아직 시작도 하지 않은 상태이고 어떤 식으로 짜야 할지 몰라서  일단 시간이 없으니 구현을 하면서 서로 맞춰가는 식으로 했다
+그리고 각자의 브랜치에서 모델을 만들고, 또 각자 더미 데이터를 만들어 나름의 방식대로 테스트해가며 진행했는데 중간에 싹 엎고 모델을 다시 짜게 되었다 그때 시간이 엄청 소비가 되기도 했고 그거에 맞춰 또 각자 짠 코드를 수정해야 해서 이런 공통적인 부분은 팀 노션이나 구글 스프레드시트 등을 이용해서 처음부터 똑같이 들고 갔어야 했다고 본다(물론 쉬운 건 아니겠지만)</li>
+</ul>
+<h4 id="-깨달음-또는-다음에-시도해-보고-싶은-것">😙 깨달음 또는 다음에 시도해 보고 싶은 것</h4>
+<ul>
+<li>이번 팀 프로젝트는 결국 온전히 모든 기능 구현이 안 된 것이 너무 찝찝했다<br>
+이번 주 월요일 오전에 발제가 있었고 일요일 17시가 과제 제출 마감기한이었는데 발제가 끝나고 저녁까지 아이디어 내는 것부터 팀 내 규칙 정하고 와이어 프레임 짜고 하니 첫삽을 뜬 게 결국 월요일 밤쯤이었다. 그리고 화요일은 광복절로 공휴일..
+사실상 수, 목, 금 3일간이라 길지 않은 것도 있었지만 처음에 계획을 짤 때 시간을 고려 안 하고 너무 많은 기능들을 집어넣었던 것일까 중간중간 모델링이라든지 코드 리팩토링이라든지 이런 부분에서 시간이 많이 뺏겨서 원래 토요일에도 모여서 하기로 했지만 각자 일정이 있는 분들도 있고..<br>
+오늘 새벽 1시쯤에 현실적으로 모든 것을 구현하기는 어렵겠다 판단하여 지금까지 한 것 마무리만 하고 제출하기로 했다 다들 설렁설렁했으면 정말 미련도 없었을 텐데 어떤 분은 2시간씩 자면서 한 분도 있었고 모두가 밤늦게까지 열심히 해서 조금만 더 시간이 있었으면,, 하고 아쉬움이 남는 것 같다<br>
+근데 매니저님이 말하기를 팀 프로젝트 목적은 협업 경험을 위한 게 크다고 하니까.. 이번 일주일간 많은 시간을 팀원분들이랑 이야기하면서 배운 점들이 정말 많았고 결과물은 미완인 채로 끝났지만 아직 모든 걸 배우지 않은 상태에서 이 정도까지 구현한 것만 봐도 대단한 것 같다(!ㅋㅋㅋ)<br>
+다음엔 더 잘하면 되지 뭐!</li>
+</ul>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

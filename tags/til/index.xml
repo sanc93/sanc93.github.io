@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 23</title>
+      <link>https://sanc93.github.io/post/record/2023-08-18-til/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-08-18-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/18 19:00 보충학습 (HG튜터님) : 확장 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘은 보충수업때 확장(Extension)에 대한 개념을 배웠다
+상속 - Person -&amp;gt; Developer, Doctor : 타입을 새로 만드는 것. 데이터를 추가하고 함수를 변형시켜 사용(수직적) 확장 - 현재 존재하는 타입에 함수를 추가하여 사용(수평적)
+확장은 기존 타입에 새로운 기능을 추가하거나 확장하는 것을 의미한다. 상속과 달리 수직적인 확장이 아닌 수평적인 확장이라고 할 수 있으며</description>
+    </item>
+    
     <item>
       <title>TIL 22</title>
       <link>https://sanc93.github.io/post/record/2023-08-17-til/</link>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 23 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/18 19:00 보충학습 (HG튜터님) : 확장 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘은 보충수업때 확장(Extension)에 대한 개념을 배웠다
+상속 - Person -&gt; Developer, Doctor : 타입을 새로 만드는 것. 데이터를 추가하고 함수를 변형시켜 사용(수직적) 확장 - 현재 존재하는 타입에 함수를 추가하여 사용(수평적)
+확장은 기존 타입에 새로운 기능을 추가하거나 확장하는 것을 의미한다. 상속과 달리 수직적인 확장이 아닌 수평적인 확장이라고 할 수 있으며" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 23</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 18, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>iOS 앱개발 입문 팀 프로젝트 과제</li>
+<li>8/16 9:00 팀 회의 / 코드리뷰</li>
+<li>8/18 19:00 보충학습 (HG튜터님) : 확장</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 앱개발 입문 팀 프로젝트 과제</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>오늘은 보충수업때 확장(Extension)에 대한 개념을 배웠다</p>
+<p>상속 - Person -&gt; Developer, Doctor : 타입을 새로 만드는 것. 데이터를 추가하고 함수를 변형시켜 사용(수직적)
+확장 - 현재 존재하는 타입에 함수를 추가하여 사용(수평적)</p>
+<p>확장은 기존 타입에 새로운 기능을 추가하거나 확장하는 것을 의미한다.
+상속과 달리 수직적인 확장이 아닌 수평적인 확장이라고 할 수 있으며</p>
+<p>확장은 클래스, 구조체, 열거형, 프로토콜에 적용할 수 있으며,
+<code>Int</code>, <code>String</code>, <code>Date</code> 등 이미 구현된 타입에 추가 기능을 편리하게 구현할 수 있다.
+아래는 기존 <code>Dog</code> 클래스에 <code>growl</code>이라는 기능을 추가하는 확장 예시다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> age = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> breed = <span style="color:#e6db74">&#34;진돗개&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">bark</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;멍멍&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Dog</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">growl</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;으르렁&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> dog = Dog() 
+</span></span><span style="display:flex;"><span>dog.growl()
+</span></span></code></pre></div><p>저장 속성은 반드시 클래스 선언부에 있어야 하며,
+<code>deinit</code> 등 일부 기능은 확장에 추가할 수 없다.</p>
+<p>반면 계산 속성은 확장에서도 정의 가능!</p>
+<p>또한, 확장을 활용하여 코드를 기능별로 더 깔끔하게 나눌 수도 있는데
+아래는 <code>Developer</code> 클래스의 <code>study</code>와 <code>play</code> 기능을 기능별로 확장하여 코드를 조직화한 예시다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Developer</span>: Person {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> language = <span style="color:#e6db74">&#34;Swift&#34;</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">work</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;개발한다&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">study</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>language<span style="color:#e6db74">)</span><span style="color:#e6db74">를 공부한다&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Developer</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">play</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;게임한다&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이런식으로 기능별로 extension을 활용해서 코드를 가독성있게 나눌수도 있다</p>
+<p>또한, 기존 타입을 extension으로 확장하여 유용한 기능을 추가할 수도 있는데
+아래는 정수, 문자열, 날짜 타입에 대한 확장을 통해 각각의 기능을 추가한 예시다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Int</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> square: Int {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">self</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">self</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.</span>square <span style="color:#75715e">// 결과 : 9</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">String</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> starCovered: String {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;***&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">self</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;***&#34;</span> 
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;hello&#34;</span>.starCovered <span style="color:#75715e">// 결과 : &#34;***hello***&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Date</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> formatted: String {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> formatter = DateFormatter()
+</span></span><span style="display:flex;"><span>    formatter.dateFormat = <span style="color:#e6db74">&#34;yyyy-MM-dd HH:mm:ss&#34;</span>
+</span></span><span style="display:flex;"><span>    formatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)<span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> formatter.string(from: <span style="color:#66d9ef">self</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>Date().formatted <span style="color:#75715e">// 결과 : &#34;2023-08-18 19:21:20&#34;</span>
+</span></span></code></pre></div><p>이렇게 date를 String으로 변환한다던지<br>
+이런 자주쓰이는것도 확장을 활용하면 유용하게 사용가능하다</p>
+<p>또 주의사항으로는</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">String</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">makeStarString</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">self</span> = <span style="color:#e6db74">&#34;***&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">self</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;***&#34;</span> <span style="color:#75715e">// immutable에러가 뜸</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">String</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">mutating</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">makeStarString</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">self</span> = <span style="color:#e6db74">&#34;***&#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">self</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;***&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> str = <span style="color:#e6db74">&#34;hello&#34;</span>
+</span></span><span style="display:flex;"><span>str.makeStarString() <span style="color:#75715e">// ***hello***</span>
+</span></span><span style="display:flex;"><span>str <span style="color:#75715e">// ***hello***</span>
+</span></span></code></pre></div><p>구조체(struct)내부의 저장속성을 변경할때에는 반드시 <code>mutating</code> 키워드 붙여아 한다</p>
+<p>subscript</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">String</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">subscript</span>(idx: Int) -&gt; String? {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">guard</span> (<span style="color:#ae81ff">0.</span>.&lt;count).contains(idx) <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> target = index(startIndex, offsetBy: idx)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> String(<span style="color:#66d9ef">self</span>[target])
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> helloWorld = <span style="color:#e6db74">&#34;Hello world&#34;</span>
+</span></span><span style="display:flex;"><span>helloWorld[<span style="color:#ae81ff">0</span>] <span style="color:#75715e">// &#34;H&#34;</span>
+</span></span><span style="display:flex;"><span>helloWorld[<span style="color:#ae81ff">5</span>] <span style="color:#75715e">// &#34;&#34;</span>
+</span></span><span style="display:flex;"><span>helloWorld[<span style="color:#ae81ff">100</span>] <span style="color:#75715e">// nil</span>
+</span></span></code></pre></div><p>이 부분은 <code>subscript</code>를 사용하여 문자열 내의 특정 인덱스에 접근하는 방법을 확장을 통해 추가하는 예시이다</p>
+<p>※ subscript :  array[1] 이런 것 같이 인덱스로 접근할 수 있는 것들<br>
+String은 subscript 지원 안하지만 이렇게 만들어서 사용 가능</p>
+<p>중첩타입</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Dog</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">Spacies</span>{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> maltese
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> shihTzu
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> pomeranian
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dog.Species.maltese
+</span></span><span style="display:flex;"><span>Dog.Species.shihTzu
+</span></span></code></pre></div><p>위의 코드에서 보여주는 것처럼, 확장을 통해 클래스 내부에 중첩 타입을 추가하는 방법도 있고</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ViewControllerExample</span>: UIViewController {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">ViewControllerExample</span>: UITableViewDelegate {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">ViewControllerExample</span>: UITableViewDataSource {
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이런식으로 코드 작성에서 클래스와 확장을 사용하여 코드를 더 구조적이고 가독성 있게 나누어서 사용할 수 있다</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
