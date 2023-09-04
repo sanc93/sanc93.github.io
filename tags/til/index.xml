@@ -7,19 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 24</title>
-      <link>https://sanc93.github.io/post/record/2023-08-22-til/</link>
-      <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
+      <link>https://sanc93.github.io/post/record/2023-09-04-til/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/record/2023-08-22-til/</guid>
-      <description>오늘 한 일 / 배운점 새로운 팀 배정 팀 노션 작성 iOS 앱개발 숙련 강의 수강 팀 회고 과제 iOS 앱개발 숙련 강의 수강 느낀점 오늘 강의에서 Life Cycle(생명주기)을 배웠다
-iOS 앱에서의 라이프사이클이란 만들어진 앱이 시작할떄부터 종료될때까지의 모든 이벤트를 의미하며 이 라이프사이클을 잘 이해해야만 앱의 동작과 상태변화에 따라 앱을 관리하고 적절한 대응을 할수가 있다고 한다
-Not Running :
-앱이 아직 실행되지 않은 상태. 앱은 동작하지 않는다
-Inactive (Foreground) :
-앱이 포그라운드, 실행 중에는 있지만 아직 이벤트는 받을 수 없는 상태</description>
+      <guid>https://sanc93.github.io/post/record/2023-09-04-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 숙련 프로젝트 발제 9:50 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 역할 배분 팀 repository 및 브랜치 생성 과제 iOS 앱개발 숙련 프로젝트 개발 느낀점 오랜만에 쓰는 TIL ㅎㅎ..(반성)
+오늘부터 또 새로운 팀 프로젝트다 이번 주제는 YouTube API를 사용한 유튜브 영상 앱 만들기인데
+우리 팀은
+로그인/회원가입 화면 - KA님 상세페이지 - CH님 (탭1) 메인 페이지(영상) - KY님 (탭2) 검색 페이지 - KA님 (탭3) 좋아요 누른 동영상 페이지 - JB님 (탭4) 마이페이지 - 나 이렇게 구성하여 각자 역할 분담해서 작업하기로 하였고</description>
     </item>
     
     <item>
