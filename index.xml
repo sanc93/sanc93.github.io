@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 25</title>
+      <link>https://sanc93.github.io/post/record/2023-09-05-til/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-05-til/</guid>
+      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 어제 계획했던 대로 전체적인 틀 잡고 컬렉션 뷰 써봤다
+처음 해보는데 뭔가 커스텀 셀 사용하는 것도 그렇고 datasource, delegate를 사용하는 것이..
+뭐 테이블 뷰랑 별로 다를게 없네~~(아닌가)
+처음에는 셀을 바둑판처럼 뿌리려 했는데 옆으로 셀을 스크롤 하는 식으로 하는 게 더 뭔가 깔끔한 것 같아서 저렇게 해봤다</description>
+    </item>
+    
     <item>
       <title>TIL 24</title>
       <link>https://sanc93.github.io/post/record/2023-09-04-til/</link>
@@ -18,18 +30,6 @@
 오늘부터 또 새로운 팀 프로젝트다 이번 주제는 YouTube API를 사용한 유튜브 영상 앱 만들기인데
 우리 팀은
 로그인/회원가입 화면 - KA님 상세페이지 - CH님 (탭1) 메인 페이지(영상) - KY님 (탭2) 검색 페이지 - KA님 (탭3) 좋아요 누른 동영상 페이지 - JB님 (탭4) 마이페이지 - 나 이렇게 구성하여 각자 역할 분담해서 작업하기로 하였고</description>
-    </item>
-    
-    <item>
-      <title>TIL 24</title>
-      <link>https://sanc93.github.io/post/record/2023-09-05-til/</link>
-      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/record/2023-09-05-til/</guid>
-      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 어제 계획했던 대로 전체적인 틀 잡고 컬렉션 뷰 써봤다
-처음 해보는데 뭔가 커스텀 셀 사용하는 것도 그렇고 datasource, delegate를 사용하는 것이..
-뭐 테이블 뷰랑 별로 다를게 없네~~(아닌가)
-처음에는 셀을 바둑판처럼 뿌리려 했는데 옆으로 셀을 스크롤 하는 식으로 하는 게 더 뭔가 깔끔한 것 같아서 저렇게 해봤다</description>
     </item>
     
     <item>
