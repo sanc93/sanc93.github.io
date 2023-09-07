@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 27</title>
+      <link>https://sanc93.github.io/post/record/2023-09-07-til/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-07-til/</guid>
+      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 UIImagePickerController로
+이미지 선택해서 프로필 사진에 이미지 넣는 거랑
+UserDefaults 사용해서 유저 프로필을 불러오고 변경하는 것 적용했다.
+UserDefaults 관련해서 어떻게 짜야 할지 정리하는 데 오래 걸렸는데
+UserDefaults에 담기는 시점
+→ 데이터 변경 시점(프로필 편집 완료 누를 때, 동영상에 좋아요 누를 때 등)마다
+UserDefaults에 담을지 아니면 특정한 이벤트(로그아웃 등)에서 한꺼번에 UserDefaults에 담을지</description>
+    </item>
+    
     <item>
       <title>TIL 26</title>
       <link>https://sanc93.github.io/post/record/2023-09-06-til/</link>

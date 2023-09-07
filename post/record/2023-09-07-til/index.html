@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 27 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 14:00 팀 회의 &amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 UIImagePickerController로
+이미지 선택해서 프로필 사진에 이미지 넣는 거랑
+UserDefaults 사용해서 유저 프로필을 불러오고 변경하는 것 적용했다.
+UserDefaults 관련해서 어떻게 짜야 할지 정리하는 데 오래 걸렸는데
+UserDefaults에 담기는 시점
+→ 데이터 변경 시점(프로필 편집 완료 누를 때, 동영상에 좋아요 누를 때 등)마다
+UserDefaults에 담을지 아니면 특정한 이벤트(로그아웃 등)에서 한꺼번에 UserDefaults에 담을지" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 27</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 7, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>14:00 팀 회의 &amp; 코드 리뷰</li>
+<li>팀 과제 코드 작성</li>
+<li>20:00 팀 회의 &amp; 코드 리뷰</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>팀 과제 코드 작성</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p><img src="/images/2023-09-07-til/1.gif" alt="1"></p>
+<p>오늘은 UIImagePickerController로<br>
+이미지 선택해서 프로필 사진에 이미지 넣는 거랑<br>
+UserDefaults 사용해서 유저 프로필을 불러오고 변경하는 것 적용했다.</p>
+<p>UserDefaults 관련해서 어떻게 짜야 할지 정리하는 데 오래 걸렸는데</p>
+<p><img src="/images/2023-09-07-til/1.png" alt="1"></p>
+<ol>
+<li>
+<p>UserDefaults에 담기는 시점<br>
+→ 데이터 변경 시점(프로필 편집 완료 누를 때, 동영상에 좋아요 누를 때 등)마다<br>
+UserDefaults에 담을지 아니면 특정한 이벤트(로그아웃 등)에서 한꺼번에 UserDefaults에 담을지</p>
+</li>
+<li>
+<p>유저의 좋아요가 저장될 곳이 없음<br>
+→ 동영상에 좋아요 눌러서 따로 좋아요 누른 동영상을 보여주는 화면이 있는데<br>
+로그아웃해도 유지가 되려면 지금 있는 User 구조체에 새로운 프로퍼티를 추가해야 할지</p>
+</li>
+<li>
+<p>UserDefault에 어떻게 담을지<br>
+→ ❶ 회원가입 후 유저의 계정 정보가 담기는 <code>userData: [User]</code> 배열<br>
+❷ 현재 로그인 상태인 계정 정보가 담기는 <code>loginUser: User</code> 배열<br>
+이렇게 두 가지가 있는데 UserDefaults로부터 userData를 끌고 와서<br>
+현재 loginUser와 일치하는(ID 값으로 매칭?) 유저의 값을 업데이트하고<br>
+변경된 userData를 UserDefault에 다시 담을지</p>
+</li>
+</ol>
+<p>내 화면에서만 쓰이는 것이 아니라 의논해야 하기도 했고<br>
+내가 생각하지 못한 부분도 있을 것 같아서 슬랙에서 다른 팀원분들께 물어봤는데</p>
+<p>먼저 UserDefaults에 담기는 시점은 변경 값이 있을 때마다 그때그때 담아주기로 하였고</p>
+<p>좋아요가 저장될 곳이 없는 문제는</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Video</span>: Equatable, Codable {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">func</span> == (lhs: Video, rhs: Video) -&gt; Bool {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> lhs.title == rhs.title <span style="color:#f92672">&amp;&amp;</span> lhs.channelTitle == rhs.channelTitle
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> title: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> thumbnailURL: URL
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> viewCount: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> channelTitle: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> tags: [String]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> publishedDate: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> videoId: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> description: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> isLiked: Bool
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">User</span>: Codable {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> Id: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> password: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> profileImage: Data?
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> userName: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> userEmail: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> likedVideos: [Video]? <span style="color:#75715e">// 새로 추가</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>위와 같이 User에 기존에 있던 Video 구조체 타입의 likedVideos라는 프로퍼티를 추가해서 해결하기로 했다</p>
+<p>그리고 UserDefaults에 담는 방법은 나는 UserData만 UserDefaults에 들어가는 줄 알았는데<br>
+앱을 다시 실행시켜도 로그인 상태가 남으려면 loginUser도 들어가야 한다고 하여<br>
+데이터 변경 시점마다 두 개 다 UserDefaults로 저장하는 식으로 했다</p>
+<p><img src="/images/2023-09-07-til/2.png" alt="2"></p>
+<p><img src="/images/2023-09-07-til/3.png" alt="3"></p>
+<p>아직은 로그인 화면이 구현되지 않아서 임시로 더미 데이터를 만들어서 내 코드에 적용해 나갔는데<br>
+역시나 하면서 계속 예기치 못한 부분에서 이상한 결과물이 나와서<br>
+로그 찍어가며 찾느라 한 시간은 날린 것 같다 ㅋㅋ..</p>
+<p>그래도 일단 하루 남기고 아슬하게 내 담당 화면 기능 구현은 무사히 끝난 것 같아서 한시름 놓인다😮‍💨</p>
+<p>이제 내일은 저 대충 짜놓은 UI 좀 다듬고<br>
+아슬아슬하게 붙어있는 오토 레이아웃&hellip; 잡아놓고</p>
+<p>저녁에 다 같이 모여서 앱 전체적으로 UI 한번 더 다듬고<br>
+다 연결했을 때 문제만 없으면 끝이다! 내일도 파이팅!</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
