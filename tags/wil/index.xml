@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 19 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/wil/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/wil/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WIL (9/5 - 9/8)</title>
+      <link>https://sanc93.github.io/post/record/2023-09-09-wil/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-09-wil/</guid>
+      <description>2023.9.5(월) - 9. 8(금) 😎 이번주에 한 일 iOS 앱개발 숙련 팀 프로젝트 과제 팀 내 코드 리뷰 😃 도움이 되었거나 즐거웠던 점 목요일에 맡은 화면 기능 구현은 일단 끝나고 금요일에는 전체적으로 화면을 다듬고 싶었는데
+며칠 전부터 이상했던 오토레이아웃 관련해서 이참에 뭐가 잘못되었는지 묻고 싶어서 튜터님께 갔다
+화면공유로 내 화면 보면서 해결해 주셨는데 여태 남이 작업하는 건 직접 본 적이 거의 없어서
+제로 실무자 관점에서 문제가 생겼을 때 어디를 가장 먼저 확인하고 어떤 식으로 잡아가는지 알 수 있어서 좋았다</description>
+    </item>
+    
     <item>
       <title>WIL (8/14 - 8/18)</title>
       <link>https://sanc93.github.io/post/record/2023-08-19-wil/</link>
