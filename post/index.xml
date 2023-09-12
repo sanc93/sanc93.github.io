@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 29</title>
+      <link>https://sanc93.github.io/post/record/2023-09-12-til/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-12-til/</guid>
+      <description>오늘 한 일 / 배운점 9/12 9:00 앱개발 심화 주차 발제 팀 노션 작성 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/12 17:00 협력사 특강 과제 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 느낀점 드디어 심화 주차에 들어왔다
+오늘도 역시 발제 끝나고 새로 팀 배치받았는데
+지정 좌표계부터 호주, 고양이 얘기까지.. 여태 내가 갔던 팀들은 다 조용했어서 이렇게 말 많이 해본적 처음이라 웃겼다 ㅋㅋㅋ
+그리고 JE님 덕분에 갤럭시 브레인 배지도 받았는데 간지 촬촬</description>
+    </item>
+    
     <item>
       <title>WIL (9/5 - 9/8)</title>
       <link>https://sanc93.github.io/post/record/2023-09-09-wil/</link>
@@ -640,15 +652,6 @@ Android
       
       <guid>https://sanc93.github.io/post/1/</guid>
       <description>야호!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/record/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/record/untitled/</guid>
-      <description></description>
     </item>
     
   </channel>
