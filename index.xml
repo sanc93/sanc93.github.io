@@ -2,266 +2,128 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개발노트</title>
-    <link>https://sanc93.github.io/index.html</link>
+    <link>https://sanc93.github.io/</link>
     <description>Recent content on 개발노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tags</title>
-      <link>https://sanc93.github.io/tags/</link>
-      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      <title>TIL 30</title>
+      <link>https://sanc93.github.io/post/record/2023-09-13-til/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-13-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
+MVVM 패턴이란 Model - View - ViewModel의 약자로
+말 그대로
+Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱의 시각적 요소 담당 ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달 이다</description>
     </item>
     
     <item>
-      <title>TIL</title>
-      <link>https://sanc93.github.io/tags/til/</link>
+      <title>TIL 29</title>
+      <link>https://sanc93.github.io/post/record/2023-09-12-til/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/til/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-12-til/</guid>
+      <description>오늘 한 일 / 배운점 9/12 9:00 앱개발 심화 주차 발제 팀 노션 작성 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/12 17:00 협력사 특강 과제 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 느낀점 드디어 심화 주차에 들어왔다
+오늘도 역시 발제 끝나고 새로 팀 배치받았는데
+지정 좌표계부터 호주, 고양이 얘기까지..
+여태 내가 있었던 팀들은 다 조용했어서 이렇게 말 많이 해본적 처음이라 웃겼다 ㅋㅋㅋ
+그리고 JE님 덕분에 갤럭시 브레인 배지도 받았는데 간지 촬촬</description>
     </item>
     
     <item>
-      <title>WIL</title>
-      <link>https://sanc93.github.io/tags/wil/</link>
+      <title>WIL (9/5 - 9/8)</title>
+      <link>https://sanc93.github.io/post/record/2023-09-09-wil/</link>
       <pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/wil/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-09-wil/</guid>
+      <description>2023.9.5(월) - 9. 8(금) 😎 이번주에 한 일 iOS 앱개발 숙련 팀 프로젝트 과제 팀 내 코드 리뷰 😃 도움이 되었거나 즐거웠던 점 목요일에 맡은 화면 기능 구현은 일단 끝나고 금요일에는 전체적으로 화면을 다듬고 싶었는데
+며칠 전부터 이상했던 오토레이아웃 관련해서 이참에 뭐가 잘못되었는지 묻고 싶어서 튜터님께 갔다
+화면공유로 내 화면 보면서 해결해 주셨는데 여태 남이 작업하는 건 직접 본 적이 거의 없어서
+실제로 실무자 관점에서 문제가 생겼을 때 어디를 가장 먼저 확인하고 어떤 식으로 잡아가는지</description>
     </item>
     
     <item>
-      <title>etc</title>
-      <link>https://sanc93.github.io/tags/etc/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <title>TIL 28</title>
+      <link>https://sanc93.github.io/post/record/2023-09-08-til/</link>
+      <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/etc/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-08-til/</guid>
+      <description>오늘 한 일 / 배운점 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 마무리 및 제출 느낀점 이번 프로젝트하면서 계속 발생하는 문제가 있었는데
+이상하게 컬렉션 뷰만 살짝 위치 건드리면 컬렉션 뷰가 안 보이는 문제가 있었다
+분명 빨간색으로 나는 에러도 하나도 없었고 그래서 오늘 WS튜터님 찾아가서 같이 원인을 찾는데
+An internal error occurred. Editing functionality may be limited
+수요일 TIL에도 적었지만 처음에는 이 에러가 제일 의심스러웠다</description>
     </item>
     
     <item>
-      <title>ios</title>
-      <link>https://sanc93.github.io/tags/ios/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <title>TIL 27</title>
+      <link>https://sanc93.github.io/post/record/2023-09-07-til/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/ios/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-07-til/</guid>
+      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 UIImagePickerController로
+이미지 선택해서 프로필 사진에 이미지 넣는 거랑
+UserDefaults 사용해서 유저 프로필을 불러오고 변경하는 것 적용했다.
+UserDefaults 관련해서 어떻게 짜야 할지 정리하는 데 오래 걸렸는데
+UserDefaults에 담기는 시점
+→ 데이터 변경 시점(프로필 편집 완료 누를 때, 동영상에 좋아요 누를 때 등)마다
+UserDefaults에 담을지 아니면 특정한 이벤트(로그아웃 등)에서 한꺼번에 UserDefaults에 담을지</description>
     </item>
     
     <item>
-      <title>for문</title>
-      <link>https://sanc93.github.io/tags/for%EB%AC%B8/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <title>TIL 26</title>
+      <link>https://sanc93.github.io/post/record/2023-09-06-til/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/for%EB%AC%B8/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-06-til/</guid>
+      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘의 작업 :
+UI를 조금 다듬고, 로그아웃 버튼 터치 시 KA님이 만드신 로그인 화면으로 넘어가게 연결했다.
+그리고 프로필 편집은 아직 제대로 구현하지 못했고
+어제 컬렉션 뷰에 더미 데이터 표시하던 거를 커스텀 셀에 좋아요 누른 동영상을 받아와서 뿌리도록 했다.
+오늘도 역시나 여러 삽질을 했는데</description>
     </item>
     
     <item>
-      <title>swift</title>
-      <link>https://sanc93.github.io/tags/swift/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <title>TIL 25</title>
+      <link>https://sanc93.github.io/post/record/2023-09-05-til/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/swift/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-05-til/</guid>
+      <description>오늘 한 일 / 배운점 14:00 팀 회의 &amp;amp; 코드 리뷰 팀 과제 코드 작성 20:00 팀 회의 &amp;amp; 코드 리뷰 과제 팀 과제 코드 작성 느낀점 오늘은 어제 계획했던 대로 전체적인 틀 잡고 컬렉션 뷰 써봤다
+처음 해보는데 뭔가 커스텀 셀 사용하는 것도 그렇고 datasource, delegate를 사용하는 것이..
+테이블 뷰랑 정말 비슷하다
+처음에는 일반적인 컬렉션 뷰처럼 셀을 바둑판처럼 뿌리려 했는데
+한 줄 만해서 옆으로 셀을 카드 넘기 듯 하는 게 요즘 앱에서 자주 보이기도 하고</description>
     </item>
     
     <item>
-      <title>while문</title>
-      <link>https://sanc93.github.io/tags/while%EB%AC%B8/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <title>TIL 24</title>
+      <link>https://sanc93.github.io/post/record/2023-09-04-til/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/while%EB%AC%B8/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-09-04-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 숙련 프로젝트 발제 9:50 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 역할 배분 팀 repository 및 브랜치 생성 과제 팀 과제 코드 작성 느낀점 오랜만에 쓰는 TIL ㅎㅎ..(반성)
+오늘부터 또 새로운 팀 프로젝트다 이번 주제는 YouTube API를 사용한 유튜브 영상 앱 만들기인데
+우리 팀은
+로그인/회원가입 화면 - KA님 상세페이지 - CH님 (탭1) 메인 페이지(영상) - KY님 (탭2) 검색 페이지 - KA님 (탭3) 좋아요 누른 동영상 페이지 - JB님 (탭4) 마이페이지 - 나 이렇게 구성하여 각자 역할 분담해서 작업하기로 하였고</description>
     </item>
     
     <item>
-      <title>반복문</title>
-      <link>https://sanc93.github.io/tags/%EB%B0%98%EB%B3%B5%EB%AC%B8/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <title>WIL (8/14 - 8/18)</title>
+      <link>https://sanc93.github.io/post/record/2023-08-19-wil/</link>
+      <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/tags/%EB%B0%98%EB%B3%B5%EB%AC%B8/</guid>
-      <description></description>
+      <guid>https://sanc93.github.io/post/record/2023-08-19-wil/</guid>
+      <description>2023.8.14(월) - 8. 18(금) 😎 이번주에 한 일 iOS 앱개발 입문 팀 프로젝트 과제 팀 내 코드 리뷰 8/16 19:00 보충학습 (HG튜터님) : 프로토콜 8/18 19:00 보충학습 (HG튜터님) : 확장 😃 도움이 되었거나 즐거웠던 점 내배캠 정식 시작 전 flutter로 팀 프로젝트 한 것에 이어 swift를 이용한 첫 번째 팀 프로젝트였는데 2주동안 혼자 하다가 간만에 더 의욕도 생기고 즐거웠다 이번에는 팀 내 IS님이 처음부터 체계적으로 팀 내 규칙 같은 것을 짰는데 틀에 맞춰 돌아가는 걸 좋아하는 나로서는 팀 노션 구성하는 방식이라든지.</description>
     </item>
     
     <item>
-      <title>딕셔너리</title>
-      <link>https://sanc93.github.io/tags/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>배열</title>
-      <link>https://sanc93.github.io/tags/%EB%B0%B0%EC%97%B4/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%EB%B0%B0%EC%97%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>세트</title>
-      <link>https://sanc93.github.io/tags/%EC%84%B8%ED%8A%B8/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%EC%84%B8%ED%8A%B8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>컬렉션타입</title>
-      <link>https://sanc93.github.io/tags/%EC%BB%AC%EB%A0%89%EC%85%98%ED%83%80%EC%9E%85/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%EC%BB%AC%EB%A0%89%EC%85%98%ED%83%80%EC%9E%85/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>튜플</title>
-      <link>https://sanc93.github.io/tags/%ED%8A%9C%ED%94%8C/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%ED%8A%9C%ED%94%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>operators</title>
-      <link>https://sanc93.github.io/tags/operators/</link>
-      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/operators/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>연산자</title>
-      <link>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</link>
-      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>property</title>
-      <link>https://sanc93.github.io/tags/property/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/property/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>프로퍼티</title>
-      <link>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>post</title>
-      <link>https://sanc93.github.io/tags/post/</link>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dart</title>
-      <link>https://sanc93.github.io/tags/dart/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/dart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flutter</title>
-      <link>https://sanc93.github.io/tags/flutter/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/tags/flutter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/etc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/flutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/flutter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/ios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/record/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/record/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sanc93.github.io/post/swift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Series</title>
-      <link>https://sanc93.github.io/series/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/series/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
- 00:00:00 +0000</pubDate>
+      <title>TIL 23</title>
+      <link>https://sanc93.github.io/post/record/2023-08-18-til/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-08-18-til/</guid>
       <description>오늘 한 일 / 배운점 iOS 앱개발 입문 팀 프로젝트 과제 8/16 9:00 팀 회의 / 코드리뷰 8/18 19:00 보충학습 (HG튜터님) : 확장 과제 iOS 앱개발 입문 팀 프로젝트 과제 느낀점 오늘은 보충수업때 확장(Extension)에 대한 개념을 배웠다

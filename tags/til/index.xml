@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 30</title>
+      <link>https://sanc93.github.io/post/record/2023-09-13-til/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-13-til/</guid>
+      <description>오늘 한 일 / 배운점 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
+MVVM 패턴이란 Model - View - ViewModel의 약자로
+말 그대로
+Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱의 시각적 요소 담당 ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달 이다</description>
+    </item>
+    
     <item>
       <title>TIL 29</title>
       <link>https://sanc93.github.io/post/record/2023-09-12-til/</link>

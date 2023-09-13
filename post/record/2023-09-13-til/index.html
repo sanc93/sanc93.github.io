@@ -4,12 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title> - 개발노트</title>
+    <title>TIL 30 - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="오늘 한 일 / 배운점 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
+MVVM 패턴이란 Model - View - ViewModel의 약자로
+말 그대로
+Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱의 시각적 요소 담당 ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달 이다" />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -110,12 +113,18 @@
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
             
             
             
@@ -141,11 +150,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold"></div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 30</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 13, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(u){text-decoration:underline;}
@@ -183,18 +194,57 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/1/">
-                                <div>첫 글</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                        </div>
-                    </li>
-    </ul>
-</div>
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강</li>
+<li>9/13 19:00 실시간 세션 : MVVM (HH튜터님)</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>오늘은 MVVM에 대해서..</p>
+<p>MVVM 패턴이란 Model - View - ViewModel의 약자로<br>
+말 그대로</p>
+<ol>
+<li>Model : 데이터와 비즈니스 로직(데이터 조작을 수행)</li>
+<li>View : 앱의 시각적 요소 담당</li>
+<li>ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달</li>
+</ol>
+<p>이다</p>
+<p>내가 정확하게 이해 했는지는 모르겠지만 아래와 같이 정리해 보았다</p>
+<p><img src="/images/2023-09-13-til/1.png" alt="1">
+이렇게 코드를 3개로 분리하여<br>
+View와 Model 사이에 ViewModel이 가로막아 View로부터 비즈니스로직을 완전히 분리해버린다<br>
+그렇게 함으로써 View는 UI 관련 작업만 간결하게 적을 수 있고,<br>
+ViewModel을 통해서 중간에서 데이터 관련된 처리를<br>
+Model은 데이터와 비즈니스로직을 관리한다</p>
+<p>나는 처음에 ViewModel의 역할이 ViewController의 역할과 겹치는 게 아닌가 했는데<br>
+UIKit은 ViewController에서, 그 외에 Model에 대한 조작이나 나머지 것들은 ViewModel이 수행한다고 보면 된다고 한다.</p>
+<p>MVC 패턴을 생각하면 Controller에서 View 떼내고 Model 때 버리면<br>
+Controller에는 그 외 모든 잡다한 게 다 남아버리는데 (=Controller가 비대해짐)
+여기서 MVVM 패턴으로 ViewModel을 만들어서 Model과 관련된 로직을 또 분리해서 Controller를 보다 가볍게 덜어낼 수 있는 것이다!
+이렇게 ViewModel이 중간에 끼여 들어감으로써 View와 Model을 느슨하게 연결할 수 있고<br>
+MVC 패턴에 비해 Controller가 덜 비대하기 때문에 코드를 더 쉽게 유지 보수할 수 있게 해준다.<br>
+프로젝트가 작으면 MVVM의 장점을 체감하지 못할 수도 있는데 프로젝트가 커질수록 Controller는 너무 커질수밖에 없고<br>
+그러면 코드가 꼬여있게 되고 복잡해지니까 이것을 비즈니스로직 단위로 덜어내고 정리를 할 수 있는 것이다.</p>
+<p>한 가지 오늘 튜터님이 말씀하신 건 그렇다고 무조건 MVVM이 옳고 좋다는 건 아니라는 것.<br>
+MVC가 가지고 있는 문제는 뷰랑 모델 걷어내면 컨트롤러만 비대해져 있다는 건데<br>
+그런 문제가 없다면 어쩌면 MVVM은 굳이 필요하지 않을 수도 있다<br>
+결국 편하고 더 쉽게 개발을 하기 위해서 위 아키텍처 패턴대로 하는 건데
+공고에서 많은 회사들이 MVVM 경험을 요구하니까 MVVM 패턴대로 개발해야 한다!
+이러기보다는 적합한 패턴으로 구현하는 게 중요하다고 하셨다</p>
+<p>생각해 보면 오늘 실시간 세션 앞쪽에서 MVC 패턴도 잠깐 나왔는데<br>
+전에 MVC 패턴대로 짜서 제출한 과제도 생각해 보면 ViewController가<br>
+뷰와 컨트롤러 두 가지 기능을 했던 것 같다 -_-;<br>
+다음에 코드 짤 때는 한번 칼같이 지켜서 짜봐야겠다고 생각했고</p>
+<p>여기서 데이터 바인딩을 할 때<br>
+Combine 또는 RxSwift가 쓰인다고 하는데<br>
+데이터 바인딩이며 아직 하나도 모르겠다 ㅋㅋ..<br>
+이번 과제 필수 구현 사항으로 MVVM으로 구현하라는 게 있어서<br>
+그때 직접 해보면서 더 익혀봐야겠다</p>
+</div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
             data-repo="sanc93/sanc93.github.io"
