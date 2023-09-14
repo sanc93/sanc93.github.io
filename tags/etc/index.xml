@@ -7,13 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create...</title>
+      <link>https://sanc93.github.io/post/etc/2023-09-14-error-04/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-09-14-error-04/</guid>
+      <description>1. 문제 새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다
+Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature 2. 원인 이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다
+Xcode 15 beta build issues (https://developer.apple.com/forums/thread/731041) 생각해 보니 어제 애플 이벤트 끝나고 오전에 이번 주는 팀 프로젝트도 없기도 하고
+또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어
+macOS 소노마 베타를 올리고 Xcode도 기존 거는 실행이 안 되니 15버전을 받았는데</description>
+    </item>
+    
     <item>
       <title>에러 : “View Controller“ is unreachable because it has no entry points...</title>
-      <link>https://sanc93.github.io/post/etc/2023-07-10-error-03/</link>
+      <link>https://sanc93.github.io/post/etc/2023-08-01-error-03/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-03/</guid>
+      <guid>https://sanc93.github.io/post/etc/2023-08-01-error-03/</guid>
       <description>1. 문제 강의 보면서 실습하다가 뷰 컨트롤러 하나만 남기고 지웠는데 갑자기 Xcode에 이러한 에러가 뜬다.
 “View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:]. 2. 원인 이 오류는 스토리보드에서 해당 &amp;ldquo;View Controller&amp;quot;에 대한 엔트리포인트(진입점)을 내가 지정해 주지 않아서 그렇다.
 3. 해결방법 View Controller를 클릭 &amp;gt; Attributes Inspector &amp;gt; Is Initial View Controller에 체크

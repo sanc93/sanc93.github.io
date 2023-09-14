@@ -3,16 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sanc93.github.io/</loc>
-    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/etc/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/</loc>
-    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/</loc>
-    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/til/</loc>
-    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/post/record/2023-09-14-til/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/post/etc/2023-09-14-error-04/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-09-13-til/</loc>
     <lastmod>2023-09-13T00:00:00+00:00</lastmod>
@@ -86,9 +95,6 @@
     <loc>https://sanc93.github.io/post/record/2023-08-02-til/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/tags/etc/</loc>
-    <lastmod>2023-08-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sanc93.github.io/tags/ios/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -98,7 +104,7 @@
     <loc>https://sanc93.github.io/post/ios/2023-08-01-uikit-02/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/post/etc/2023-07-10-error-03/</loc>
+    <loc>https://sanc93.github.io/post/etc/2023-08-01-error-03/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-07-31-til/</loc>
@@ -228,6 +234,8 @@
     <loc>https://sanc93.github.io/post/</loc>
   </url><url>
     <loc>https://sanc93.github.io/post/etc/</loc>
+  </url><url>
+    <loc>https://sanc93.github.io/post/etc/untitled/</loc>
   </url><url>
     <loc>https://sanc93.github.io/post/flutter/</loc>
   </url><url>

@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>TIL 30 - 개발노트</title>
+    <title>TIL 31 - 개발노트</title>
 
     
     
-    <meta name="description" content="오늘 한 일 / 배운점 9/13 9:30 팀 데일리 스크럼 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
-MVVM 패턴이란 Model - View - ViewModel의 약자로
-말 그대로
-Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱의 시각적 요소 담당 ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달 이다" />
+    <meta name="description" content="오늘 한 일 / 배운점 9/14 9:30 팀 데일리 스크럼 iOS 앱개발 심화 개인 과제(~9/22 14:00) 9/14 19:00 실시간 세션 : MVC 패턴의 기초와 구조 (HG튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오전에 팀 데일리 스크럼 시간에 공유 받은 지식들
+코드 작성할 때 순서는
+outlet 변수 선언 override function action 순으로 짜는 게 보편적이다 ctrl &#43; command &#43; shift &#43; a를 누르면
+이전 커밋 기록 변경사항을 확인 가능하다!!" />
     <meta name="author" content="Sanghun Kim" />
     
 
@@ -152,9 +152,9 @@ Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱�
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">TIL 30</div>
+        <div class="font:40 font:extrabold">TIL 31</div>
         <div class="mt:16 f:fade-60">
-            <time>Sep 13, 2023</time>
+            <time>Sep 14, 2023</time>
             </div>
     </header><div class="
     _:where(a):hover{text-decoration-color:fade}
@@ -196,55 +196,94 @@ Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱�
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
 "><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
 <ul>
-<li>9/13 9:30 팀 데일리 스크럼</li>
-<li>iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강</li>
-<li>9/13 19:00 실시간 세션 : MVVM (HH튜터님)</li>
+<li>9/14 9:30 팀 데일리 스크럼</li>
+<li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
+<li>9/14 19:00 실시간 세션 : MVC 패턴의 기초와 구조 (HG튜터님)</li>
 </ul>
 <h4 id="과제">과제</h4>
 <ul>
 <li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
 </ul>
 <h4 id="느낀점">느낀점</h4>
-<p>오늘은 MVVM에 대해서..</p>
-<p>MVVM 패턴이란 Model - View - ViewModel의 약자로<br>
-말 그대로</p>
+<p>오전에 팀 데일리 스크럼 시간에 공유 받은 지식들</p>
 <ol>
-<li>Model : 데이터와 비즈니스 로직(데이터 조작을 수행)</li>
-<li>View : 앱의 시각적 요소 담당</li>
-<li>ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달</li>
+<li>
+<p>코드 작성할 때 순서는</p>
+<ol>
+<li>outlet</li>
+<li>변수 선언</li>
+<li>override</li>
+<li>function</li>
+<li>action 순으로 짜는 게 보편적이다</li>
 </ol>
-<p>이다</p>
-<p>내가 정확하게 이해 했는지는 모르겠지만 아래와 같이 정리해 보았다</p>
-<p><img src="/images/2023-09-13-til/1.png" alt="1">
-이렇게 코드를 3개로 분리하여<br>
-View와 Model 사이에 ViewModel이 가로막아 View로부터 비즈니스로직을 완전히 분리해버린다<br>
-그렇게 함으로써 View는 UI 관련 작업만 간결하게 적을 수 있고,<br>
-ViewModel을 통해서 중간에서 데이터 관련된 처리를<br>
-Model은 데이터와 비즈니스로직을 관리한다</p>
-<p>나는 처음에 ViewModel의 역할이 ViewController의 역할과 겹치는 게 아닌가 했는데<br>
-UIKit은 ViewController에서, 그 외에 Model에 대한 조작이나 나머지 것들은 ViewModel이 수행한다고 보면 된다고 한다.</p>
-<p>MVC 패턴을 생각하면 Controller에서 View 떼내고 Model 때 버리면<br>
-Controller에는 그 외 모든 잡다한 게 다 남아버리는데 (=Controller가 비대해짐)
-여기서 MVVM 패턴으로 ViewModel을 만들어서 Model과 관련된 로직을 또 분리해서 Controller를 보다 가볍게 덜어낼 수 있는 것이다!
-이렇게 ViewModel이 중간에 끼여 들어감으로써 View와 Model을 느슨하게 연결할 수 있고<br>
-MVC 패턴에 비해 Controller가 덜 비대하기 때문에 코드를 더 쉽게 유지 보수할 수 있게 해준다.<br>
-프로젝트가 작으면 MVVM의 장점을 체감하지 못할 수도 있는데 프로젝트가 커질수록 Controller는 너무 커질수밖에 없고<br>
-그러면 코드가 꼬여있게 되고 복잡해지니까 이것을 비즈니스로직 단위로 덜어내고 정리를 할 수 있는 것이다.</p>
-<p>한 가지 오늘 튜터님이 말씀하신 건 그렇다고 무조건 MVVM이 옳고 좋다는 건 아니라는 것.<br>
-MVC가 가지고 있는 문제는 뷰랑 모델 걷어내면 컨트롤러만 비대해져 있다는 건데<br>
-그런 문제가 없다면 어쩌면 MVVM은 굳이 필요하지 않을 수도 있다<br>
-결국 편하고 더 쉽게 개발을 하기 위해서 위 아키텍처 패턴대로 하는 건데
-공고에서 많은 회사들이 MVVM 경험을 요구하니까 MVVM 패턴대로 개발해야 한다!
-이러기보다는 적합한 패턴으로 구현하는 게 중요하다고 하셨다</p>
-<p>생각해 보면 오늘 실시간 세션 앞쪽에서 MVC 패턴도 잠깐 나왔는데<br>
-전에 MVC 패턴대로 짜서 제출한 과제도 생각해 보면 ViewController가<br>
-뷰와 컨트롤러 두 가지 기능을 했던 것 같다 -_-;<br>
-다음에 코드 짤 때는 한번 칼같이 지켜서 짜봐야겠다고 생각했고</p>
-<p>여기서 데이터 바인딩을 할 때<br>
-Combine 또는 RxSwift가 쓰인다고 하는데<br>
-데이터 바인딩이며 아직 하나도 모르겠다 ㅋㅋ..<br>
-이번 과제 필수 구현 사항으로 MVVM으로 구현하라는 게 있어서<br>
-그때 직접 해보면서 더 익혀봐야겠다</p>
+</li>
+<li>
+<p><code>ctrl</code> + <code>command</code> + <code>shift</code> + <code>a</code>를 누르면</p>
+<p>이전 커밋 기록 변경사항을 확인 가능하다!!<br>
+<img src="/images/2023-09-14-til/1.png" alt="1"></p>
+</li>
+<li>
+<p><code>ctrl</code>+<code>shift</code>+<code>↑</code>또는<code>↓</code> 을 누르면</p>
+<p>여러 줄 선택 가능하다!!<br>
+<img src="/images/2023-09-14-til/2.gif" alt="2"></p>
+</li>
+<li>
+<p><code>command</code>+<code>shift</code>+ <code>o</code> 를 누르면</p>
+<p>프로젝트 내 파일 / 클래스 / 함수 검색이 가능하다!<br>
+<img src="/images/2023-09-14-til/3.png" alt="3"></p>
+</li>
+</ol>
+<hr>
+<p>그리고 저녁에 실시간 세션<br>
+오늘 주제는 MVC였지만 MVVM 관련해서도 질문받아주시고<br>
+다른 좋은 얘기도 많이 해주셨다<br>
+그중에서 기억이 남는 몇 가지 적자면</p>
+<h4 id="탑다운top-down과-바텀업bottom-up">탑다운(Top-down)과 바텀업(Bottom-up)</h4>
+<p>상위의 개념을 Controller라고 하면 Controller부터 만들어서<br>
+크게 크게 가고 싶은 사람이 있는데 이런 방식을 <strong>탑다운</strong> 이라고 하고<br>
+반대로 아래서부터 위로, 모델부터 만들어가는 건 <strong>바텀업</strong> 이라고 한다</p>
+<p>탑다운의 경우 먼저 뷰 컨트롤러부터 만들고 이제 써야 할 데이터를 생각을 할 것이다<br>
+그때 모델을 만들고 그걸 또 뷰 컨트롤러에 와서 넣어주고 이런 식으로 계속 왔다 갔다 하게 되는데</p>
+<p>반대의 바닥부터 쌓아가는 바텀업의 경우<br>
+모델부터 만든다고 하면 앱을 만들기 전에 정책이나 이런 걸 다 기술하고, 그다음에 디자인도 나와있을 테니<br>
+어떤 레이블이 표시돼야 하는지 어떤 텍스트가 표시돼야 하는지 만약에 투두 앱을 만든다고 하면<br>
+그 To-do라는 정보 안에 뭐가 있어야 하는지 앱을 다 구현해 보지 않아도 미리 정의할 수가 있다.<br>
+그래서 미리 어느 정도 그걸 정리해놓고 하는데 물론 완벽히 처음부터 완벽히 다 짤 수는 없으니<br>
+상세한 부분은 앱을 구현하면서 없으면 새로 만들고 식으로 모델을 업데이트 해나간다<br>
+이렇게 먼저 모델을 만들어놓고 나서 뷰 컨트롤러랑 뷰를 같이 만들면 뷰 컨트롤러를 만들 때<br>
+To-do가 이미 있으니까 데이터를 바로 갖다 쓸 수 있다<br>
+근데 만약 탑다운 방식으로 뷰 컨트롤러부터 만들었다면 뷰 컨트롤러를 만들면서 결국 모델을 정의해 줘야 한다</p>
+<p>그래서 튜터님은 만약 단계를 밟아 가고 싶다, 머리가 덜 아픈 쪽을 택하고 싶다 하면</p>
+<ol>
+<li>
+<p>Model부터 먼저 정의(사전에 미리 클래스명도 정해놓는 것도 좋다.)</p>
+</li>
+<li>
+<p>View와 ViewController를 같이 구현</p>
+</li>
+</ol>
+<p>구현하면서 만들어놨던 모델을 수정을 하고.. 이걸 계속 반복<br>
+이 순서대로 즉 바텀업 방식으로 구현하는 걸 추천한다고 하셨다</p>
+<h4 id="폴더링">폴더링</h4>
+<p>초반에 프로젝트 폴더랑 하거나 구조를 잡는데 어려움을 많이 느낄 텐데<br>
+어떻게 해야 할지도 모르겠고 순서에 맞춰서 하고 싶다고 한다면</p>
+<p>MVC 패턴의 경우 Model, View, Controller 3개 폴더를,<br>
+MVVM 패턴의 경우 Model, View, Controller, ViewModel 이렇게 4개 폴더를 만들어놓고 시작하면 된다고 한다<br>
+그리고 그때그때 생성되는 파일들을 맞게 분류해서 넣으면 됨</p>
+<p><img src="/images/2023-09-14-til/4.png" alt="4">
+MVVM 패턴의 경우 Model, View 그리고 Presentation이라는 폴더를 만들어<br>
+ViewController와 ViewModel 파일을 붙여서 놓고 하는 것도 방법이라고 알려주셨다</p>
+<h4 id="캡슐화">캡슐화</h4>
+<p>외부와 통신하는 그런 것들을 최소화해야 한다<br>
+꼭 필요한 것만 통신을 해야 하는데 외부에서 갖다 쓰는 게 아닌 이 안에서만 쓰는 거라고 한다면<br>
+다 <code>private</code> 을 붙여서 막아두는 것이 좋다고 한다</p>
+<h4 id="extension을-잘-활용해라">extension을 잘 활용해라</h4>
+<p>MVC 패턴이라면 어쩔 수 없이 컨트롤러가 길어질 텐데<br>
+최대한 가독성 좋게 하려면 extension을 적극적으로 사용하면 된다</p>
+<p>IBOutlet, 프로퍼티, deinit 이런 반드시 클래스 선언부에 들어가야 하는 애들을 제외하고는<br>
+아래 extension을 사용해서 아래에 정의해 주는 것이 좋다<br>
+예를 들어 viewDidLoad에 많이 적어놓으면 다른 사람이 딱 봤을 때 읽기가 굉장히 힘든데<br>
+함수로 묶어서 아래에 정의해두면 비교적 깔끔해져서 이해하기 쉽다</p>
 </div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"

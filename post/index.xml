@@ -7,14 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 31</title>
+      <link>https://sanc93.github.io/post/record/2023-09-14-til/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-09-14-til/</guid>
+      <description>오늘 한 일 / 배운점 9/14 9:30 팀 데일리 스크럼 iOS 앱개발 심화 개인 과제(~9/22 14:00) 9/14 19:00 실시간 세션 : MVC 패턴의 기초와 구조 (HG튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오전에 팀 데일리 스크럼 시간에 공유 받은 지식들
+코드 작성할 때 순서는
+outlet 변수 선언 override function action 순으로 짜는 게 보편적이다 ctrl + command + shift + a를 누르면
+이전 커밋 기록 변경사항을 확인 가능하다!!</description>
+    </item>
+    
+    <item>
+      <title>에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create...</title>
+      <link>https://sanc93.github.io/post/etc/2023-09-14-error-04/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/2023-09-14-error-04/</guid>
+      <description>1. 문제 새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다
+Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature 2. 원인 이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다
+Xcode 15 beta build issues (https://developer.apple.com/forums/thread/731041) 생각해 보니 어제 애플 이벤트 끝나고 오전에 이번 주는 팀 프로젝트도 없기도 하고
+또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어
+macOS 소노마 베타를 올리고 Xcode도 기존 거는 실행이 안 되니 15버전을 받았는데</description>
+    </item>
+    
     <item>
       <title>TIL 30</title>
       <link>https://sanc93.github.io/post/record/2023-09-13-til/</link>
       <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-09-13-til/</guid>
-      <description>오늘 한 일 / 배운점 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
+      <description>오늘 한 일 / 배운점 9/13 9:30 팀 데일리 스크럼 iOS 앱개발 심화 KDT 실무형 iOS 앱 개발자 양성과정 수강 9/13 19:00 실시간 세션 : MVVM (HH튜터님) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘은 MVVM에 대해서..
 MVVM 패턴이란 Model - View - ViewModel의 약자로
 말 그대로
 Model : 데이터와 비즈니스 로직(데이터 조작을 수행) View : 앱의 시각적 요소 담당 ViewModel : 모델과 뷰 사이의 중간다리 역할. 뷰와 상호 작용하면서 UI에 표시할 데이터를 처리하고 뷰로부터 입력을 받아 모델에 전달 이다</description>
@@ -335,10 +361,10 @@ UIButton 또는 UISegmentedControl 사용하여 할 일 완료/미완료 상태 
     
     <item>
       <title>에러 : “View Controller“ is unreachable because it has no entry points...</title>
-      <link>https://sanc93.github.io/post/etc/2023-07-10-error-03/</link>
+      <link>https://sanc93.github.io/post/etc/2023-08-01-error-03/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-03/</guid>
+      <guid>https://sanc93.github.io/post/etc/2023-08-01-error-03/</guid>
       <description>1. 문제 강의 보면서 실습하다가 뷰 컨트롤러 하나만 남기고 지웠는데 갑자기 Xcode에 이러한 에러가 뜬다.
 “View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:]. 2. 원인 이 오류는 스토리보드에서 해당 &amp;ldquo;View Controller&amp;quot;에 대한 엔트리포인트(진입점)을 내가 지정해 주지 않아서 그렇다.
 3. 해결방법 View Controller를 클릭 &amp;gt; Attributes Inspector &amp;gt; Is Initial View Controller에 체크
@@ -665,6 +691,15 @@ Android
       
       <guid>https://sanc93.github.io/post/1/</guid>
       <description>야호!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/etc/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/etc/untitled/</guid>
+      <description></description>
     </item>
     
   </channel>

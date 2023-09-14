@@ -4,12 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>for문 - 개발노트</title>
+    <title>에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create... - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="1. 문제 새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다
+Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature 2. 원인 이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다
+Xcode 15 beta build issues (https://developer.apple.com/forums/thread/731041) 생각해 보니 어제 애플 이벤트 끝나고 오전에 이번 주는 팀 프로젝트도 없기도 하고
+또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어
+macOS 소노마 베타를 올리고 Xcode도 기존 거는 실행이 안 되니 15버전을 받았는데" />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -101,12 +106,18 @@
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+                    transition:150ms;ease-in
+                    active" href="/post/etc/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">etc</a>
+                
             
             
             
@@ -141,11 +152,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold">for문</div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create...</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 14, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(u){text-decoration:underline;}
@@ -183,26 +196,30 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/1/">
-                                <div>첫 글</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/untitled/">
-                                <div></div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jan 01, 0001</time></div>
-                        </div>
-                    </li>
-    </ul>
-</div>
+"><blockquote>
+<h3 id="1-문제">1. 문제</h3>
+</blockquote>
+<p>새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데<br>
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다</p>
+<p><img src="/images/2023-09-14-error-04/1.png" alt="1"></p>
+<pre tabindex="0"><code>Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature
+</code></pre><blockquote>
+<h3 id="2-원인">2. 원인</h3>
+</blockquote>
+<p>이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다</p>
+<h6 id="xcode-15-beta-build-issues-httpsdeveloperapplecomforumsthread731041">Xcode 15 beta build issues (<a href="https://developer.apple.com/forums/thread/731041">https://developer.apple.com/forums/thread/731041</a>)</h6>
+<p>생각해 보니 어제 애플 이벤트 끝나고 오전에 이번 주는 팀 프로젝트도 없기도 하고<br>
+또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어<br>
+macOS 소노마 베타를 올리고 Xcode도 기존 거는 실행이 안 되니 15버전을 받았는데<br>
+지금 Xcode15에서 이러한 문제가 있는 것 같았다</p>
+<blockquote>
+<h3 id="3-해결방법">3. 해결방법</h3>
+</blockquote>
+<p><img src="/images/2023-09-14-error-04/2.png" alt="2"></p>
+<p>해결 방법은 매우 간단<br>
+프로젝트의 Build Settings &gt; Build Options &gt; User Script Sandboxing을 Yes에서 No로 변경</p>
+<p>끝~</p>
+</div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
             data-repo="sanc93/sanc93.github.io"
