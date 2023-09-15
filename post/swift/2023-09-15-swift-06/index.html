@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>Swift 06 : 타입캐스팅 (Type Casting) - 개발노트</title>
+
+    
+    
+    <meta name="description" content="타입캐스팅이란 스위프트에서 타입캐스팅이란 변수나 상수의 데이터 타입을 확인하거나
+다른 데이터 타입으로 변환하는 것을 말한다.
+타입을 변환 한다는 건 쉽게말하면 데이터의 &ldquo;모양&quot;을 바꾸는 것..
+어떤 데이터를 다른 데이터처럼 보이게 만드는 것이다.
+타입 캐스팅에는 is,as,as!,as? 총 4가지 연산자가 있는데
+is는 타입 검사(Type Checking)
+as는 업캐스팅(Upcasting)
+as!는 강제 다운캐스팅(Force Downcasting)
+as?는 조건부 다운캐스팅(Optional Downcasting)
+이라고 할 수 있다
+문법은 다음과 같이 사용 :
+변수명 is 타입 변수명 as 타입 변수명 as! 타입 변수명 as?" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/swift/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">swift</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Swift 06 : 타입캐스팅 (Type Casting)</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 15, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="타입캐스팅이란">타입캐스팅이란</h4>
+<p>스위프트에서 타입캐스팅이란 변수나 상수의 데이터 타입을 확인하거나<br>
+다른 데이터 타입으로 변환하는 것을 말한다.<br>
+타입을 변환 한다는 건 쉽게말하면 데이터의 &ldquo;모양&quot;을 바꾸는 것..<br>
+어떤 데이터를 다른 데이터처럼 보이게 만드는 것이다.</p>
+<p>타입 캐스팅에는 <code>is</code>,<code>as</code>,<code>as!</code>,<code>as?</code> 총 4가지 연산자가 있는데</p>
+<p><code>is</code>는 타입 검사(Type Checking)<br>
+<code>as</code>는 업캐스팅(Upcasting)<br>
+<code>as!</code>는 강제 다운캐스팅(Force Downcasting)<br>
+<code>as?</code>는 조건부 다운캐스팅(Optional Downcasting)</p>
+<p>이라고 할 수 있다</p>
+<p>문법은 다음과 같이 사용 :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">변수명</span> <span style="color:#66d9ef">is</span> <span style="color:#960050;background-color:#1e0010">타입</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">변수명</span> <span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">타입</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">변수명</span> <span style="color:#66d9ef">as</span>! <span style="color:#960050;background-color:#1e0010">타입</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">변수명</span> <span style="color:#66d9ef">as</span>? <span style="color:#960050;background-color:#1e0010">타입</span>
+</span></span></code></pre></div><p>아래와 같이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">brushHair</span>() {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;머리를 빗습니다&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Gildong</span>: Person {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> age = <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> gender = <span style="color:#e6db74">&#34;male&#34;</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">brushHair</span>() {
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;빗을 머리가 없습니다&#34;</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">hobby</span>() {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;누워서 과자를 먹습니다&#34;</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> unknownPerson = Gildong()
+</span></span></code></pre></div><p>부모 클래스 Person과 Person을 상속하는 자식 클래스 Gildong이 있다고 치고<br>
+각각 예제와 함께 설명을 정리해 보았다</p>
+<hr>
+<h5 id="is--객체가-특정-타입인지-여부를-검사하여-boolean값-즉-true-또는-false로-반환한다">is : 객체가 특정 타입인지 여부를 검사하여 Boolean값, 즉 true 또는 false로 반환한다</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>unknownPerson <span style="color:#66d9ef">is</span> Person <span style="color:#75715e">// true</span>
+</span></span><span style="display:flex;"><span>unknownPerson <span style="color:#66d9ef">is</span> Gildong <span style="color:#75715e">// true</span>
+</span></span></code></pre></div><p><code>unknownPerson</code>은 <code>Gildong</code> 클래스의 인스턴스이고<br>
+<code>unknownPerson</code>의 타입은 <code>Gildong</code>이지만, <code>Gildong</code> 클래스는 <code>Person</code> 클래스를 상속하고 있으므로<br>
+<code>unknownPerson</code>은 <code>Person</code> 클래스의 인스턴스이기도 하다 그래서 <code>Person</code>타입과 <code>Gildong</code>타입에 둘 다 true를 반환한다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> unknownPerson.gender <span style="color:#66d9ef">is</span> Int {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;gender가 Int타입이라고?&#34;</span>)
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;역시.. gender는 Int가 아니였다능&#34;</span>) <span style="color:#75715e">// &#34;역시.. gender는 Int가 아니였다능&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>unknownPerson</code>의 <code>gender</code>프로퍼티는 문자열이므로 <code>Int</code>타입이 아니다.<br>
+따라서 else를 타서 &ldquo;역시.. gender는 Int가 아니였다능&quot;이 출력 되었다</p>
+<hr>
+<h5 id="as--하위-클래스-객체를-상위-클래스로-변환하는-작업">as : 하위 클래스 객체를 상위 클래스로 변환하는 작업</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> unknownPerson2 = unknownPerson <span style="color:#66d9ef">as</span> Person
+</span></span></code></pre></div><p><code>unknownPerson</code>은 위에서 만든 <code>Gildong</code>이란 클래스의 인스턴스이다.<br>
+그 <code>unknownPerson</code>을 <code>as</code>연산자를 사용하여 <code>Person</code>으로 업캐스팅 해주어 <code>unknownPerson2</code>에 집어넣었다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>unknownPerson2.brushHair() <span style="color:#75715e">// 빗을 머리가 없습니다</span>
+</span></span><span style="display:flex;"><span>unknownPerson2.hobby() <span style="color:#75715e">// Value of type &#39;Person&#39; has no member &#39;hobby&#39;</span>
+</span></span></code></pre></div><p>여기서 의문점..<br>
+왜 <code>unknownPerson2</code>의 <code>brushHair()</code>는 Person의 <code>brushHair()</code>, &ldquo;머리를 빗습니다&quot;가 출력되는 것이 아닌<br>
+여전히 <code>Gildong</code>의 <code>brushHair()</code>, &ldquo;빗을 머리가 없습니다&quot;로 출력이 되는 걸까..?</p>
+<p>이건 Swift의 메소드 호출이 실제 객체 타입을 기반으로 동적 처리되기 떄문이다<br>
+위에서 먼저<code>unknownPerson</code>은 <code>Gildong</code> 클래스의 인스턴스로서 생성이 되었고<br>
+그런 다음 <code>unknownPerson</code>을  업캐스팅해서 <code>unknownPerson2</code>에 대입했다<br>
+<code>unknownPerson2</code>는 Person 타입의 변수이지만 여전히 <code>Gildong</code> 객체를 가리킨다.<br>
+따라서 오버라이딩한 메소드를 호출하면 해당 오버라이딩된 메소드가 실행된다<br>
+그래서 <code>Gildong</code>을 기반으로 호출이 되는 것이다.</p>
+<p>반면 <code>unknownPerson2</code>의 <code>hobby()</code>라는 메소드를 실행시키려고 하면<br>
+오버라이딩되지 않아 <code>Gildong</code> 클래스에만 정의되어 있으므로 호출할 수 없는 것이다.</p>
+<p>이런 업캐스팅은 언제 유용하게 사용할수 있을까?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> unknownPerson3 = Person()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> list = [unknownPerson, unknownPerson3]
+</span></span><span style="display:flex;"><span>list[<span style="color:#ae81ff">0</span>].hobby() <span style="color:#75715e">// Value of type &#39;Person&#39; has no member &#39;hobby&#39;</span>
+</span></span></code></pre></div><p>만약 위에서 만든 <code>Gildong</code>타입의 <code>unknownPerson</code>과<br>
+<code>Person</code>타입의 <code>unknownPerson2</code>를 하나의 리스트에 담으려고 한다고 해보자<br>
+원래 타입이 다르면 오류가 나야 할 텐데 잘 담긴다<br>
+그 이유는 swift에서 자동으로 <code>Person</code>으로 업캐스팅 해주었기 때문이다.<br>
+만약 둘이 생판 다른 타입이었다면 에러가 날것이다.</p>
+<hr>
+<h5 id="as--강제로-타입을-변환하려고-시도하고-만약-변환이-실패할-경우-런타임-오류가-발생한다">as! : 강제로 타입을 변환하려고 시도하고, 만약 변환이 실패할 경우 런타임 오류가 발생한다</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> convertedAge = unknownPerson.age <span style="color:#66d9ef">as</span>! Int
+</span></span><span style="display:flex;"><span>print(convertedAge) <span style="color:#75715e">// 30</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> convertedGender = unknownPerson.gender <span style="color:#66d9ef">as</span>! Int <span style="color:#75715e">// Abort() called 에러 발생</span>
+</span></span><span style="display:flex;"><span>print(convertedGender)
+</span></span></code></pre></div><p>as! 연산자를 이용해서 <code>unknownPerson</code>의 <code>age</code>와 <code>gender</code> 강제로 각각 <code>Int</code>로 형 변환하려고 한다</p>
+<p><code>age</code>는 30이 들어갔기 때문에 정상적으로 <code>Int</code>로 형 변환되어 문제없이 출력되었으나<br>
+<code>gender</code>는 문자열 &ldquo;male&rdquo; 이 들어갔기 때문에 <code>Int</code>로 형 변환할 수 없고 바로 런타임 에러가 발생하게 된다</p>
+<p>이와 같이 <code>as!</code>연산자는 만약 변환할 수 없는 경우에는 바로 뻗어버리기 때문에<br>
+옵셔널 강제 언래핑처럼 반드시 변환 가능 여부가 확실한 경우에만 사용해야 하며<br>
+되도록 사용을 지양하는 것이 좋다</p>
+<hr>
+<h5 id="as--타입-변환을-시도하고-변환이-실패할-경우에는-nil을-반환한다">as? : 타입 변환을 시도하고, 변환이 실패할 경우에는 nil을 반환한다</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> convertedGender = unknownPerson.gender <span style="color:#66d9ef">as</span>? Int
+</span></span><span style="display:flex;"><span>print(convertedGender) <span style="color:#75715e">// nil</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> convertedAge = unknownPerson.age <span style="color:#66d9ef">as</span>? Int {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;값: </span><span style="color:#e6db74">\(</span>convertedAge<span style="color:#e6db74">)</span><span style="color:#e6db74">, 변환 성공~&#34;</span>) <span style="color:#75715e">// &#34;값: 30, 변환 성공~&#34;</span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;age는 Int로 다운캐스팅 못한다!!&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> convertedGender = unknownPerson.gender <span style="color:#66d9ef">as</span>? Int {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;값: </span><span style="color:#e6db74">\(</span>convertedGender<span style="color:#e6db74">)</span><span style="color:#e6db74">, 변환 성공~&#34;</span>)
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;gender는 Int로 다운캐스팅 못한다!!&#34;</span>) <span style="color:#75715e">// &#34;gender는 Int로 다운캐스팅 못한다!!&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>위에서 사용한 <code>as!</code> 연산자 대신에 <code>as?</code> 연산자를 사용함으로써 조건부로 형 변환을 시도할 수 있다.
+실패한다 해도 nil을 반환하기 때문에 최소한 에러는 방지되고 안전하게 다운 캐스팅을 시도하는 방법인 것이다</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

@@ -3,15 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sanc93.github.io/</loc>
-    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/tags/etc/</loc>
-    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+    <loc>https://sanc93.github.io/tags/as/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/is/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/</loc>
-    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/swift/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/post/swift/2023-09-15-swift-06/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/%ED%83%80%EC%9E%85%EC%BA%90%EC%8A%A4%ED%8C%85/</loc>
+    <lastmod>2023-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/etc/</loc>
     <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/til/</loc>
@@ -132,9 +147,6 @@
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/for%EB%AC%B8/</loc>
-    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sanc93.github.io/tags/swift/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/swift/2023-07-21-swift-05/</loc>
