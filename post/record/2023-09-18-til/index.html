@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 32 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 9/18 14:30 실시간 세션 : IT 직군 확장 (커리어개발팀 HS매니저님)
+→ 이번 부트 캠프를 통해서 무조건 개발자로만 가야 하는 게 아니라 다른 직무를 선택할 수도 있음
+개발 실력이 떨어져서 다른 직무로 눈을 돌리라는 것이 아닌
+개발 실력을 겸하면 개발자가 아니어도 선택지가 무궁무진해진다는 것..
+IT 유사 직무로 첫 커리어를 시작할 수도 있다
+PM : Product Manager 프로덕트(제품)를 매니징(관리) 하는 직무. 기획
+PM은 모든 이해관계자의 요구를 충족하는 제품을 만들기 위해" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 32</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 18, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>
+<p>9/18 14:30 실시간 세션 : IT 직군 확장 (커리어개발팀 HS매니저님)</p>
+<p>→ 이번 부트 캠프를 통해서 무조건 개발자로만 가야 하는 게 아니라 다른 직무를 선택할 수도 있음<br>
+개발 실력이 떨어져서 다른 직무로 눈을 돌리라는 것이 아닌<br>
+개발 실력을 겸하면 개발자가 아니어도 선택지가 무궁무진해진다는 것..<br>
+IT 유사 직무로 첫 커리어를 시작할 수도 있다</p>
+<p>PM : Product Manager
+프로덕트(제품)를 매니징(관리) 하는 직무. 기획<br>
+PM은 모든 이해관계자의 요구를 충족하는 제품을 만들기 위해<br>
+회사, 고객 및 제품 팀 간의 커뮤니케이션 및 다리 역할 함<br>
+개발자와 자주 소통하고 마감 직전의 개발자들의 일정을 조율해 주는 게 PM의 역할<br>
+개발 베이스가 조금이라도 있으면 합리적인 솔루션 제공 가능<br>
+디자이너들과도 협업을 많이 함</p>
+<p>SI : System Integration
+다양한 프로젝트 경험 가능<br>
+온보딩 하고 바로 프로젝트 형식으로 투입, 업무 강도 높은 편이라 느낄 수 있지만<br>
+초기 업무 빠르게 배울 수 있는 장점</p>
+<p>QA : Quality Assuarance
+IT업계에서 솔루션 업체나 게임 개발사 등 자사의 제품 기능을 검증하고 관리하기 위한 QA 팀을 별도로 두고 운영함<br>
+프로젝트 시작과 마무리까지 모든 과정을 함께 기획하고 올바른 방향을 찾고 품질 저하 요소를 발견하여<br>
+해당 프로젝트의 품질을 올리는데 주 목적을 가지고 있음</p>
+</li>
+<li>
+<p>iOS 앱개발 심화 개인 과제(~9/22 14:00)</p>
+</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<h5 id="뻘짓-1">뻘짓 1:</h5>
+<p>EntryView라는 UIView를 만들고</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">init</span>(frame: CGRect) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>.<span style="color:#66d9ef">init</span>(frame: frame)
+</span></span><span style="display:flex;"><span>    backgroundColor = .darkGray
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이런 식으로 배경색을 지정했는데 배경색이 반영되지 않았다.<br>
+원인은 <code>EntryView</code>의 크기를 내가 지정해 주지 않았기 때문</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>entryView.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.edges.equalToSuperview()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이렇게 뷰의 가장자리를 부모 뷰의 가장자리와 맞춰주니 아주 잘 보인다<br>
+내가 아무리 별짓을 다해도 정작 뷰의 크기를 안정하면 0x0인 거나 마찬가지겠지..<br>
+크기 지정.. 기억하자</p>
+<h5 id="뻘짓-2">뻘짓 2:</h5>
+<p><img src="/images/2023-09-18-til/1.png" alt="1"></p>
+<p>나는 이렇게 부모 뷰의 x, y 축 중심에 <code>entryBtnOne</code>을 두고<br>
+<code>entryBtnOne</code>으로부터 20 위로 <code>titleLabel</code>을<br>
+<code>entryBtnOne</code>으로부터 15 아래로 <code>entryBtnTwo</code>를 두고 싶었다</p>
+<pre tabindex="0"><code>*** Terminating app due to uncaught exception &#39;NSGenericException&#39;, reason: &#39;Unable to activate constraint with anchors &lt;NSLayoutYAxisAnchor:0x600001701480 &#34;UILabel:0x10bf08460.bottom&#34;&gt; and &lt;NSLayoutYAxisAnchor:0x600001700b80 &#34;UIButton:0x10bf0b5c0&#39;과제1
+(ProfileDesignView)&#39;.top&#34;&gt; because they have no common ancestor.  Does the constraint or its anchors reference items in different view hierarchies?  That&#39;s illegal.&#39;
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x00000001804658a8 __exceptionPreprocess + 172
+	1   libobjc.A.dylib                     0x000000018005c09c objc_exception_throw + 56
+	2   CoreAutoLayout                      0x00000001ab19c430 -[NSLayoutConstraint setActive:] + 0
+	3   CoreAutoLayout                      0x00000001ab19c574 +[NSLayoutConstraint _addOrRemoveConstraints:activate:] + 296
+	4   SnapKit                             0x000000010412e770 $s7SnapKit10ConstraintC16activateIfNeeded16updatingExistingySb_tF + 1888
+	5   SnapKit                             0x0000000104143cb4 $s7SnapKit15ConstraintMakerC15makeConstraints4item7closureyAA06LayoutC4Item_p_yACXEtFZ + 256
+	6   SnapKit                             0x000000010414abac $s7SnapKit17ConstraintViewDSLV15makeConstraintsyyyAA0C5MakerCXEF + 96
+	7   assignment01                        0x0000000102a0bf50 $s12assignment019EntryViewC5frameACSo6CGRectV_tcfc + 644
+	8   assignment01                        0x0000000102a0c980 $s12assignment019EntryViewC5frameACSo6CGRectV_tcfcTo + 56
+	9   assignment01                        0x0000000102a082ec $sSo6UIViewCABycfcTO + 24
+	10  assignment01                        0x0000000102a07b1c $sSo6UIViewCABycfC + 32
+	11  assignment01                        0x0000000102a09278 $s12assignment0119EntryViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc + 120
+	12  assignment01                        0x0000000102a09488 $s12assignment0119EntryViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfcTo + 168
+	13  assignment01                        0x0000000102a0975c $sSo16UIViewControllerCABycfcTO + 24
+	14  assignment01                        0x0000000102a08b38 $sSo16UIViewControllerCABycfC + 32
+	15  assignment01                        0x0000000102a0d148 $s12assignment0113SceneDelegateC5scene_13willConnectTo7optionsySo7UISceneC_So0I7SessionCSo0I17ConnectionOptionsCtF + 232
+	16  assignment01                        0x0000000102a0d3d0 $s12assignment0113SceneDelegateC5scene_13willConnectTo7optionsySo7UISceneC_So0I7SessionCSo0I17ConnectionOptionsCtFTo + 84
+	17  UIKitCore                           0x000000010451bca4 +[UIScene _sceneForFBSScene:create:withSession:connectionOptions:] + 1012
+	18  UIKitCore                           0x0000000104ff533c -[UIApplication _connectUISceneFromFBSScene:transitionContext:] + 804
+	19  UIKitCore                           0x0000000104ff5624 -[UIApplication workspace:didCreateScene:withTransitionContext:completion:] + 356
+	20  UIKitCore                           0x0000000104aec704 -[UIApplicationSceneClientAgent scene:didInitializeWithEvent:completion:] + 260
+	21  FrontBoardServices                  0x000000018544d014 -[FBSScene _callOutQueue_didCreateWithTransitionContext:completion:] + 296
+	22  FrontBoardServices                  0x0000000185475acc __92-[FBSWorkspaceScenesClient createSceneWithIdentity:parameters:transitionContext:completion:]_block_invoke.82 + 224
+	23  FrontBoardServices                  0x0000000185459bb4 -[FBSWorkspace _calloutQueue_executeCalloutFromSource:withBlock:] + 160
+	24  FrontBoardServices                  0x0000000185475844 __92-[FBSWorkspaceScenesClient createSceneWithIdentity:parameters:transitionContext:completion:]_block_invoke + 284
+	25  libdispatch.dylib                   0x0000000102c1993c _dispatch_client_callout + 16
+	26  libdispatch.dylib                   0x0000000102c1d534 _dispatch_block_invoke_direct + 392
+	27  FrontBoardServices                  0x0000000185498fa0 __FBSSERIALQUEUE_IS_CALLING_OUT_TO_A_BLOCK__ + 44
+	28  FrontBoardServices                  0x0000000185498e7c -[FBSMainRunLoopSerialQueue _targetQueue_performNextIfPossible] + 196
+	29  FrontBoardServices                  0x0000000185498fd4 -[FBSMainRunLoopSerialQueue _performNextFromRunLoopSource] + 24
+	30  CoreFoundation                      0x00000001803c669c __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+	31  CoreFoundation                      0x00000001803c65e4 __CFRunLoopDoSource0 + 172
+	32  CoreFoundation                      0x00000001803c5dac __CFRunLoopDoSources0 + 320
+	33  CoreFoundation                      0x00000001803c043c __CFRunLoopRun + 768
+	34  CoreFoundation                      0x00000001803bfd28 CFRunLoopRunSpecific + 572
+	35  GraphicsServices                    0x000000018986ebc0 GSEventRunModal + 160
+	36  UIKitCore                           0x0000000104ff3fdc -[UIApplication _run] + 868
+	37  UIKitCore                           0x0000000104ff7c54 UIApplicationMain + 124
+	38  UIKitCore                           0x00000001044b9ab8 __swift_destroy_boxed_opaque_existential_1Tm + 12244
+	39  assignment01                        0x0000000102a0aaa4 $sSo21UIApplicationDelegateP5UIKitE4mainyyFZ + 120
+	40  assignment01                        0x0000000102a0aa1c $s12assignment0111AppDelegateC5$mainyyFZ + 44
+	41  assignment01                        0x0000000102a0ab78 main + 28
+	42  dyld                                0x0000000102b91558 start_sim + 20
+	43  ???                                 0x0000000102da6058 0x0 + 4342833240
+	44  ???                                 0x4106800000000000 0x0 + 4685573199813935104
+)
+libc++abi: terminating due to uncaught exception of type NSException
+</code></pre><p>이런 무시무시한 에러가 남..</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>addSubview(titleLabel)
+</span></span><span style="display:flex;"><span>titleLabel.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.bottom.equalTo(entryBtnOne.snp.top).offset(<span style="color:#f92672">-</span><span style="color:#ae81ff">20</span>) <span style="color:#75715e">// 문제원인</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>addSubview(entryBtnOne)
+</span></span><span style="display:flex;"><span>entryBtnOne.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.centerY.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.width.equalTo(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    make.height.equalTo(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>addSubview(entryBtnTwo)
+</span></span><span style="display:flex;"><span>entryBtnTwo.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.top.equalTo(entryBtnOne.snp.bottom).offset(<span style="color:#ae81ff">15</span>)
+</span></span><span style="display:flex;"><span>    make.width.equalTo(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    make.height.equalTo(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이것도 알고보니 매우 단순한 문제였다.<br>
+생각을 해보니 코드는 순차적으로 내려올 텐데 <code>entryBtnOne</code>이 아직 정의되지도 않았는데<br>
+먼저 <code>titleLabel</code>을 없는 <code>entryBtnOne</code>를 기준으로 제약조건을 잡으려고 했던 게 문제였다 ㄱ-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>addSubview(entryBtnOne)
+</span></span><span style="display:flex;"><span>entryBtnOne.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.centerY.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.width.equalTo(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    make.height.equalTo(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>addSubview(titleLabel)
+</span></span><span style="display:flex;"><span>titleLabel.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.bottom.equalTo(entryBtnOne.snp.top).offset(<span style="color:#f92672">-</span><span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>addSubview(entryBtnTwo)
+</span></span><span style="display:flex;"><span>entryBtnTwo.snp.makeConstraints { make <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    make.centerX.equalToSuperview()
+</span></span><span style="display:flex;"><span>    make.top.equalTo(entryBtnOne.snp.bottom).offset(<span style="color:#ae81ff">15</span>)
+</span></span><span style="display:flex;"><span>    make.width.equalTo(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    make.height.equalTo(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이렇게 <code>titleLabel</code>을 <code>entryBtnOne</code>뒤로 위치를 바꿔주니</p>
+<p><img src="/images/2023-09-18-til/2.png" alt="2"></p>
+<p>잘 나온다</p>
+<h5 id="현재-진행중-">현재 진행중 :</h5>
+<p><img src="/images/2023-09-18-til/3.gif" alt="3"></p>
+<p>분명 나는 내비게이션바와 탭바를 과제1 View 안에다 지정했는데<br>
+어째서 과제 2에서도 내비게이션바와 탭바가 보이는 것인가&hellip;</p>
+<p>그리고 tabBarItem은 왜 탭바 위로 튀어나오는 것인가<br>
+과제 필수 구현에서 present 방식으로 하라 그래서<br>
+그래서 아랫부분이 잘려서 위로 튀어나온 건가?<br>
+근데 그러면 push 방식으로 넘어가는 과제2 View에선 왜 튀어나오는 것이여 😞<br>
+대체 뭘까.. 왜&hellip;</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
