@@ -4,12 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title> - 개발노트</title>
+    <title>TIL 33 - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="오늘 한 일 / 배운점 iOS 앱개발 심화 개인 과제(~9/22 14:00) 과제 iOS 앱개발 심화 개인 과제(~9/22 14:00) 느낀점 오늘 UI 구현 과제 중에 아래 컬렉션 뷰를 뿌려줘야 하는데
+자꾸 보이지가 않았다
+분명 제약 조건도 맞게 준 것 같은데
+계층을 보면 분명 있어야 할 UICollectionView는 아예 보이지도 않는다..
+collectionViewFeed.snp.makeConstraints { $0.top.equalTo(profileDesignView.snp.bottom) $0.leading.trailing.bottom.equalToSuperview() } profileDesignView 전체의 bottom에 컬렉션 뷰의 top을 맞추고
+나머지 좌우하단은 부모 뷰에 맞추도록 했는데 말이다
+혹시나 해서
+collectionViewFeed.snp.makeConstraints { $0." />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -65,18 +72,12 @@
             
             
             
-                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
-                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in
-                    active" href="/" title=""
-                        style="color: #f0f0f0;
-                        animation: text-fade-animation 3s linear infinite alternate;">(all)</a>
-                
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
             
             
             
@@ -116,12 +117,18 @@
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
             
             
             
@@ -147,11 +154,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold"></div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 33</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 20, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(u){text-decoration:underline;}
@@ -189,10 +198,52 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-    </ul>
-</div>
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 앱개발 심화 개인 과제(~9/22 14:00)</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p><img src="/images/2023-09-20-til/1.png" alt="1">
+오늘 UI 구현 과제 중에 아래 컬렉션 뷰를 뿌려줘야 하는데<br>
+자꾸 보이지가 않았다<br>
+분명 제약 조건도 맞게 준 것 같은데</p>
+<p><img src="/images/2023-09-20-til/2.png" alt="2">
+계층을 보면 분명 있어야 할 UICollectionView는 아예 보이지도 않는다..</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>collectionViewFeed.snp.makeConstraints {
+</span></span><span style="display:flex;"><span>    $0.top.equalTo(profileDesignView.snp.bottom)
+</span></span><span style="display:flex;"><span>    $0.leading.trailing.bottom.equalToSuperview()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>profileDesignView 전체의 bottom에 컬렉션 뷰의 top을 맞추고<br>
+나머지 좌우하단은 부모 뷰에 맞추도록 했는데 말이다</p>
+<p>혹시나 해서</p>
+<pre tabindex="0"><code>collectionViewFeed.snp.makeConstraints {
+    $0.top.equalTo(profileDesignView.navGalleryStackView.snp.bottom)
+    $0.leading.trailing.equalToSuperview()
+    $0.bottom.equalTo(profileDesignView.tabBar.snp.top)
+}
+</code></pre><p>profileDesignView 안에 있는 요소에 제약조건을 맞춰보았다</p>
+<p><img src="/images/2023-09-20-til/3.png" alt="3">
+허허.. 잘 뜬다</p>
+<p>그 이유를 몰랐는데<br>
+이거 지금 TIL 쓰면서 발견했다</p>
+<p><img src="/images/2023-09-20-til/4.png" alt="4"></p>
+<p>나는 ProfileDesignView라는 뷰 파일에 모든 요소를 때려 박았으니<br>
+당연히 그 아래에 컬렉션 뷰를 붙이면 되겠거니 해서 제약조건을 그렇게 준거였는데</p>
+<p><img src="/images/2023-09-20-til/5.png" alt="5"></p>
+<p>생각해 보니 저 아래 탭바도 ProfileDesignView에다가 구현했었다<br>
+그러니까 위에서 한 <code> $0.top.equalTo(profileDesignView.snp.bottom)</code>는 &hellip; 결국 탭바 아래<br>
+심지어 그 탭 빠는 화면 가장자리에 맞춰뒀었으니<br>
+여태 safearea밖에 다 내가 컬렉션 뷰를 붙여놓고 찾고 있었던 것이다&hellip; (한심)</p>
+<p><img src="/images/2023-09-20-til/6.gif" alt="6"></p>
+<p>일단 피그마대로 모양은 나온 것 같은데<br>
+코드가 일단 중복되는 코드도 너무 많고.. 전체적으로 허접하고&hellip;더럽다 해야되나?<br>
+한번 정리를 해야 될 것 같다<br>
+그리고 과제2 해야지.. ㅜㅜ</p>
+</div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
             data-repo="sanc93/sanc93.github.io"
