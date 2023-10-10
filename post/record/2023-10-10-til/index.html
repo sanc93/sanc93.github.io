@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>TIL 34 - 개발노트</title>
+
+    
+    
+    <meta name="description" content="오늘 한 일 / 배운점 10/10 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 과제 iOS 최종 프로젝트 과제 느낀점 드디어 최종 프로젝트가 시작됐다
+전반부 3주 : MVP를 담은 실제 서비스를 구축
+후반부 3주 : 트러블 슈팅 &#43; 배포 경험을 바탕으로 서비스를 운영/개선
+이번에는 이렇게 6주인데 내배캠에서 필수 구현, 선택 구현 이런 것 정해주는 것 없이
+팀마다 자율적으로 주제를 정해서 하게 됐다
+오전에는 커밋 컨벤션이나 회의 시간 등등." />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 34</div>
+        <div class="mt:16 f:fade-60">
+            <time>Oct 10, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>10/10 10:00 팀 회의</li>
+<li>팀 노션 작성</li>
+<li>주제 아이디어 정하기</li>
+<li>와이어 프레임 짜기</li>
+<li>프로젝트 규칙 정하기</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>iOS 최종 프로젝트 과제</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>드디어 최종 프로젝트가 시작됐다</p>
+<p>전반부 3주 : MVP를 담은 실제 서비스를 구축<br>
+후반부 3주 : 트러블 슈팅 + 배포 경험을 바탕으로 서비스를 운영/개선</p>
+<p>이번에는 이렇게 6주인데 내배캠에서 필수 구현, 선택 구현 이런 것 정해주는 것 없이<br>
+팀마다 자율적으로 주제를 정해서 하게 됐다</p>
+<p>오전에는 커밋 컨벤션이나 회의 시간 등등.. 팀 규칙 등을 정하는 데 좀 시간이 걸렸고<br>
+오후에는 어떤 앱을 개발할지 서로 아이디어를 냈는데</p>
+<ol>
+<li>산책 앱</li>
+<li>필사 앱</li>
+<li>여행 앱</li>
+<li>연극, 영화, 예술 쪽 종사자를 위한 앱</li>
+<li>등산 앱</li>
+<li>취업 개인형 맞춤 서비스 앱</li>
+<li>온라인 토론장 앱</li>
+<li>환자 보호자를 위한 앱</li>
+</ol>
+<p>이 중에서 투표로</p>
+<ol>
+<li>여행 앱</li>
+<li>환자 보호자를 위한 앱</li>
+</ol>
+<p>두 가지로 추려졌다.<br>
+여행 앱은 해외여행을 계획 할때 필요한 정보를 보통 여기저기서 찾는데<br>
+간단한 기능들을 하나로 묶어서 여행 일정 추가, 공항 시설 검색, 실시간 환율정보,
+번역, 해외에서 긴급상황 시 연락처 등 가볍게 볼 수 있는 앱이 있으면 좋겠다고 생각을 했고</p>
+<p>환자 보호자 앱은 SB 님 아이디어인데 환자들을 위한 앱은 많은데 그 옆에 있는 보호자를 위한 앱은 별로 없으니<br>
+환자 보호자 멘탈 관리를 할 수 있는 미니게임이나 명상 등.. 기능이 들어간 앱이 있으면 좋겠다고 하셨다</p>
+<p>여행 앱은 너무 흔하고 뻔하다는 문제점과&hellip; 사용자 입장으로 봤을 때<br>
+네이버나 이런 사이트를 이용하지 굳이 이 앱 사용할까? 싶고<br>
+환자 보호자 앱은 콘텐츠를 우리가 만들 수는 없는데 그거를 어디서 갖다 쓸지<br>
+저작권이나 이런&hellip; 현실적으로 구현 가능한지에 대한 의문이 있었다.</p>
+<p>그러던 중 어디에 들어갈 때 필요한 에티켓 정보를 볼 수 있는 앱이 있으면 좋겠다는 이야기가 나왔고<br>
+다들 만장일치로 동의해서 그걸로 하기로 했다<br>
+나도 개인적으로 너무 괜찮은 아이디어인 것 같아서 좋았다</p>
+<p>주제가 정해지고 나서는 쭉쭉 앞으로 진행이 되었는데<br>
+일단 목표로써는 기능이 많고 어렵고 이런 걸 떠나서 다들 앱 배포 경험이 없으니 간단한 앱이라도 배포하는 데에 초점을 두기로 했다<br>
+와이어 프레임을 짜는 데 있어서 SB 님이 앱 UI를 쓱쓱 그리더니 거의 혼자 다 짜셨다;</p>
+<p><img src="/images/2023-10-10-til/1.png" alt="1"></p>
+<p>이번 프로젝트는 기능도 전보다 많고 소셜 로그인 기능이라든지 아직 안 해본 기능도 많아서 쉬울 것 같지는 않지만<br>
+이 프로젝트를 통해서 정말 많은 걸 얻어 갈 것 같아서 기대가 된다</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>
