@@ -7,14 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 35</title>
+      <link>https://sanc93.github.io/post/record/2023-10-11-til/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-10-11-til/</guid>
+      <description>오늘 한 일 / 배운점 구글폼 설문지 만들기 디자인패턴 결정 데이터 모델링 데이터 관리 방식 결정 깃헙 팀 레포지토리 생성 깃 브랜치 전략 정하기 앱 컬러스키마 페이지 분담 (UI) 10/11 15:00 커리어톤 사전 설명회 과제 iOS 최종 프로젝트 과제 느낀점 오늘도 어제에 이어서 다같이 모여서 기획하다가 하루가 날라갔다
+오전에는 개발 전 유저 리서치를 위해 구글폼 작성과
+디자인 패턴을 뭘로 할지 의논했다. 처음에는 규모가 그리 크지 않아서 MVC로 할까 하는 의견이 있었지만</description>
+    </item>
+    
     <item>
       <title>TIL 34</title>
       <link>https://sanc93.github.io/post/record/2023-10-10-til/</link>
       <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sanc93.github.io/post/record/2023-10-10-til/</guid>
-      <description>오늘 한 일 / 배운점 10/10 10:00 팀 회의 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 과제 iOS 최종 프로젝트 과제 느낀점 드디어 최종 프로젝트가 시작됐다
+      <description>오늘 한 일 / 배운점 팀 노션 작성 주제 아이디어 정하기 와이어 프레임 짜기 프로젝트 규칙 정하기 과제 iOS 최종 프로젝트 과제 느낀점 드디어 최종 프로젝트가 시작됐다
 전반부 3주 : MVP를 담은 실제 서비스를 구축
 후반부 3주 : 트러블 슈팅 + 배포 경험을 바탕으로 서비스를 운영/개선
 이번에는 이렇게 6주인데 내배캠에서 필수 구현, 선택 구현 이런 것 정해주는 것 없이
