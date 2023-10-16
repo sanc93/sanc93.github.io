@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 36</title>
+      <link>https://sanc93.github.io/post/record/2023-10-12-til/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-10-12-til/</guid>
+      <description>오늘 한 일 / 배운점 앱에 들어갈 컨텐츠 내용 조사 UI 구현 과제 UI 구현 느낀점 오늘부터 UI 구현 작업을 시작했는데
+검색 내용이 들어가는 UITextField 옆에 취소 버튼을 나란히 놓는 작업이 있었다
+현재 iPhone15 Pro를 기본으로 잡고 시뮬레이터를 돌리고 있는데
+만약에 iPhone SE처럼 더 작은 화면이나 Pro Max나 Plus 모델처럼 더 큰 화면에서 이 앱을 실행한다고 생각했을 때
+일단 취소 버튼은 width 값이 변할 일은 없고
+저 UITextField를 건드려야 할 것 같은데 width 값이 고정이 되어버리면 이상할 것 같아서</description>
+    </item>
+    
     <item>
       <title>TIL 35</title>
       <link>https://sanc93.github.io/post/record/2023-10-11-til/</link>
