@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL 37</title>
+      <link>https://sanc93.github.io/post/record/2023-10-17-til/</link>
+      <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/record/2023-10-17-til/</guid>
+      <description>오늘 한 일 / 배운점 Firebase 과제 UI 구현 느낀점 ![스크린샷 2023-10-17 11.33.54](../../../static/images/2023-10-17-til/스크린샷 2023-10-17 11.33.54.png)이번 프로젝트에서 로그인/로그아웃, 컨텐츠 내용 저장, 커뮤니티 기능 구현하기 위해 Firebase를 사용하기로 했는데 이번에 Firebase사용하는게 처음이라 어제 좀 자료를 찾아보고 공부를 했었다 보기만해서는 그렇게 어려워보이지 않을 것 같은데 일단은 직접해보지 않으면 모를것같아 MVP(Minimum Viable Product 최소기능제품)완성 후 추가적으로 넣으려는 커뮤니티 기능에 들어갈 CRUD기능을 어떻게 구현해봐야할지 하나 프로젝트를 파서 테스트를 해보려고 한다
+Firebase : https://firebase.google.com/
+![스크린샷 2023-10-17 11.</description>
+    </item>
+    
     <item>
       <title>TIL 36</title>
       <link>https://sanc93.github.io/post/record/2023-10-12-til/</link>
@@ -790,6 +801,15 @@ Android
       
       <guid>https://sanc93.github.io/post/etc/untitled/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanc93.github.io/post/swift/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanc93.github.io/post/swift/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6/</guid>
+      <description> </description>
     </item>
     
   </channel>

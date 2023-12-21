@@ -4,12 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/custom.css">
-    <title>while문 - 개발노트</title>
+    <title>TIL 37 - 개발노트</title>
 
     
     
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="오늘 한 일 / 배운점 Firebase 과제 UI 구현 느낀점 ![스크린샷 2023-10-17 11.33.54](../../../static/images/2023-10-17-til/스크린샷 2023-10-17 11.33.54.png)이번 프로젝트에서 로그인/로그아웃, 컨텐츠 내용 저장, 커뮤니티 기능 구현하기 위해 Firebase를 사용하기로 했는데 이번에 Firebase사용하는게 처음이라 어제 좀 자료를 찾아보고 공부를 했었다 보기만해서는 그렇게 어려워보이지 않을 것 같은데 일단은 직접해보지 않으면 모를것같아 MVP(Minimum Viable Product 최소기능제품)완성 후 추가적으로 넣으려는 커뮤니티 기능에 들어갈 CRUD기능을 어떻게 구현해봐야할지 하나 프로젝트를 파서 테스트를 해보려고 한다
+Firebase : https://firebase.google.com/
+![스크린샷 2023-10-17 11." />
+    <meta name="author" content="Sanghun Kim" />
     
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
@@ -110,12 +112,18 @@
             
             
             
+                
                 <a class="
                     font:semibold
                     font:fade
                     font:fade-10:hover
+                    font:fade-0.active
                     px:8
-                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+                    transition:150ms;ease-in
+                    active" href="/post/record/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">til/wil</a>
+                
             
             
             
@@ -141,11 +149,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:15 w:full">
-        <header class="mb:12">
-            <div class="font:18 font:extrabold">while문</div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">TIL 37</div>
+        <div class="mt:16 f:fade-60">
+            <time>Oct 17, 2023</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(u){text-decoration:underline;}
@@ -183,34 +193,43 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul class="mt:0 mb:0 pl:0">
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/1/">
-                                <div>첫 글</div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jun 19, 2023</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/etc/untitled/">
-                                <div></div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jan 01, 0001</time></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mb:0 py:18">
-                            <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="https://sanc93.github.io/post/swift/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6/">
-                                <div></div>
-                            </a>
-                            <div class="mt:8 f:14 f:fade-70"><time>Jan 01, 0001</time></div>
-                        </div>
-                    </li>
-    </ul>
-</div>
+"><h4 id="오늘-한-일--배운점">오늘 한 일 / 배운점</h4>
+<ul>
+<li>Firebase</li>
+</ul>
+<h4 id="과제">과제</h4>
+<ul>
+<li>UI 구현</li>
+</ul>
+<h4 id="느낀점">느낀점</h4>
+<p>![스크린샷 2023-10-17 11.33.54](../../../static/images/2023-10-17-til/스크린샷 2023-10-17 11.33.54.png)이번 프로젝트에서
+로그인/로그아웃, 컨텐츠 내용 저장, 커뮤니티 기능 구현하기 위해 Firebase를 사용하기로 했는데
+이번에 Firebase사용하는게 처음이라 어제 좀 자료를 찾아보고 공부를 했었다
+보기만해서는 그렇게 어려워보이지 않을 것 같은데
+일단은 직접해보지 않으면 모를것같아
+MVP(Minimum Viable Product 최소기능제품)완성 후
+추가적으로 넣으려는 커뮤니티 기능에 들어갈 CRUD기능을 어떻게 구현해봐야할지 하나 프로젝트를 파서 테스트를 해보려고 한다</p>
+<p>Firebase : <a href="https://firebase.google.com/">https://firebase.google.com/</a></p>
+<p>![스크린샷 2023-10-17 11.32.31](../../../static/images/2023-10-17-til/스크린샷 2023-10-17 11.32.31.png)</p>
+<p>정말 직관적이라 적을것도 없지만 프로젝트를 생성하니
+옆에 카테고리가 생성되었다</p>
+<p>Authentication : 사용자 인증을 관리, 이메일/비밀번호, 소셜 미디어, SMS 등 여러 방식으로 관리 가능
+App Check : 앱이 신뢰할 수 있는지 확인하고, 무단 액세스 및 앱의 악용을 방지하는 도구를 제공
+Firestore Database : NoSQL 문서 데이터베이스 서비스로, 클라우드에 데이터를 저장하고 실시간 데이터 동기화 및 쿼리 지원
+Realtime Database : 실시간 데이터 동기화와 실시간 업데이트를 지원.  실시간 채팅 같은거 구현 할때..
+Extensions :  이미지 처리나 알림 기능 같은 Firebase 확장 프로그램 추가 가능
+Storage :  클라우드 스토리지 서비스, 파일(이미지, 비디오 등)을 저장/관리</p>
+<p>이중에서 이번 프로젝트에서 사용될법한 메뉴들은 이 정도..</p>
+<ol>
+<li>GoogleService-Info.plist 추가</li>
+<li>Firebase SDK 추가
+현재 Xcode15에서 코코아팟 설치 문제가 있다는 이야기가 있어서 SPM으로 설치</li>
+<li>AppDelegate에 코드 추가</li>
+</ol>
+<p>이렇게 끝이 났다</p>
+<p>앞으로 만들 커뮤니티가 게시판적인 성향을 띌것이기 때문에..
+Firestore Database에서 만든다</p>
+</div></article>
 <div id="giscus_thread">
     <script src="https://giscus.app/client.js"
             data-repo="sanc93/sanc93.github.io"
