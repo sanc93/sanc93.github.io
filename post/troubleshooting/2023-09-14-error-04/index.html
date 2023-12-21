@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/custom.css">
+    <title>에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create... - 개발노트</title>
+
+    
+    
+    <meta name="description" content="1. 문제 새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다
+Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature 2. 원인 이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다
+Xcode 15 beta build issues (https://developer.apple.com/forums/thread/731041) 생각해 보니 어제 애플 이벤트 끝나고
+이번 주는 팀 프로젝트도 없기도 하고 또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어
+macOS 소노마 베타를 올려봤는데 Xcode가 실행이 안 되서 15버전을 받았었다" />
+    <meta name="author" content="Sanghun Kim" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <style> 
+    @keyframes text-fade-animation {
+        0% { color: #f0f0f0; }
+ 
+        50% { color: #4682B4; }
+
+        100% { color: #2F4F4F; }
+    }
+    @keyframes text-fade-animation-about {
+        0% { color: #20B2AA; }
+ 
+        50% { color: #98FB98; }
+
+        100% { color: #3CB371; }
+    }
+</style>
+
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              개발노트
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/" title="">(all)</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/flutter/" title="">flutter</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/swift/" title="">swift</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/ios/" title="">ios</a>
+            
+            
+            
+                
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    font:fade-0.active
+                    px:8
+                    transition:150ms;ease-in
+                    active" href="/post/troubleshooting/" title=""
+                        style="color: #f0f0f0;
+                        animation: text-fade-animation 3s linear infinite alternate;">troubleshooting</a>
+                
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/etc/" title="">etc</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/post/record/" title="">til/wil</a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="" title=""> | </a>
+            
+            
+            
+                <a class="
+                    font:semibold
+                    font:fade
+                    font:fade-10:hover
+                    px:8
+                    transition:150ms;ease-in" href="/about/" title="">about</a>
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create...</div>
+        <div class="mt:16 f:fade-60">
+            <time>Sep 14, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(u){text-decoration:underline;}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><blockquote>
+<h3 id="1-문제">1. 문제</h3>
+</blockquote>
+<p>새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데<br>
+갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다</p>
+<p><img src="/images/2023-09-14-error-04/1.png" alt="1"></p>
+<pre tabindex="0"><code>Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature
+</code></pre><blockquote>
+<h3 id="2-원인">2. 원인</h3>
+</blockquote>
+<p>이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다</p>
+<h6 id="xcode-15-beta-build-issues-httpsdeveloperapplecomforumsthread731041">Xcode 15 beta build issues (<a href="https://developer.apple.com/forums/thread/731041">https://developer.apple.com/forums/thread/731041</a>)</h6>
+<p>생각해 보니 어제 애플 이벤트 끝나고<br>
+이번 주는 팀 프로젝트도 없기도 하고 또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어<br>
+macOS 소노마 베타를 올려봤는데 Xcode가 실행이 안 되서 15버전을 받았었다<br>
+다른사람들도 이러한 문제가 있는 걸 보니 Xcode15 문제인듯</p>
+<blockquote>
+<h3 id="3-해결방법">3. 해결방법</h3>
+</blockquote>
+<p><img src="/images/2023-09-14-error-04/2.png" alt="2"></p>
+<p>해결 방법은 매우 간단했다<br>
+프로젝트의 Build Settings &gt; Build Options &gt; User Script Sandboxing을 Yes에서 No로 변경</p>
+<p>끝~</p>
+</div></article>
+<div id="giscus_thread">
+    <script src="https://giscus.app/client.js"
+            data-repo="sanc93/sanc93.github.io"
+            data-repo-id="R_kgDOJr9Tuw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJr9Tu84CYQIi"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+<footer class="py:24"> 
+    <div class="f:fade-30 f:14 mb:8">© Sanghun Kim</div>
+</footer></div>
+    </div>
+</body>
+
+</html>

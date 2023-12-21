@@ -7,34 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Sanghun Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>에러 : Sandbox: rsync.samba(50778) deny(1) file-write-create...</title>
-      <link>https://sanc93.github.io/post/etc/2023-09-14-error-04/</link>
-      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/2023-09-14-error-04/</guid>
-      <description>1. 문제 새로 프로젝트를 파고 뭐 조금 만지다가 시뮬레이터를 실행시켰는데
-갑자기 난생처음 보는 에러가 3개나 잡히면서 실행이 되지 않는다
-Sandbox: rsync.samba(50778) deny(1) file-write-create /Users/sanghunkim/Library/Developer/Xcode/DerivedData/assignment01-cmzskzpxprdqbtdkjnoezkyqmhoi/Build/Products/Debug-iphonesimulator/assignment01.app/Frameworks/SnapKit.framework/_CodeSignature 2. 원인 이 오류는 찾아보니 macOS의 Sandbox 보안 기능으로 인해 발생한다고 하는데 이런 글이 있었다
-Xcode 15 beta build issues (https://developer.apple.com/forums/thread/731041) 생각해 보니 어제 애플 이벤트 끝나고
-이번 주는 팀 프로젝트도 없기도 하고 또 RC 버전이면 정식 버전이나 마찬가지라고 하니까 별문제 없겠다 싶어
-macOS 소노마 베타를 올려봤는데 Xcode가 실행이 안 되서 15버전을 받았었다</description>
-    </item>
-    
-    <item>
-      <title>에러 : “View Controller“ is unreachable because it has no entry points...</title>
-      <link>https://sanc93.github.io/post/etc/2023-08-01-error-03/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/2023-08-01-error-03/</guid>
-      <description>1. 문제 강의 보면서 실습하다가 뷰 컨트롤러 하나만 남기고 지웠는데 갑자기 Xcode에 이러한 에러가 뜬다.
-“View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:]. 2. 원인 이 오류는 스토리보드에서 해당 &amp;ldquo;View Controller&amp;quot;에 대한 엔트리포인트(진입점)을 내가 지정해 주지 않아서 그렇다.
-3. 해결방법 View Controller를 클릭 &amp;gt; Attributes Inspector &amp;gt; Is Initial View Controller에 체크
-하여 엔트리포인트를 추가해주자.
-이렇게하면 뷰 컨트롤러에 엔트리포인트가 추가 된것도 확인이 가능하고 오류 메세지도 깔끔히 사라진다.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sanc93.github.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>객체 지향 프로그래밍의 SOLID 원칙</title>
       <link>https://sanc93.github.io/post/etc/2023-07-19-etc-02/</link>
@@ -65,17 +38,6 @@ class Student { func examScore() { // 시험 점수 로직 } func saveToDatabase
       
       <guid>https://sanc93.github.io/post/etc/2023-07-17-etc-01/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>에러 : Because 프로젝트명 requires SDK version &gt;=3.0.5 &lt;4.0.0, version solving failed.</title>
-      <link>https://sanc93.github.io/post/etc/2023-07-10-error-02/</link>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanc93.github.io/post/etc/2023-07-10-error-02/</guid>
-      <description>1. 문제 Flutter 프로젝트를 끌어와서 VSCode &amp;gt; pubspec.yml 파일에서 Get Packages 하려고 하니 디버그 콘솔에 이러한 문구가 뜬다.
-Resolving dependencies... The current Dart SDK version is 3.0.3. Because introduce_e1if requires SDK version &amp;gt;=3.0.5 &amp;lt;4.0.0, version solving failed. Exited (1) 2. 원인 내 Dart 버전이 3.0.3 인데 3.0.5 ~ 4.0.0 버전을 요구하고 있어서 그렇다
-.. environment: sdk: &amp;#39;&amp;gt;=3.0.5 &amp;lt;4.0.0&amp;#39; .. 3. 해결방법 Dart SDK를 올려주면 해결된다. VSCode Terminal에서 flutter upgrade 해주자</description>
     </item>
     
   </channel>

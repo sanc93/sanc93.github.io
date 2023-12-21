@@ -47,13 +47,13 @@
     <loc>https://sanc93.github.io/tags/%ED%83%80%EC%9E%85%EC%BA%90%EC%8A%A4%ED%8C%85/</loc>
     <lastmod>2023-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/tags/etc/</loc>
-    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sanc93.github.io/post/record/2023-09-14-til/</loc>
     <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/post/etc/2023-09-14-error-04/</loc>
+    <loc>https://sanc93.github.io/tags/troubleshooting/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sanc93.github.io/post/troubleshooting/2023-09-14-error-04/</loc>
     <lastmod>2023-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-09-13-til/</loc>
@@ -137,7 +137,7 @@
     <loc>https://sanc93.github.io/post/ios/2023-08-01-uikit-02/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/post/etc/2023-08-01-error-03/</loc>
+    <loc>https://sanc93.github.io/post/troubleshooting/2023-08-01-error-03/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-07-31-til/</loc>
@@ -197,6 +197,9 @@
     <loc>https://sanc93.github.io/tags/%ED%8A%9C%ED%94%8C/</loc>
     <lastmod>2023-07-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sanc93.github.io/tags/etc/</loc>
+    <lastmod>2023-07-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sanc93.github.io/tags/operators/</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -236,13 +239,10 @@
     <loc>https://sanc93.github.io/post/etc/2023-07-17-etc-01/</loc>
     <lastmod>2023-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/tags/post/</loc>
+    <loc>https://sanc93.github.io/post/troubleshooting/2023-07-10-error-02/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sanc93.github.io/post/etc/2023-07-10-error-02/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sanc93.github.io/post/etc/2023-07-10-error-01/</loc>
+    <loc>https://sanc93.github.io/post/troubleshooting/2023-07-10-error-01/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/tags/dart/</loc>
