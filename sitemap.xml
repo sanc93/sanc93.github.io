@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sanc93.github.io/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sanc93.github.io/post/</loc>
     <lastmod>2023-10-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,9 +15,6 @@
     <lastmod>2023-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-10-17-til/</loc>
-    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sanc93.github.io/</loc>
     <lastmod>2023-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sanc93.github.io/post/record/2023-10-12-til/</loc>
@@ -265,8 +265,6 @@
   </url><url>
     <loc>https://sanc93.github.io/post/etc/</loc>
   </url><url>
-    <loc>https://sanc93.github.io/post/etc/untitled/</loc>
-  </url><url>
     <loc>https://sanc93.github.io/post/flutter/</loc>
   </url><url>
     <loc>https://sanc93.github.io/post/ios/</loc>
@@ -276,6 +274,10 @@
     <loc>https://sanc93.github.io/post/swift/</loc>
   </url><url>
     <loc>https://sanc93.github.io/post/swift/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6/</loc>
+  </url><url>
+    <loc>https://sanc93.github.io/post/troubleshooting/</loc>
+  </url><url>
+    <loc>https://sanc93.github.io/tags/post/</loc>
   </url><url>
     <loc>https://sanc93.github.io/series/</loc>
   </url>
